@@ -1,0 +1,208 @@
+﻿DN Part ID,PG Product Group,Product Family,Product Group,Product Subgroup,Product Description
+105,PG2,Body,Body Components,Wiper,Rear Wiper Linkage
+106,PG1,Thermal,Climate Control Components,Compressor,Clutch
+107,PG1,Thermal,Climate Control Components,Compressor,Compressor
+108,PG1,Thermal,Climate Control Components,HVAC,Actuator
+109,PG1,Thermal,Climate Control Components,HVAC,Ambient Temp Sensor
+110,PG1,Thermal,Climate Control Components,HVAC,Blower Motor
+111,PG1,Thermal,Climate Control Components,HVAC,Blower Motor Resistor
+112,PG1,Thermal,Climate Control Components,HVAC,Cabin Air Filter
+113,PG1,Thermal,Climate Control Components,HVAC,Cabin Temp Sensor
+114,PG1,Thermal,Climate Control Components,HVAC,HVAC Case
+115,PG3,Electronics,Body Electronics Components,Climate Control,Climate Control Panel
+116,PG1,Thermal,Climate Control Components,HVAC,Door
+117,PG1,Thermal,Climate Control Components,HVAC,Drain Tube
+118,PG1,Thermal,Climate Control Components,HVAC,Duct
+119,PG1,Thermal,Climate Control Components,HVAC,Duct Temp Sensor
+120,PG1,Thermal,Climate Control Components,HVAC,HVAC ECU
+121,PG1,Thermal,Climate Control Components,HVAC,Evaporator
+122,PG1,Thermal,Climate Control Components,HVAC,Evaporator Temp Sensor
+123,PG1,Thermal,Climate Control Components,HVAC,Heater Core
+124,PG1,Thermal,Climate Control Components,HVAC,Linkage
+125,PG1,Thermal,Climate Control Components,HVAC,Manual Door Cable
+126,PG1,Thermal,Climate Control Components,HVAC,Misc
+127,PG1,Thermal,Climate Control Components,HVAC,O-Ring/Seal
+128,PG1,Thermal,Climate Control Components,HVAC,PTC Heater
+129,PG1,Thermal,Climate Control Components,Plumbing,Refrigerant Line
+130,PG1,Thermal,Climate Control Components,HVAC,Refrigerant Pressure Sensor
+131,PG1,Thermal,Climate Control Components,HVAC,TXV Expansion Valve
+132,PG1,Thermal,Climate Control Components,HVAC,Vacuum Hose
+133,PG1,Thermal,Climate Control Components,HVAC,Wire Harness
+134,PG1,Thermal,Powertrain Thermal Components,Powertrain Cooling,Air Deflector
+135,PG1,Thermal,Powertrain Thermal Components,Powertrain Cooling,Attachments
+136,PG1,Thermal,Powertrain Thermal Components,Powertrain Cooling,Charge Air Cooler
+137,PG1,Thermal,Powertrain Thermal Components,Powertrain Cooling,Condenser
+138,PG1,Thermal,Powertrain Thermal Components,Powertrain Cooling,Coolant Hose
+139,PG1,Thermal,Powertrain Thermal Components,Powertrain Cooling,Electric Coolant Pump
+140,PG1,Thermal,Powertrain Thermal Components,Powertrain Cooling,Misc
+141,PG1,Thermal,Powertrain Thermal Components,Powertrain Cooling,Oil Cooler
+142,PG1,Thermal,Powertrain Thermal Components,Powertrain Cooling,Oil Cooler Bypass
+143,PG1,Thermal,Powertrain Thermal Components,Powertrain Cooling,Oil Hose
+144,PG1,Thermal,Powertrain Thermal Components,Powertrain Cooling,Radiator
+145,PG1,Thermal,Powertrain Thermal Components,Powertrain Cooling,Radiator Cap
+146,PG1,Thermal,Powertrain Thermal Components,Powertrain Cooling,Radiator Drain
+147,PG1,Thermal,Powertrain Thermal Components,Powertrain Cooling,Radiator Fan Assy
+148,PG1,Thermal,Powertrain Thermal Components,Powertrain Cooling,Radiator Fan Clutch
+149,PG1,Thermal,Powertrain Thermal Components,Powertrain Cooling,Radiator Fan Controller
+150,PG1,Thermal,Powertrain Thermal Components,Powertrain Cooling,Radiator Fan Mechanical Clutch
+151,PG1,Thermal,Powertrain Thermal Components,Powertrain Cooling,Radiator Fan Motor
+152,PG1,Thermal,Powertrain Thermal Components,Powertrain Cooling,Radiator Fan Shroud
+153,PG1,Thermal,Powertrain Thermal Components,Powertrain Cooling,Radiator Hose
+154,PG1,Thermal,Powertrain Thermal Components,Powertrain Cooling,Radiator Overflow Cap
+155,PG1,Thermal,Powertrain Thermal Components,Powertrain Cooling,Radiator Overflow Tank
+156,PG1,Thermal,Powertrain Thermal Components,Powertrain Cooling,Refrigerant Desicant
+157,PG1,Thermal,Powertrain Thermal Components,Powertrain Cooling,Underbody Panels
+158,PG1,Thermal,Powertrain Thermal Components,Powertrain Cooling,Coolant Temperature Sensor
+159,PG2,Drivetrain,Drivetrain Components,Transmission,AT Solenoid
+160,PG2,Powertrain,Engine Components,Exhaust Emission Control,A/F Sensor
+161,PG2,Powertrain,Engine Components,Ignition,Cam Sensor
+162,PG2,Powertrain,Engine Components,Ignition,Crank Sensor
+163,PG2,Powertrain,Engine Components,Exhaust Emission Control,Differential Pressure Sensor
+164,PG2,Powertrain,Engine Components,Engine Electronic Control,Engine ECU
+165,PG2,Powertrain,Engine Components,Exhaust Emission Control,Exhaust Gas Temperature Sensor
+166,PG2,Powertrain,Engine Components,Exhaust Emission Control,Exhaust Manifold Pressure Sensor
+167,PG2,Powertrain,Engine Components,Ignition,Ignition Coil
+168,PG2,Powertrain,Engine Components,Air Intake,Intake Air Temperature Sensor
+169,PG2,Powertrain,Engine Components,Electrified Systems,Inverter
+170,PG2,Powertrain,Engine Components,Ignition,Knock Sensor
+171,PG2,Powertrain,Engine Components,Air Intake,Manifold Air Pressure Sensor
+172,PG2,Powertrain,Engine Components,Air Intake,Mass Air Flow Sensor
+173,PG2,Powertrain,Engine Components,Exhaust Emission Control,O2 Sensor
+174,PG2,Powertrain,Engine Components,Valve Train,Oil Control Valve
+175,PG2,Powertrain,Engine Components,Valve Train,Oil Pressure Sensor
+176,PG2,Powertrain,Engine Components,Exhaust Emission Control,Secondary Air Valve
+177,PG2,Powertrain,Engine Components,Ignition Components,Spark Plug
+178,PG2,Powertrain,Engine Components,Air Intake,Throttle Body
+179,PG2,Powertrain,Engine Components,Transmission,Transmission ECU
+180,PG2,Powertrain,Engine Components,Valve Train,Variable Cam Timing
+181,PG2,Powertrain,Engine Components,Air Intake,Engine Air Filter
+182,PG2,Powertrain,Engine Components,Air Intake,Engine Air Intake
+183,PG2,Powertrain,Engine Components,Electrified Systems,Alternator
+184,PG2,Powertrain,Engine Components,Electrified Systems,Starter
+185,PG2,Powertrain,Engine Components,Electrified Systems,Starter Relay
+186,PG2,Powertrain,Engine Components,Exhaust Emission Control,Canister
+187,PG2,Powertrain,Engine Components,Exhaust Emission Control,ELCM
+188,PG2,Powertrain,Engine Components,Exhaust Emission Control,Purge Valve
+189,PG2,Powertrain,Engine Components,Exhaust Emission Control,Tank Pressure Sensor
+190,PG2,Powertrain,Engine Components,Exhaust Emission Control,Vent Valve
+191,PG2,Powertrain,Engine Components,Common Rail,CRS Fuel Rail
+192,PG2,Powertrain,Engine Components,Common Rail,CRS Fuel Temp Sensor
+193,PG2,Powertrain,Engine Components,Common Rail,CRS Fuel Pump (HP)
+194,PG2,Powertrain,Engine Components,Common Rail,CRS Fuel Injector
+195,PG2,Powertrain,Engine Components,Common Rail,CRS Fuel Pressure Sensor
+196,PG2,Powertrain,Engine Components,Fuel Delivery,Fuel Level Sender
+197,PG2,Powertrain,Engine Components,Fuel Delivery,Fuel Pump Module
+198,PG2,Powertrain,Engine Components,Fuel Delivery,Sub-Gauge
+199,PG3,Electronics,Body Electronics Components,Airbag Sensors & Controllers,Airbag ECU
+200,PG3,Electronics,Body Electronics Components,Airbag Sensors & Controllers,Airbag Sensor
+201,PG3,Electronics,Body Electronics Products,Body Electronics,Body ECU
+202,PG3,Electronics,Body Electronics Products,Body Electronics,Data Communication Module
+203,PG3,Electronics,Body Electronics Products,Body Electronics,Heads Up Display
+204,PG3,Electronics,Body Electronics Products,Body Electronics,Integrated Center Stack
+205,PG3,Electronics,Body Electronics Products,Body Electronics,Memory Seat Module
+206,PG3,Electronics,Body Electronics Products,Body Electronics,Meter
+207,PG3,Electronics,Body Electronics Products,Body Electronics,Meter Lens
+208,PG3,Electronics,Body Electronics Products,Cockpit,Navigation Unit
+209,PG3,Electronics,Body Electronics Products,Body Electronics,Pedestrian Alert System
+210,PG3,Electronics,Body Electronics Products,Body Electronics,Sonar Sensor
+211,PG3,Electronics,Body Electronics Products,Body Electronics,Video Processing Module
+212,PG3,Electronics,Body Electronics Products,Body Electronics,Wheel Speed Sensor
+213,PG3,Electronics,Body Electronics Products,Body Electronics,RKE Antenna
+214,PG3,Electronics,Body Electronics Products,Body Electronics,RKE Buzzer
+215,PG3,Electronics,Body Electronics Products,Body Electronics,RKE ECU
+216,PG3,Electronics,Body Electronics Products,Body Electronics,RKE Fob
+217,PG2,Body,Body Components,Washer,Fluid Level Sensor
+218,PG2,Body,Body Components,Washer,Washer Hose
+219,PG2,Body,Body Components,Washer,Washer Misc
+220,PG2,Body,Body Components,Washer,Washer Nozzle
+221,PG2,Body,Body Components,Washer,Washer Pump
+222,PG2,Body,Body Components,Washer,Washer Tank
+223,PG2,Body,Body Components,Wiper,Wiper Arm
+224,PG2,Body,Body Components,Wiper,Wiper Blade
+225,PG2,Body,Body Components,Wiper,Linkage
+226,PG2,Body,Body Components,Wiper,Wiper Motor
+227,PG2,Body,Body Components,Wiper,Rear Arm
+228,PG2,Body,Body Components,Wiper,Rear Wiper Motor
+229,PG2,Body,Body Components,Wiper,Wiper Rubber
+230,PG2,Body,Body Components,Body Electronics,Power Liftgate Motor
+231,PG2,Body,Body Components,Body Electronics,Power Window Motor
+232,PG3,Body,Body Electronics Products,Body Electronics,Horn
+233,PG2,Powertrain,Engine Components,Fuel Delivery,Fuel Pump (LP)
+234,PG2,Powertrain,Engine Components,Common Rail,CRS Fuel Pressure Regulator
+239,Unknown,Unknown,Unknown,Unknown,Unknown
+240,PG1,Thermal,Powertrain Thermal Components,Powertrain Cooling,Radiator Fan Blade
+241,PG2,Powertrain,Engine Components,Fuel Injection,Fuel Injector
+242,PG2,Powertrain,Engine Components,Air Intake,Vacuum Switching Valve
+243,PG2,Powertrain,Engine Components,Fuel Injection,GDI Pump
+244,PG3,Electronics,Body Electronics Components,Safety Systems,Millimeter Wave Radar
+245,PG3,Electronics,Body Electronics Components,Safety Systems,Blind Spot Radar
+246,PG3,Electronics,Body Electronics Components,Body Electronics,Wireless Charger
+247,PG3,Electronics,Body Electronics Components,Body Electronics,Multi Info Display
+248,PG3,Electronics,Body Electronics Components,Safety Systems,Forward Camera
+249,PG3,Electronics,Body Electronics Components,Body Electronics,RKE Receiver
+250,PG3,Electronics,Body Electronics Components,Body Electronics,Relay
+251,PG2,Powertrain,Engine Components,Air Intake,Intake Actuator
+252,PG2,Powertrain,Engine Components,Oil management,Oil Filter Assembly
+253,PG3,Electronics,Body Electronics Components,Body Electronics,TPMS Receiver
+254,PG3,Electronics,Body Electronics Components,Body Electronics,TPMS ECU
+255,PG2,Powertrain,Engine Components,Air Intake,Intake Manifold Gasket
+256,PG1,Body,Body Components,Body Electronics,Seat Blower
+257,PG1,Thermal,Climate Control Components,HVAC,Solar Sensor
+258,PG1,Thermal,Climate Control Components,HVAC,Rear Case
+259,PG3,Electronics,Body Electronics Components,Safety Systems,Driving Support ECU
+260,PG2,Body,Body Components,Wiper,Wiper Arm Cap
+261,PG2,Powertrain,Engine Components,Fuel Injection,Fuel Injector O-Ring
+262,PG1,Thermal,Powertrain Thermal Components,Powertrain Cooling,Radiator Fan Resistor
+263,PG3,Electronics,Body Electronics Products,Body Electronics,RKE Module
+264,PG3,Electronics,Body Electronics Products,Body Electronics,"GB BCM - Don't use, keep generic names (Body ECU)"
+265,PG3,Powertrain,Body Components,Engine Electronic Control,Accelerator Pedal
+266,PG2,Powertrain,Engine Components,Air Intake,Intake Manifold
+267,PG3,Powertrain,Body Components,Engine Electronic Control,Fuel Pump ECU
+268,PG1,Thermal,Powertrain Thermal Components,Powertrain Cooling,Condenser Modulator Plug
+269,PG2,Powertrain,Engine Components,Engine Electronic Control,Hybrid ECU
+270,PG2,Powertrain,Engine Components,Fuel Delivery,Fuel Pressure Regulator
+271,PG2,Powertrain,Engine Components,Electrified Systems,Alternator Pulley
+272,PG3,Electronics,Body Electronics Components,Body Electronics,Flasher Relay
+273,PG2,Powertrain,Engine Components,Fuel Injection,Fuel Rail
+274,PG2,Powertrain,Engine Components,Fuel Injection,Fuel Pressure Sensor
+275,PG3,Electronics,Body Electronics Products,Cockpit,Navigation ECU
+276,PG3,Electronics,Body Electronics Products,Cockpit,Navigation Display
+277,PG1,Thermal,Climate Control Components,HVAC,Blower Motor (Rear)
+278,PG2,Powertrain,Engine Components,Air Intake,EGR Valve
+279,PG1,Thermal,Climate Control Components,A/C,Oil
+280,PG3,Electronics,Body Electronics Components,Cockpit,Infotainment Control Unit
+281,PG1,Thermal,Powertrain Thermal Components,Powertrain Cooling,Engine Cooling Module
+282,PG1,Thermal,Powertrain Thermal Components,Powertrain Cooling,Low Temp Radiator
+283,Unknown,Unknown,Unknown,Unknown,Non DN Part
+284,PG1,Thermal,Climate Control Components,A/C,Info Label
+285,PG1,Thermal,Climate Control Components,Compressor,Stator
+286,PG3,Electronics,Body Electronics Components,Body Electronics,BT Low Energy Module (BLEM)
+287,PG3,Electronics,Body Electronics Components,Body Electronics,BT Low Energy Antenna Module (BLEAM)
+288,PG3,Electronics,Body Electronics Products,Body Electronics,ELM
+289,PG1,Thermal,Climate Control Components,HVAC,Cabin Air Filter Door
+290,PG2,Powertrain,Engine Components,Fuel Delivery,ORVR Valve
+291,PG1,Thermal,Climate Control Components,A/C,Compressor Bracket
+292,PG2,Body,Body Components,Wiper,Rear Wiper Grommet
+293,PG2,Body,Body Components,Wiper,Rear Wiper Pull Handle
+294,PG3,Electronics,Body Electronics Components,Cockpit,Navigation Button
+295,PG1,Thermal,Climate Control Components,Plumbing,Refrigerant Liquid Line
+296,PG3,Electronics,Body Electronics Components,Body Electronics,ELM
+297,PG3,Electronics,Body Electronics Components,Body Electronics,Gateway ECU
+298,PG2,Powertrain,Engine Components,Fuel Delivery,Evap Canister Vent Shut Valve
+299,PG2,Powertrain,Drivetrain Components,Transmission,Valve Body Assembly
+300,PG1,Thermal,Powertrain Thermal Components,Powertrain Cooling,Condenser Pipe
+301,PG1,Thermal,Climate Control Components,Plumbing,Internal Heat Exchanger Pipe
+302,PG1,Thermal,Climate Control Components,HVAC,Blower Case
+303,PG2,Powertrain,Engine Components,Fuel Delivery,Honda 2W Fuel Pump
+304,PG3,Electronics,Body Electronics Products,Body Electronics,Meter Knob
+305,PG2,Powertrain,Engine Components,Electrified Systems,DC DC Converter
+306,PG2,Powertrain,Engine Components,Exhaust Emission Control,Wastegate Actuator
+307,PG3,Electronics,Body Electronics Components,Body Electronics,Digital Key ECU
+308,PG3,Electronics,Body Electronics Products,Steering,EPS ECU
+309,PG3,Electronics,Body Electronics Products,Body Electronics,Battery ECU
+310,PG2,Powertrain,Engine Components,Fuel Delivery,Vapor Pressure Sensor
+311,PG3,Electronics,Body Electronics Components,Body Electronics,EPS ECU
+312,PG2,Drivetrain,Drivetrain Components,Transmission,Rear Diff Solenoid L
+313,PG2,Drivetrain,Drivetrain Components,Transmission,Rear Diff Solenoid R
+314,PG1,Thermal,Powertrain Thermal Components,Powertrain Cooling,Intercooler
+315,PG3,Body,Body Electronics Components,Body Electronics,Rain Sensor

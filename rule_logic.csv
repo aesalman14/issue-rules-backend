@@ -1,0 +1,3425 @@
+﻿Logic ID,Rule ID,Logic Number,P1,Col,Operand,Val,P2,And Or
+2859-1,2859,1,NULL,Customer,=,GM,NULL,And
+2859-2,2859,2,NULL,Model Year,=,2025,NULL,And
+2859-3,2859,3,NULL,Datalink,LIKE,*Compressor*,NULL,And
+2859-4,2859,4,(,Datalink,LIKE,*BT*,NULL,Or
+2859-5,2859,5,NULL,Datalink,LIKE,*BV*,),NULL
+2859-6,2859,6,NULL,Claim Category,LIKE,*P1C01*,NULL,NULL
+2859-7,2859,7,NULL,Issue ID,=,TBD,NULL,NULL
+2854-1,2854,1,NULL,NULL,NULL,NULL,NULL,NULL
+2847-1,2847,1,NULL,Customer,=,GM,NULL,And
+2847-2,2847,2,NULL,Model Year,=,2023,NULL,NULL
+2846-1,2846,1,NULL,Model Year,>=,2025,NULL,And
+2846-2,2846,2,(,Claim Category,LIKE,*P0365*,NULL,Or
+2846-3,2846,3,NULL,Claim Category,LIKE,*P0340*,),NULL
+2845-1,2845,1,NULL,Customer,=,Ford,NULL,And
+2845-2,2845,2,(,Claimed Part Number,LIKE,LJ9Z7B012L,NULL,Or
+2845-3,2845,3,NULL,Claimed Part Number,=,LJ9Z7B012C,NULL,Or
+2845-4,2845,4,NULL,Claimed Part Number,=,LJ9Z7B012G,),And
+2845-5,2845,5,(,Issue ID,=,0,NULL,Or
+2845-6,2845,6,NULL,Issue ID,=,NULL,),NULL
+2840-1,2840,1,(,Model Year,>=,2024,),And
+2840-2,2840,2,(,Engine,LIKE,L5D,NULL,Or
+2840-3,2840,3,NULL,Engine,LIKE,L5P,),And
+2840-4,2840,4,(,Dealer Comments,LIKE,*P02CC*,NULL,Or
+2840-5,2840,5,NULL,Correction Comments,LIKE,*P02CC*,NULL,Or
+2840-6,2840,6,NULL,Correction Comments,LIKE,*p02ce*,NULL,Or
+2840-7,2840,7,NULL,Correction Comments,LIKE,*p02d0*,NULL,Or
+2840-8,2840,8,NULL,Correction Comments,LIKE,*p02d2*,NULL,Or
+2840-10,2840,10,NULL,Correction Comments,LIKE,*p02d4*,NULL,Or
+2840-11,2840,11,NULL,Correction Comments,LIKE,*p02d6*,NULL,Or
+2840-12,2840,12,NULL,Correction Comments,LIKE,*p02d8*,NULL,Or
+2840-13,2840,13,NULL,Correction Comments,LIKE,*p02da*,NULL,Or
+2840-14,2840,14,NULL,Dealer Comments,LIKE,*p02ce*,NULL,Or
+2840-15,2840,15,NULL,Dealer Comments,LIKE,*p02d0*,NULL,Or
+2840-16,2840,16,NULL,Dealer Comments,LIKE,*p02d2*,NULL,Or
+2840-17,2840,17,NULL,Dealer Comments,LIKE,*p02d4*,NULL,Or
+2840-18,2840,18,NULL,Dealer Comments,LIKE,*p02d6*,NULL,Or
+2840-19,2840,19,NULL,Dealer Comments,LIKE,*p02d8*,NULL,Or
+2840-20,2840,20,NULL,Dealer Comments,LIKE,*p02db*,),NULL
+2839-1,2839,1,(,Customer Comments,=," C/S HEARS CLICKING SOUND IN DASH ON START UPS                                 
+FOUND RECIRCULATION HOUSING DOOR BROKEN                                       
+REPLACED RECIRCULATION HOUSING, EVACUATE & RECHARGED SYSTEM",),NULL
+2788-1,2788,1,NULL,DN Part ID,=,188,NULL,And
+2788-2,2788,2,NULL,Customer,=,Ford,NULL,And
+2788-3,2788,3,NULL,Model Year,>=,2025,NULL,And
+2788-4,2788,4,NULL,Model,=,Explorer,NULL,And
+2788-5,2788,5,NULL,Claim Category 2,LIKE,*P04F0*,NULL,NULL
+2741-1,2741,1,NULL,Customer,=,Ford,NULL,And
+2741-2,2741,2,(,Model Year,>=,2022,NULL,And
+2741-3,2741,3,NULL,Model Year,<=,2024,),And
+2741-4,2741,4,(,Issue ID,=,0,NULL,Or
+2741-5,2741,5,NULL,Issue ID,=,NULL,),And
+2741-6,2741,6,(,Model,=,Escape Hybrid,NULL,Or
+2741-7,2741,7,NULL,Model,=,Maverick HEV,),And
+2741-8,2741,8,NULL,Customer Category 2,LIKE,*U101*,NULL,And
+2741-9,2741,9,NULL,Claim Category,LIKE,*Reprogram*,NULL,NULL
+2740-1,2740,1,NULL,Customer,=,Ford,NULL,And
+2740-2,2740,2,NULL,Claim Category 2,LIKE,*TSB 24-2141*,NULL,And
+2740-3,2740,3,(,Issue ID,=,0,NULL,Or
+2740-4,2740,4,NULL,Issue ID,=,NULL,),NULL
+2739-1,2739,1,NULL,Customer,=,Ford,NULL,And
+2739-2,2739,2,NULL,Claim Category 2,LIKE,*TSB 24-2187*,NULL,And
+2739-3,2739,3,(,Issue ID,=,0,NULL,Or
+2739-4,2739,4,NULL,Issue ID,=,,),NULL
+2695-1,2695,1,NULL,Product Description,=,NULL,NULL,Or
+2695-2,2695,2,NULL,Customer,=,GM,NULL,And
+2695-3,2695,3,(,Product Description,LIKE,*HVAC Case*,NULL,Or
+2695-4,2695,4,NULL,Product Description,LIKE,*Actuato*,),And
+2695-5,2695,5,NULL,Model Year,>=,2024,NULL,And
+2695-6,2695,6,NULL,Model Year,=,2024,NULL,And
+2695-7,2695,7,NULL,Vehicle Build Date,>=,4/1/2024,NULL,And
+2695-8,2695,8,NULL,Vehicle Build Date,<=,7/4/2024,NULL,And
+2695-9,2695,9,(,Issue ID,=,0,NULL,Or
+2695-10,2695,10,NULL,Issue ID,IS NULL,NULL,NULL,Or
+2695-11,2695,11,NULL,Issue ID,LIKE,Unknown,),And
+2695-12,2695,12,(,Claim Category,LIKE,*Noise*,NULL,Or
+2695-13,2695,13,NULL,Claim Category,LIKE,*Nosie*,),NULL
+2684-1,2684,1,NULL,Customer,=,GM,NULL,And
+2684-2,2684,2,NULL,Datalink,=,DeltaPressureSensorDMAX,NULL,And
+2684-3,2684,3,NULL,Model Year,>=,2024,NULL,And
+2684-4,2684,4,NULL,Model Year,<=,2025,NULL,And
+2684-5,2684,5,NULL,Claim Category,LIKE,*P244A/B*,NULL,NULL
+2653-1,2653,1,NULL,Customer,=,Honda,NULL,And
+2653-2,2653,2,NULL,Product Description,=,Evap Canister Vent Shut Valve,NULL,And
+2653-3,2653,3,NULL,Model,=,Civic,NULL,And
+2653-4,2653,4,NULL,Model Year,>=,2023,NULL,And
+2653-5,2653,5,NULL,Failure Code,LIKE,*1454*,NULL,NULL
+2617-1,2617,1,NULL,Customer,=,GM,NULL,And
+2617-2,2617,2,NULL,Datalink,=,FuelInjectorCSS3L,NULL,And
+2617-3,2617,3,NULL,Model Year,=,2024,NULL,And
+2617-4,2617,4,NULL,Claim Category,LIKE,*Inj.C*,NULL,And
+2617-5,2617,5,(,Issue ID,=,0,NULL,Or
+2617-6,2617,6,NULL,Issue ID,=,TBD,NULL,Or
+2617-7,2617,7,NULL,Issue ID,IS NULL,,),NULL
+2616-1,2616,1,NULL,Customer,=,Honda,NULL,And
+2616-2,2616,2,(,Model Year,=,2023,NULL,Or
+2616-3,2616,3,NULL,Model Year,=,2024,),And
+2616-4,2616,4,NULL,Model Code,=,CRV,NULL,And
+2616-5,2616,5,NULL,Claimed Part Number,=,36162,NULL,And
+2616-6,2616,6,NULL,Engine,=,LFC,NULL,NULL
+2615-1,2615,1,NULL,Customer,=,Honda,NULL,And
+2615-2,2615,2,(,Model Year,=,2023,NULL,Or
+2615-3,2615,3,NULL,Model Year,=,2024,),And
+2615-4,2615,4,NULL,Model Code,=,PILOT,NULL,And
+2615-5,2615,5,NULL,Claimed Part Number,=,36542,NULL,NULL
+2613-1,2613,1,NULL,Customer,=,GM,NULL,And
+2613-2,2613,2,NULL,Datalink,=,FuelRailDMAX,NULL,And
+2613-3,2613,3,NULL,Model Year,>=,2024,NULL,And
+2613-4,2613,4,NULL,Model Year,<=,2025,NULL,And
+2613-5,2613,5,NULL,Claim Category,LIKE,*P1089*,NULL,And
+2613-6,2613,6,(,Issue ID,=,0,NULL,Or
+2613-7,2613,7,NULL,Issue ID,=,0,NULL,Or
+2613-8,2613,8,NULL,Issue ID,IS NULL,NULL,),NULL
+2612-1,2612,1,NULL,Customer,=,GM,NULL,And
+2612-2,2612,2,NULL,Datalink,=,FuelInjectorDMAX,NULL,And
+2612-3,2612,3,NULL,Model Year,>=,2024,NULL,And
+2612-4,2612,4,NULL,Model Year,>=,2024,NULL,And
+2612-5,2612,5,NULL,Vehicle Build Date,>=,1/1/2021,NULL,And
+2612-6,2612,6,NULL,Vehicle Build Date,<=,1/1/2025,NULL,And
+2612-7,2612,7,(,Issue ID,=,0,NULL,Or
+2612-8,2612,8,NULL,Issue ID,IS NULL,NULL,),And
+2612-9,2612,9,NULL,Claim Category,LIKE,*TL*,NULL,NULL
+2611-1,2611,1,NULL,Customer,=,GM,NULL,And
+2611-2,2611,2,NULL,Model Year,=,2024,NULL,And
+2611-3,2611,3,NULL,Model Year,=,2024,NULL,And
+2611-4,2611,4,NULL,Vehicle Build Date,>=,1/1/2022,NULL,And
+2611-5,2611,5,NULL,Vehicle Build Date,<=,1/1/2025,NULL,And
+2611-6,2611,6,(,Issue ID,IS NULL,NULL,NULL,Or
+2611-7,2611,7,NULL,Issue ID,=,0,),And
+2611-8,2611,8,(,Claim Category,LIKE,*Damaged Wire*,NULL,Or
+2611-9,2611,9,NULL,Claim Category,LIKE,*24-NA-042*,NULL,Or
+2611-10,2611,10,NULL,Claim Category,LIKE,*Shorted*,),And
+2611-11,2611,11,NULL,Datalink,=,O2SensorGEN5Truck,NULL,NULL
+2608-1,2608,1,NULL,Customer,=,GM,NULL,And
+2608-2,2608,2,NULL,Datalink,=,TMAPL5P,NULL,And
+2608-3,2608,3,NULL,Customer Category,=,MAF Non Denso,NULL,And
+2608-4,2608,4,(,Issue ID,IS NULL,NULL,NULL,Or
+2608-5,2608,5,NULL,Issue ID,=,0,),NULL
+2607-1,2607,1,NULL,Customer,=,GM,NULL,And
+2607-2,2607,2,NULL,Datalink,=,FuelInjectorCSS3L,NULL,And
+2607-3,2607,3,NULL,Model Year,>=,2023,NULL,And
+2607-4,2607,4,NULL,Model Year,<=,2023,NULL,And
+2607-5,2607,5,NULL,Vehicle Build Date,>=,3/1/2022,NULL,And
+2607-6,2607,6,NULL,Vehicle Build Date,<=,12/31/2024,NULL,And
+2607-7,2607,7,NULL,Claim Category,LIKE,*Inj.C*,NULL,And
+2607-8,2607,8,(,Issue ID,IS NULL,NULL,NULL,Or
+2607-10,2607,10,NULL,Issue ID,=,0,NULL,Or
+2607-11,2607,11,NULL,Issue ID,=,1854,NULL,Or
+2607-12,2607,12,NULL,Issue ID,=,452,),NULL
+2601-1,2601,1,NULL,Customer,=,GM,NULL,And
+2601-2,2601,2,NULL,Datalink,=,DeltaPressureSensorDMAX,NULL,And
+2601-3,2601,3,(,Model Year,=,2024,NULL,Or
+2601-4,2601,4,NULL,Model Year,=,2025,),And
+2601-5,2601,5,NULL,Engine,=,L5P,NULL,And
+2601-6,2601,6,(,Vehicle Build Date,>=,2/1/2022,NULL,And
+2601-7,2601,7,NULL,Vehicle Build Date,<=,6/1/2023,),And
+2601-8,2601,8,(,Issue ID,=,0,NULL,Or
+2601-9,2601,9,NULL,Issue ID,=,0,NULL,Or
+2601-10,2601,10,NULL,Issue ID,IS NULL,NULL,),And
+2601-11,2601,11,(,Claim Category 2,LIKE,*P2463*,NULL,Or
+2601-12,2601,12,NULL,Claim Category 2,LIKE,*P2455*,NULL,Or
+2601-13,2601,13,NULL,Claim Category 2,LIKE,*P24A4*,),NULL
+2594-1,2594,1,NULL,Customer,=,Honda,NULL,And
+2594-2,2594,2,NULL,Product Description,=,Infotainment Control Unit,NULL,And
+2594-3,2594,3,(,Model Year,>=,2018,NULL,And
+2594-4,2594,4,NULL,Model Year,<=,2023,),And
+2594-5,2594,5,NULL,Complaint Code Desc,LIKE,*18-23M Most*,NULL,NULL
+2582-1,2582,1,NULL,customer,=,Honda,NULL,And
+2582-2,2582,2,NULL,Product Description,=,Infotainment Control Unit,NULL,And
+2582-3,2582,3,NULL,Model,=,RDX,NULL,And
+2582-4,2582,4,(,Model Year,=,2019,NULL,Or
+2582-5,2582,5,NULL,Model Year,=,2020,),And
+2582-6,2582,6,NULL,Issue ID,IS NULL,NULL,NULL,And
+2582-7,2582,7,NULL,Customer Category,=,Speaker Noise,NULL,NULL
+2580-0,2580,0,NULL,Product Description,=,fuel pump module,NULL,And
+2580-1,2580,1,NULL,Issue ID,IS NULL,NULL,NULL,And
+2580-2,2580,2,NULL,Customer,=,Honda,NULL,And
+2580-4,2580,4,NULL,Customer Category,=,FPM Impeller Swell,NULL,NULL
+2574-1,2574,1,NULL,Customer,=,Honda,NULL,And
+2574-2,2574,2,NULL,Product Description,=,Infotainment Control Unit,NULL,And
+2574-3,2574,3,((,Model Year,>=,2018,NULL,And
+2574-4,2574,4,NULL,Vehicle Build Date,<=,06/06/2023,NULL,And
+2574-5,2574,5,NULL,Model,=,Odyssey,),Or
+2574-6,2574,6,(,Model Year,>=,2019,NULL,And
+2574-7,2574,7,NULL,Vehicle Build Date,<=,12/12/2022,NULL,And
+2574-8,2574,8,NULL,Model,=,Pilot,),Or
+2574-9,2574,9,(,Model Year,>=,2019,NULL,And
+2574-10,2574,10,NULL,Vehicle Build Date,<=,06/05/2023,NULL,And
+2574-11,2574,11,NULL,Model,=,Passport,)),And
+2574-12,2574,12,(,Customer Category,=,Backup Camera,NULL,Or
+2574-13,2574,13,NULL,Customer Category,=,Speaker Noise,NULL,Or
+2574-14,2574,14,NULL,Customer Category,=,Blank Display,NULL,Or
+2574-15,2574,15,NULL,Customer Category,=,Flicker Display,),NULL
+2565-1,2565,1,NULL,Customer,=,Stellantis,NULL,And
+2565-2,2565,2,NULL,Claimed Part Number,LIKE,68376684AE,NULL,NULL
+2564-1,2564,1,((,Model,=,Ram DS,NULL,And
+2564-2,2564,2,NULL,Model Year,>=,2022,),And
+2564-3,2564,3,(,Customer Comments,LIKE,*tick*,NULL,Or
+2564-4,2564,4,NULL,Dealer Comments,LIKE,*tick*,)),NULL
+2560-1,2560,1,NULL,Customer,=,Honda,NULL,And
+2560-2,2560,2,(,Model Code,=,RDX,NULL,Or
+2560-3,2560,3,NULL,Model Code,=,TLX,),And
+2560-4,2560,4,NULL,Claimed Part Number,=,80220,NULL,And
+2560-5,2560,5,(,Model Year,=,2023,NULL,Or
+2560-6,2560,6,NULL,Model Year,=,2024,),And
+2560-7,2560,7,NULL,Vehicle Build Date,<=,10/9/2023,NULL,NULL
+2556-1,2556,1,NULL,Customer,=,GM,NULL,And
+2556-2,2556,2,NULL,Datalink,LIKE,*wiper blade*,NULL,And
+2556-3,2556,3,NULL,Claim Category,=,Poor Wipe Quality,NULL,And
+2556-4,2556,4,NULL,Issue ID,IS NULL,NULL,NULL,NULL
+2550-1,2550,1,NULL,Model,=,Wrangler JL,NULL,And
+2550-2,2550,2,NULL,Product Description,=,Compressor,NULL,And
+2550-3,2550,3,NULL,Customer Comments,LIKE,*nois*,NULL,NULL
+2541-1,2541,1,NULL,Customer,=,Honda,NULL,And
+2541-2,2541,2,(,Model,=,Pilot,NULL,Or
+2541-3,2541,3,NULL,Model,=,Passport,NULL,Or
+2541-4,2541,4,NULL,Model,=,Odyssey,NULL,Or
+2541-5,2541,5,NULL,Model,=,Ridgeline,NULL,Or
+2541-6,2541,6,NULL,Model,=,Civic,),And
+2541-7,2541,7,(,Product Description,=,Evap Canister Vent Shut Valve,NULL,Or
+2541-8,2541,8,NULL,Product Description,=,purge valve,),And
+2541-9,2541,9,NULL,Vehicle Build Date,>=,01/01/2022,NULL,And
+2541-10,2541,10,NULL,Vehicle Build Date,<,12/01/2022,NULL,And
+2541-11,2541,11,NULL,Customer Category,=,Evap Leak DTC,NULL,NULL
+1997-0,1997,0,(((,Claimed Part Number,LIKE,68396059A*,),And
+1997-1,1997,1,(,Model,=,Ram DT,NULL,Or
+1997-2,1997,2,NULL,Model,=,Ram HD,NULL,Or
+1997-4,1997,4,NULL,Model,=,Wagoneer WS,)),And
+1997-5,1997,5,(,Customer Comments,LIKE,*stuck*,NULL,Or
+1997-6,1997,6,NULL,Customer Comments,LIKE,*move*,NULL,Or
+1997-7,1997,7,NULL,Dealer Comments,LIKE,*B11C2-92*,NULL,Or
+1997-8,1997,8,NULL,Dealer Comments,LIKE,*stuck*,NULL,Or
+1997-9,1997,9,NULL,Dealer Comments,LIKE,*inop*,NULL,Or
+1997-10,1997,10,NULL,Dealer Comments,LIKE,*move*,)),NULL
+1995-1,1995,1,(,Customer Comments,LIKE,*G-Maintenance - Company Car*,NULL,Or
+1995-2,1995,2,NULL,Dealer Comments,LIKE,*G-Maintenance - Company Car*,NULL,Or
+1995-3,1995,3,NULL,Correction Comments,LIKE,*G-Maintenance - Company Car*,),And
+1995-4,1995,4,(,Customer Comments,LIKE,*Payment Code*,NULL,Or
+1995-5,1995,5,NULL,Dealer Comments,LIKE,*Payment Code*,NULL,Or
+1995-6,1995,6,NULL,Correction Comments,LIKE,*Payment Code*,),NULL
+1994-1,1994,1,(,Customer Comments,LIKE,*Payment Code*,NULL,Or
+1994-2,1994,2,NULL,Dealer Comments,LIKE,*Payment Code*,NULL,Or
+1994-3,1994,3,NULL,Correction Comments,LIKE,*Payment Code*,),And
+1994-4,1994,4,(,Customer Comments,LIKE,*G-Maintenance*,NULL,Or
+1994-5,1994,5,NULL,Dealer Comments,LIKE,*G-Maintenance*,NULL,Or
+1994-6,1994,6,NULL,Correction Comments,LIKE,*G-Maintenance*,),NULL
+1983-0,1983,0,NULL,Product Description,=,compresscor,NULL,And
+1983-1,1983,1,NULL,Customer,=,GM,NULL,And
+1983-2,1983,2,NULL,Model Year,>=,2022,NULL,And
+1983-4,1983,4,(,Claim Category,=,Motor Underspeed,NULL,Or
+1983-5,1983,5,NULL,Claim Category,=,A/C Inop (low Oil),),And
+1983-6,1983,6,NULL,Engine Family,=,Electric,NULL,NULL
+1976-0,1976,0,(((,Model Platform,LIKE,*MP*,NULL,Or
+1976-1,1976,1,NULL,Model Platform,LIKE,*DS*,NULL,Or
+1976-2,1976,2,NULL,Model Platform,LIKE,*WS*,NULL,Or
+1976-3,1976,3,NULL,Model Platform,LIKE,*DT*,NULL,Or
+1976-4,1976,4,NULL,Model Platform,LIKE,*HD*,),And
+1976-6,1976,6,(,Vehicle Build Date,>,8/1/2020,),And
+1976-7,1976,7,(,Failure Code Desc,LIKE,*leak*,)),And
+1976-8,1976,8,(,Customer Comments,LIKE,*Vent*,NULL,Or
+1976-9,1976,9,NULL,Customer Comments,LIKE,*Antifreeze*,NULL,Or
+1976-10,1976,10,NULL,Dealer Comments,LIKE,*Coolant*,NULL,Or
+1976-11,1976,11,NULL,Dealer Comments,LIKE,*antifreeze*,NULL,Or
+1976-12,1976,12,NULL,Dealer Comments,LIKE,*vent*,NULL,Or
+1976-13,1976,13,NULL,Customer Comments,LIKE,*coolant*,)),NULL
+1975-1,1975,1,(,Model,=,Durango WD,NULL,And
+1975-2,1975,2,NULL,Product Description,=,Compressor,NULL,And
+1975-3,1975,3,NULL,Model Year,>,2021,),And
+1975-4,1975,4,(,Customer Comments,LIKE,*nois*,NULL,Or
+1975-5,1975,5,NULL,Dealer Comments,LIKE,*nois*,),NULL
+1974-1,1974,1,((,Model Platform,LIKE,*DT*,NULL,And
+1974-2,1974,2,NULL,Vehicle Build Date,>=,08/01/2020,),And
+1974-3,1974,3,(,Customer Comments,LIKE,*nois*,NULL,Or
+1974-4,1974,4,NULL,Dealer Comments,LIKE,*nois*,NULL,Or
+1974-5,1974,5,NULL,Customer Comments,LIKE,*hum*,NULL,Or
+1974-6,1974,6,NULL,Dealer Comments,LIKE,*hum*,NULL,Or
+1974-7,1974,7,NULL,Customer Comments,LIKE,*vibrat*,NULL,Or
+1974-8,1974,8,NULL,Dealer Comments,LIKE,*vibrat*,NULL,Or
+1974-9,1974,9,NULL,Customer Comments,LIKE,*loud*,)),NULL
+1969-1,1969,1,NULL,Model Year,>,2021,NULL,And
+1969-2,1969,2,NULL,Model,=,Mustang Mach E,NULL,And
+1969-3,1969,3,NULL,Dealer Comments,LIKE,*2182*,NULL,NULL
+1968-1,1968,1,NULL,Product Description,=,Heater Core,NULL,And
+1968-2,1968,2,NULL,Model Year,=,2022,NULL,And
+1968-3,1968,3,(,Model,=,Ram HD,NULL,Or
+1968-4,1968,4,NULL,Model,=,Cherokee,NULL,Or
+1968-5,1968,5,NULL,Model,=,Ram DT,),And
+1968-6,1968,6,NULL,Vehicle Build Date,<,4/22/2022,NULL,And
+1968-7,1968,7,(,Dealer Comments,LIKE,*leak*,NULL,Or
+1968-8,1968,8,NULL,Customer Comments,LIKE,*leak*,),NULL
+1967-1,1967,1,NULL,Model,=,Wagoneer WS,NULL,And
+1967-2,1967,2,NULL,Vehicle Build Date,<=,11/01/2022,NULL,And
+1967-3,1967,3,(,Dealer Comments,LIKE,*lock*,NULL,Or
+1967-4,1967,4,NULL,Dealer Comments,LIKE,*seiz*,),NULL
+1966-1,1966,1,(,Model Platform,=,LD,NULL,And
+1966-2,1966,2,NULL,Model Year,>=,2022,NULL,And
+1966-3,1966,3,NULL,Product Description,=,Compressor,),And
+1966-4,1966,4,(,Customer Comments,LIKE,*nois*,NULL,Or
+1966-5,1966,5,NULL,Dealer Comments,LIKE,*seiz*,NULL,Or
+1966-6,1966,6,NULL,Dealer Comments,LIKE,*nois*,),NULL
+1965-1,1965,1,(,Customer Category,=,Warning - multiple,NULL,And
+1965-2,1965,2,NULL,Claim Category,=,Wiring/Harness Issue,),NULL
+1958-1,1958,1,NULL,Customer,=,GM,NULL,And
+1958-2,1958,2,NULL,Datalink,=,FuelPumpCSS3L,NULL,And
+1958-3,1958,3,NULL,Vehicle Build Date,>=,10/1/2020,NULL,And
+1958-4,1958,4,NULL,Vehicle Build Date,<,12/31/2022,NULL,And
+1958-5,1958,5,(,Issue ID,=,0,NULL,Or
+1958-6,1958,6,NULL,Issue ID,IS NULL,NULL,NULL,Or
+1958-7,1958,7,NULL,Issue ID,=,0,),And
+1958-8,1958,8,(,Claim Category,LIKE,*Metal*,NULL,Or
+1958-9,1958,9,NULL,Claim Category,LIKE,*P228A*,NULL,Or
+1958-10,1958,10,NULL,Claim Category,LIKE,*Leak*,),NULL
+1953-1,1953,1,NULL,Customer,=,Ford,NULL,And
+1953-2,1953,2,NULL,Model Year,>=,2022,NULL,And
+1953-3,1953,3,NULL,Model Year,<=,2022,NULL,And
+1953-4,1953,4,(,Claim Category 2,LIKE,*51135*,NULL,Or
+1953-5,1953,5,NULL,Claim Category 2,LIKE,*50788*,),And
+1953-6,1953,6,(,Issue ID,IS NULL,NULL,NULL,Or
+1953-7,1953,7,NULL,Issue ID,=,0,),NULL
+1945-1,1945,1,NULL,NULL,NULL,NULL,NULL,NULL
+1942-1,1942,1,NULL,Customer,=,GM,NULL,And
+1942-2,1942,2,NULL,Datalink,LIKE,*CamSensorSGE*,NULL,And
+1942-3,1942,3,(,Model Year,=,2022,NULL,Or
+1942-4,1942,4,NULL,Model Year,=,2023,),And
+1942-5,1942,5,NULL,Vehicle Build Date,>=,1/1/2021,NULL,And
+1942-6,1942,6,NULL,Vehicle Build Date,<=,1/1/2023,NULL,And
+1942-7,1942,7,(,Claim Category,LIKE,*P0366*,NULL,Or
+1942-8,1942,8,NULL,Claim Category,LIKE,P0365,),And
+1942-9,1942,9,NULL,Model,LIKE,*Malibu*,NULL,NULL
+1941-1,1941,1,NULL,Customer,=,GM,NULL,And
+1941-2,1941,2,NULL,Datalink,LIKE,*CSS3L*,NULL,And
+1941-3,1941,3,(,Model Year,=,2022,NULL,Or
+1941-4,1941,4,NULL,Model Year,=,2022,),And
+1941-5,1941,5,(,Claim Category,LIKE,*22-NA-168*,NULL,Or
+1941-6,1941,6,NULL,Claim Category,LIKE,*P2C7A*,),NULL
+1938-1,1938,1,NULL,Customer,=,Honda,NULL,And
+1938-2,1938,2,NULL,Model Code,=,RIDGELINE,NULL,And
+1938-3,1938,3,NULL,Model Year,=,2022,NULL,And
+1938-4,1938,4,(,Issue ID,IS NULL,NULL,NULL,Or
+1938-5,1938,5,NULL,Issue ID,=,0,),And
+1938-6,1938,6,((,Vehicle Build Date,>=,9/1/2021,NULL,And
+1938-7,1938,7,NULL,Vehicle Build Date,<=,1/18/2022,),Or
+1938-8,1938,8,(,Vehicle Repair Date,>=,5/1/2022,NULL,And
+1938-10,1938,10,NULL,Vehicle Repair Date,<=,5/30/2022,)),NULL
+1937-0,1937,0,NULL,Datalink,LIKE,*Alternator*,NULL,And
+1937-1,1937,1,NULL,customer,=,GM,NULL,And
+1937-2,1937,2,NULL,Model Year,>,2020,NULL,And
+1937-3,1937,3,NULL,Model Year,<=,2023,NULL,And
+1937-4,1937,4,(,Claimed Part Number,=,13545139,NULL,Or
+1937-5,1937,5,NULL,Claimed Part Number,=,13536551,NULL,Or
+1937-6,1937,6,NULL,Claimed Part Number,=,84062199,NULL,Or
+1937-7,1937,7,NULL,Claimed Part Number,=,26261634,NULL,Or
+1937-8,1937,8,NULL,Claimed Part Number,=,13536552,NULL,Or
+1937-9,1937,9,NULL,Claimed Part Number,=,26339092,NULL,Or
+1937-10,1937,10,NULL,Claimed Part Number,=,23909746,NULL,Or
+1937-11,1937,11,NULL,Claimed Part Number,=,13534128,NULL,Or
+1937-12,1937,12,NULL,Claimed Part Number,=,84129223,NULL,Or
+1937-13,1937,13,NULL,Claimed Part Number,=,13534127,NULL,Or
+1937-14,1937,14,NULL,Claimed Part Number,=,23753279,NULL,Or
+1937-15,1937,15,NULL,Claimed Part Number,=,13534116,NULL,Or
+1937-16,1937,16,NULL,Claimed Part Number,=,13534129,NULL,Or
+1937-17,1937,17,NULL,Claimed Part Number,=,23871224,NULL,Or
+1937-18,1937,18,NULL,Claimed Part Number,=,26275741,NULL,Or
+1937-19,1937,19,NULL,Claimed Part Number,=,13539730,NULL,Or
+1937-20,1937,20,NULL,Claimed Part Number,=,26345322,NULL,Or
+1937-21,1937,21,NULL,Claimed Part Number,=,24117240,NULL,Or
+1937-22,1937,22,NULL,Claimed Part Number,=,13535009,NULL,Or
+1937-23,1937,23,NULL,Claimed Part Number,=,13532106,NULL,Or
+1937-24,1937,24,NULL,Claimed Part Number,=,26312017,NULL,Or
+1937-25,1937,25,NULL,Claimed Part Number,=,84169187,NULL,Or
+1937-26,1937,26,NULL,Claimed Part Number,=,42609193,NULL,Or
+1937-27,1937,27,NULL,Claimed Part Number,=,13539728,NULL,Or
+1937-28,1937,28,NULL,Claimed Part Number,=,26335014,NULL,Or
+1937-29,1937,29,NULL,Claimed Part Number,=,13539727,NULL,Or
+1937-30,1937,30,NULL,Claimed Part Number,=,13597226,NULL,Or
+1937-31,1937,31,NULL,Claimed Part Number,=,13526558,NULL,Or
+1937-32,1937,32,NULL,Claimed Part Number,=,13534125,NULL,Or
+1937-33,1937,33,NULL,Claimed Part Number,=,26366719,NULL,Or
+1937-34,1937,34,NULL,Claimed Part Number,=,13539731,NULL,Or
+1937-35,1937,35,NULL,Claimed Part Number,=,84206550,NULL,Or
+1937-36,1937,36,NULL,Claimed Part Number,=,24117253,NULL,Or
+1937-37,1937,37,NULL,Claimed Part Number,=,13532887,NULL,Or
+1937-38,1937,38,NULL,Claimed Part Number,=,26687069,NULL,Or
+1937-39,1937,39,NULL,Claimed Part Number,=,42527306,NULL,Or
+1937-40,1937,40,NULL,Claimed Part Number,=,26271510,NULL,Or
+1937-41,1937,41,NULL,Claimed Part Number,=,52140285,NULL,Or
+1937-42,1937,42,NULL,Claimed Part Number,=,13539729,NULL,Or
+1937-43,1937,43,NULL,Claimed Part Number,=,13540929,NULL,Or
+1937-44,1937,44,NULL,Claimed Part Number,=,13534118,NULL,Or
+1937-45,1937,45,NULL,Claimed Part Number,=,P42677220,NULL,Or
+1937-46,1937,46,NULL,Claimed Part Number,=,24117241,NULL,Or
+1937-47,1937,47,NULL,Claimed Part Number,=,84946606,NULL,Or
+1937-48,1937,48,NULL,Claimed Part Number,=,13540927,NULL,Or
+1937-49,1937,49,NULL,Claimed Part Number,=,13534122,NULL,Or
+1937-50,1937,50,NULL,Claimed Part Number,=,24116287,NULL,Or
+1937-51,1937,51,NULL,Claimed Part Number,=,23891172,NULL,Or
+1937-52,1937,52,NULL,Claimed Part Number,=,13535317,NULL,Or
+1937-53,1937,53,NULL,Claimed Part Number,=,13540926,NULL,Or
+1937-54,1937,54,NULL,Claimed Part Number,=,26333949,NULL,Or
+1937-55,1937,55,NULL,Claimed Part Number,=,13527267,NULL,Or
+1937-56,1937,56,NULL,Claimed Part Number,=,20881337,NULL,Or
+1937-57,1937,57,NULL,Claimed Part Number,=,26280789,NULL,Or
+1937-58,1937,58,NULL,Claimed Part Number,=,23913412,NULL,Or
+1937-59,1937,59,NULL,Claimed Part Number,=,94751298,NULL,Or
+1937-60,1937,60,NULL,Claimed Part Number,=,55497887,NULL,Or
+1937-61,1937,61,NULL,Claimed Part Number,=,24117242,NULL,Or
+1937-62,1937,62,NULL,Claimed Part Number,=,26318584,NULL,Or
+1937-63,1937,63,NULL,Claimed Part Number,=,13540928,NULL,Or
+1937-64,1937,64,NULL,Claimed Part Number,=,11549425,NULL,Or
+1937-65,1937,65,NULL,Claimed Part Number,=,11611102,NULL,Or
+1937-66,1937,66,NULL,Claimed Part Number,=,23530784,NULL,Or
+1937-67,1937,67,NULL,Claimed Part Number,=,P84129223,NULL,Or
+1937-68,1937,68,NULL,Claimed Part Number,=,P13545139,NULL,Or
+1937-69,1937,69,NULL,Claimed Part Number,=,13546927,NULL,Or
+1937-70,1937,70,NULL,Claimed Part Number,=,P13526558,NULL,Or
+1937-71,1937,71,NULL,Claimed Part Number,=,26304964,NULL,Or
+1937-72,1937,72,NULL,Claimed Part Number,=,P13534116,NULL,Or
+1937-73,1937,73,NULL,Claimed Part Number,=,13595628,NULL,Or
+1937-74,1937,74,NULL,Claimed Part Number,=,13535007,NULL,Or
+1937-75,1937,75,NULL,Claimed Part Number,=,55490583,),And
+1937-77,1937,77,(,Issue ID,=,0,NULL,Or
+1937-78,1937,78,NULL,Issue ID,IS NULL,NULL,),And
+1937-79,1937,79,NULL,Vehicle Build Date,>=,12/1/2017,NULL,NULL
+1936-1,1936,1,(,Customer Category,=,Cluster Inoperable,NULL,And
+1936-2,1936,2,NULL,Claim Category,=,Replaced meter,),And
+1936-3,1936,3,(,Model,=,F250/350/450/550,),NULL
+1934-1,1934,1,NULL,NULL,NULL,NULL,NULL,NULL
+1934-2,1934,2,NULL,NULL,NULL,NULL,NULL,NULL
+1933-1,1933,1,(,Model,=,Wagoneer WS,),And
+1933-2,1933,2,(,Dealer Comments,LIKE,*free spin*,NULL,Or
+1933-3,1933,3,NULL,Dealer Comments,LIKE,*clutch not*,NULL,Or
+1933-4,1933,4,NULL,Dealer Comments,LIKE,*clutch sei*,NULL,Or
+1933-5,1933,5,NULL,Dealer Comments,LIKE,*Compressor Inop*,),NULL
+1931-1,1931,1,NULL,Customer,=,Honda,NULL,And
+1931-2,1931,2,NULL,Model Code,=,CRV,NULL,And
+1931-3,1931,3,(,Model Year,=,2021,NULL,Or
+1931-4,1931,4,NULL,Model Year,=,2022,),And
+1931-5,1931,5,(,Issue ID,IS NULL,NULL,NULL,Or
+1931-6,1931,6,NULL,Issue ID,=,0,),And
+1931-7,1931,7,NULL,Vehicle Build Date,<=,7/26/2022,NULL,NULL
+1921-1,1921,1,(,Customer Category,=,Cluster reboots,NULL,Or
+1921-2,1921,2,NULL,Customer Category,=,Phone issues,),And
+1921-3,1921,3,NULL,Claim Category,=,S/W update - TSB 22-2129,NULL,NULL
+1919-1,1919,1,NULL,Customer,=,GM,NULL,And
+1919-2,1919,2,NULL,Datalink,=,FuelPressureSensorDMAX,NULL,And
+1919-3,1919,3,NULL,Model Year,>=,2017,NULL,And
+1919-4,1919,4,NULL,Model Year,<=,2024,NULL,And
+1919-5,1919,5,(,Issue ID,=,0,NULL,Or
+1919-6,1919,6,NULL,Issue ID,IS NULL,NULL,),And
+1919-7,1919,7,NULL,Claim Category,LIKE,*Connector SI*,NULL,NULL
+1917-1,1917,1,((,Model,=,Highlander,NULL,And
+1917-2,1917,2,NULL,Model Year,>=,2020,),Or
+1917-3,1917,3,(,Model,=,Sienna,NULL,And
+1917-4,1917,4,NULL,Model Year,>=,2021,)),And
+1917-5,1917,5,NULL,Issue ID,LIKE,*TBD*,NULL,And
+1917-6,1917,6,NULL,Claimed Part Number,LIKE,88716*,NULL,And
+1917-7,1917,7,(,Dealer Comments,LIKE,*hole*,NULL,Or
+1917-8,1917,8,NULL,Dealer Comments,LIKE,*rust*,NULL,Or
+1917-9,1917,9,NULL,Dealer Comments,LIKE,*corrosion*,NULL,Or
+1917-10,1917,10,NULL,Correction Comments,LIKE,*hole*,NULL,Or
+1917-11,1917,11,NULL,Correction Comments,LIKE,*rust*,NULL,Or
+1917-12,1917,12,NULL,Correction Comments,LIKE,*corrosion*,),NULL
+1913-1,1913,1,NULL,Customer,=,Honda,NULL,And
+1913-2,1913,2,NULL,Model Code,=,PILOT,NULL,And
+1913-3,1913,3,(,Model Year,=,2016,NULL,Or
+1913-4,1913,4,NULL,Model Year,=,2017,NULL,Or
+1913-5,1913,5,NULL,Model Year,=,2018,),And
+1913-6,1913,6,(,Issue ID,=,0,NULL,Or
+1913-7,1913,7,NULL,Issue ID,IS NULL,NULL,),NULL
+1908-1,1908,1,(,Customer Category,=,Cluster Inoperable,NULL,Or
+1908-2,1908,2,NULL,Customer Category,=,Display issues,),And
+1908-3,1908,3,NULL,Claim Category,=,Replaced meter,NULL,And
+1908-4,1908,4,(,Model,=,Explorer,NULL,Or
+1908-5,1908,5,NULL,Model,=,Escape Hybrid,NULL,Or
+1908-6,1908,6,NULL,Model,=,Corsair,),NULL
+1907-1,1907,1,(,Customer Category,=,Cluster Inoperable,NULL,Or
+1907-2,1907,2,NULL,Customer Category,=,Display issue- Black screen,),And
+1907-3,1907,3,NULL,Claim Category,=,Replaced meter,NULL,And
+1907-4,1907,4,(,Model,=,Bronco Sport,NULL,Or
+1907-5,1907,5,NULL,Model,=,Bronco,),NULL
+1906-1,1906,1,NULL,Customer,=,GM,NULL,And
+1906-2,1906,2,NULL,Datalink,=,FuelInjectorCSS3L,NULL,And
+1906-3,1906,3,NULL,Model Year,>=,2021,NULL,And
+1906-4,1906,4,NULL,Model Year,<=,2023,NULL,And
+1906-5,1906,5,(,Issue ID,LIKE,0,NULL,Or
+1906-6,1906,6,NULL,Issue ID,LIKE,0,NULL,Or
+1906-7,1906,7,NULL,Issue ID,IS NULL,NULL,),And
+1906-8,1906,8,NULL,Claim Category,LIKE,*QH*,NULL,NULL
+1905-1,1905,1,NULL,Customer,=,GM,NULL,And
+1905-2,1905,2,NULL,Datalink,=,FuelPumpDMAX,NULL,And
+1905-3,1905,3,NULL,Model Year,>=,2021,NULL,And
+1905-4,1905,4,NULL,Model Year,<=,2023,NULL,And
+1905-5,1905,5,(,Issue ID,LIKE,0,NULL,Or
+1905-6,1905,6,NULL,Issue ID,LIKE,0,NULL,Or
+1905-7,1905,7,NULL,Issue ID,IS NULL,NULL,),And
+1905-9,1905,9,NULL,Claim Category,LIKE,*Metal*,NULL,NULL
+1903-1,1903,1,NULL,Customer,=,Ford,NULL,And
+1903-2,1903,2,(,Model Year,>=,2020,NULL,And
+1903-3,1903,3,NULL,Model Year,<=,2024,),And
+1903-4,1903,4,NULL,Claim Category 2,LIKE,*50845*,NULL,And
+1903-5,1903,5,(,Issue ID,IS NULL,NULL,NULL,Or
+1903-6,1903,6,NULL,Issue ID,=,0,),NULL
+1902-1,1902,1,NULL,Customer,=,Ford,NULL,And
+1902-2,1902,2,(,Model Year,>=,2020,NULL,And
+1902-3,1902,3,NULL,Model Year,<=,2022,),And
+1902-4,1902,4,NULL,Claim Category 2,LIKE,*50120*,NULL,And
+1902-5,1902,5,(,Issue ID,IS NULL,NULL,NULL,Or
+1902-6,1902,6,NULL,Issue ID,=,0,),NULL
+1901-1,1901,1,((,Model,=,Compass MP,NULL,And
+1901-2,1901,2,NULL,Vehicle Build Date,>,08/01/2021,),And
+1901-3,1901,3,(,Customer Comments,LIKE,*not work*,NULL,Or
+1901-4,1901,4,NULL,Customer Comments,LIKE,*inop*,NULL,Or
+1901-5,1901,5,NULL,Customer Comments,LIKE,*short*,NULL,Or
+1901-6,1901,6,NULL,Dealer Comments,LIKE,*inop*,NULL,Or
+1901-7,1901,7,NULL,Dealer Comments,LIKE,*not work*,NULL,Or
+1901-8,1901,8,NULL,Customer Comments,LIKE,*nois*,NULL,Or
+1901-9,1901,9,NULL,Dealer Comments,LIKE,*no air*,)),NULL
+1898-1,1898,1,NULL,Customer,=,GM,NULL,And
+1898-2,1898,2,NULL,Datalink,=,StarterGen5,NULL,And
+1898-3,1898,3,(,Issue ID,=,0,NULL,Or
+1898-4,1898,4,NULL,Issue ID,=,416,NULL,Or
+1898-5,1898,5,NULL,Issue ID,IS NULL,NULL,),And
+1898-6,1898,6,NULL,Model Year,>=,2021,NULL,And
+1898-7,1898,7,NULL,Model Year,<=,2022,NULL,And
+1898-8,1898,8,NULL,Claim Category,LIKE,*Loose Nut*,NULL,NULL
+1897-1,1897,1,NULL,Customer,=,Honda,NULL,And
+1897-2,1897,2,NULL,Product Description,=,Infotainment Control Unit,NULL,And
+1897-3,1897,3,NULL,Customer Category,LIKE,*Clock Reset*,NULL,NULL
+1895-1,1895,1,((,Model,=,Ram DT,NULL,And
+1895-2,1895,2,NULL,Engine Desc,=,ESD: 6.2L Supercharged HEMI V8 SRT Engine,),And
+1895-3,1895,3,(,Dealer Comments,LIKE,*tube dam*,NULL,Or
+1895-4,1895,4,NULL,Dealer Comments,LIKE,*tube cra*,NULL,Or
+1895-5,1895,5,NULL,Dealer Comments,LIKE,*leak*,NULL,Or
+1895-6,1895,6,NULL,Dealer Comments,LIKE,*tube br*,)),NULL
+1889-1,1889,1,NULL,Model Year,=,2022,NULL,And
+1889-2,1889,2,NULL,model,=,Tundra,NULL,And
+1889-3,1889,3,(,Customer Comments,LIKE,*P059A71*,NULL,Or
+1889-4,1889,4,NULL,Customer Comments,LIKE,*011-22*,NULL,Or
+1889-5,1889,5,NULL,Customer Comments,LIKE,*TCI-5510*,NULL,Or
+1889-6,1889,6,NULL,Dealer Comments,LIKE,*P059A71*,NULL,Or
+1889-7,1889,7,NULL,Dealer Comments,LIKE,*011-22*,NULL,Or
+1889-8,1889,8,NULL,Dealer Comments,LIKE,*800269*,NULL,Or
+1889-9,1889,9,NULL,Dealer Comments,LIKE,*TCI-5510*,NULL,Or
+1889-10,1889,10,NULL,Correction Comments,LIKE,*P059A71*,NULL,Or
+1889-11,1889,11,NULL,Correction Comments,LIKE,*011-22*,NULL,Or
+1889-12,1889,12,NULL,Correction Comments,LIKE,*800269*,NULL,Or
+1889-13,1889,13,NULL,Correction Comments,LIKE,*TCI-5510*,NULL,Or
+1889-14,1889,14,NULL,Labor Code,LIKE,*800269*,),And
+1889-15,1889,15,NULL,Vehicle Build Date,<=,3/31/2022,NULL,NULL
+1886-1,1886,1,NULL,Model,=,NULL,NULL,NULL
+1884-1,1884,1,NULL,Customer,=,Ford,NULL,And
+1884-2,1884,2,(,Model Year,>=,2020,NULL,And
+1884-3,1884,3,NULL,Model Year,<=,2022,),And
+1884-4,1884,4,NULL,Claim Category 2,LIKE,*50077*,NULL,And
+1884-5,1884,5,(,Issue ID,IS NULL,NULL,NULL,Or
+1884-6,1884,6,NULL,Issue ID,=,0,),NULL
+1883-1,1883,1,NULL,Customer,=,Ford,NULL,And
+1883-2,1883,2,(,Model Year,>=,2020,NULL,And
+1883-3,1883,3,NULL,Model Year,<=,2024,),And
+1883-4,1883,4,NULL,Claim Category 2,LIKE,*50845*,NULL,And
+1883-5,1883,5,(,Issue ID,IS NULL,NULL,NULL,Or
+1883-6,1883,6,NULL,Issue ID,=,0,),NULL
+1876-1,1876,1,(,Customer,=,Toyota,NULL,And
+1876-2,1876,2,NULL,Issue ID,IS NULL,NULL,NULL,And
+1876-3,1876,3,NULL,Model Year,=,2022,),And
+1876-4,1876,4,(,Model,=,NULL,NULL,NULL
+1875-0,1875,0,NULL,Product Description,=,Airbag ECU,NULL,And
+1875-1,1875,1,NULL,Model Year,=,2022,NULL,And
+1875-2,1875,2,NULL,model,=,Tundra,NULL,And
+1875-3,1875,3,(,Labor Code,=,EL9070,NULL,Or
+1875-4,1875,4,NULL,Dealer Comments,LIKE,*57-22*,NULL,Or
+1875-5,1875,5,NULL,Dealer Comments,LIKE,*B002011*,NULL,Or
+1875-6,1875,6,NULL,Dealer Comments,LIKE,*B002012*,NULL,Or
+1875-7,1875,7,NULL,Dealer Comments,LIKE,*B002811*,NULL,Or
+1875-8,1875,8,NULL,Dealer Comments,LIKE,*B002812*,NULL,Or
+1875-10,1875,10,NULL,Dealer Comments,LIKE,*B007011*,NULL,Or
+1875-11,1875,11,NULL,Dealer Comments,LIKE,*B007012*,NULL,Or
+1875-12,1875,12,NULL,Dealer Comments,LIKE,*B007212*,NULL,Or
+1875-13,1875,13,NULL,Dealer Comments,LIKE,*B007311*,NULL,Or
+1875-14,1875,14,NULL,Dealer Comments,LIKE,*B007312*,NULL,Or
+1875-15,1875,15,NULL,Dealer Comments,LIKE,*B007512*,NULL,Or
+1875-16,1875,16,NULL,Dealer Comments,LIKE,*charger*,NULL,Or
+1875-17,1875,17,NULL,Dealer Comments,LIKE,*wireless*,NULL,Or
+1875-18,1875,18,NULL,Dealer Comments,LIKE,*Qi*,),NULL
+1874-1,1874,1,NULL,Model,=,Tundra,NULL,And
+1874-2,1874,2,NULL,Model Year,=,2022,NULL,And
+1874-3,1874,3,NULL,Issue ID,LIKE,*TBD*,NULL,And
+1874-4,1874,4,(,Customer Comments,LIKE,*fuel gauge*,NULL,Or
+1874-5,1874,5,NULL,Customer Comments,LIKE,*fuel gage*,NULL,Or
+1874-6,1874,6,NULL,Customer Comments,LIKE,*gas gage*,NULL,Or
+1874-7,1874,7,NULL,Customer Comments,LIKE,*gas gauge*,NULL,Or
+1874-8,1874,8,NULL,Customer Comments,LIKE,*fuel level*,),And
+1874-9,1874,9,(,Claimed Part Number,LIKE,83800*,NULL,Or
+1874-10,1874,10,NULL,Claimed Part Number,LIKE,83320*,),NULL
+1870-1,1870,1,NULL,Customer,=,Ford,NULL,And
+1870-2,1870,2,NULL,Model,=,Explorer,NULL,NULL
+1867-1,1867,1,(,Customer,=,Toyota,NULL,And
+1867-2,1867,2,NULL,Issue ID,IS NULL,NULL,NULL,And
+1867-3,1867,3,NULL,Model,=,Tundra,NULL,And
+1867-4,1867,4,NULL,Model Year,=,2022,),And
+1867-5,1867,5,(,Complaint Code,=,66,NULL,Or
+1867-6,1867,6,NULL,Complaint Code,=,64,),And
+1867-7,1867,7,(,Vehicle Build Date,>,2/4/2022,NULL,And
+1867-8,1867,8,NULL,Vehicle Build Date,<,2/26/2022,),NULL
+1865-1,1865,1,((,Model Year,>=,2018,NULL,And
+1865-2,1865,2,NULL,Model Year,<=,2019,NULL,And
+1865-3,1865,3,NULL,model,=,Camry,),Or
+1865-4,1865,4,(,Model Year,>=,2019,NULL,And
+1865-5,1865,5,NULL,Model Year,<=,2021,NULL,And
+1865-6,1865,6,NULL,model,=,Rav4,),Or
+1865-7,1865,7,(,Model Year,=,2019,NULL,And
+1865-8,1865,8,(,model,=,Avalon,NULL,Or
+1865-9,1865,9,NULL,model,=,ES,))),And
+1865-10,1865,10,(,Customer Comments,LIKE,*019064*,NULL,Or
+1865-11,1865,11,NULL,Dealer Comments,LIKE,*019064*,NULL,Or
+1865-12,1865,12,NULL,Correction Comments,LIKE,*019064*,NULL,Or
+1865-13,1865,13,NULL,Dealer Comments,LIKE,*047-22*,NULL,Or
+1865-14,1865,14,NULL,Correction Comments,LIKE,*047-22*,NULL,Or
+1865-15,1865,15,NULL,Dealer Comments,LIKE,*EG1918*,NULL,Or
+1865-16,1865,16,NULL,Correction Comments,LIKE,*EG1918*,NULL,Or
+1865-17,1865,17,NULL,Labor Code,LIKE,*EG1918*,),NULL
+1863-1,1863,1,((,Model Platform,=,WS,),And
+1863-2,1863,2,(,Customer Comments,LIKE,*nois*,NULL,Or
+1863-3,1863,3,NULL,Customer Comments,LIKE,*click*,NULL,Or
+1863-4,1863,4,NULL,Dealer Comments,LIKE,*nois*,NULL,Or
+1863-5,1863,5,NULL,Dealer Comments,LIKE,*click*,)),NULL
+1861-1,1861,1,NULL,Customer,=,Ford,NULL,And
+1861-2,1861,2,(,Model Year,=,2021,NULL,Or
+1861-3,1861,3,NULL,Model Year,=,2022,),And
+1861-4,1861,4,NULL,Claim Category,=,Insufficient Charge,NULL,And
+1861-5,1861,5,NULL,Claim Category 2,=,No Compressor Replaced,NULL,NULL
+1858-1,1858,1,NULL,Customer,=,Ford,NULL,And
+1858-2,1858,2,NULL,Model,=,F150,NULL,And
+1858-3,1858,3,NULL,Claim Category,=,Noise - SSM 50445 (DCV),NULL,And
+1858-4,1858,4,NULL,Vehicle Build Date,<=,2-1-2021,NULL,NULL
+1857-1,1857,1,NULL,Customer,=,Ford,NULL,And
+1857-2,1857,2,NULL,Model Year,=,2021,NULL,And
+1857-3,1857,3,NULL,Model,=,Explorer,NULL,And
+1857-4,1857,4,NULL,Engine,=,C/RAX,NULL,And
+1857-5,1857,5,NULL,Claim Category,=,Seized,NULL,NULL
+1856-1,1856,1,NULL,Customer,=,Ford,NULL,And
+1856-2,1856,2,NULL,Model,=,Ranger,NULL,And
+1856-3,1856,3,NULL,Vehicle Build Date,<,9/1/2021,NULL,And
+1856-4,1856,4,(,Claim Category,=,Seized,NULL,Or
+1856-5,1856,5,NULL,Claim Category,=,INOP/Internal Failure,NULL,Or
+1856-6,1856,6,NULL,Claim Category,=,Clutch Seized/Damaged,NULL,Or
+1856-7,1856,7,NULL,Claim Category,=,Noise,NULL,Or
+1856-8,1856,8,NULL,Claim Category,=,Unclear Dealer Comment,NULL,Or
+1856-9,1856,9,NULL,Claim Category,=,Clutch Inop,),NULL
+1855-1,1855,1,NULL,Customer,=,Ford,NULL,And
+1855-2,1855,2,NULL,Model,=,Explorer,NULL,And
+1855-3,1855,3,NULL,Claim Category,=,Wiring Harness Contacting Rotor,NULL,NULL
+1854-1,1854,1,NULL,Customer,=,GM,NULL,And
+1854-2,1854,2,NULL,Datalink,=,FuelInjectorCSS3L,NULL,And
+1854-3,1854,3,NULL,Model Year,>,2019,NULL,And
+1854-4,1854,4,NULL,Model Year,<=,2023,NULL,And
+1854-5,1854,5,(,Issue ID,IS NULL,NULL,NULL,Or
+1854-6,1854,6,NULL,Issue ID,=,0,NULL,Or
+1854-7,1854,7,NULL,Issue ID,=,0,),And
+1854-8,1854,8,((,Customer Comments,LIKE,*P0216*,NULL,Or
+1854-9,1854,9,NULL,Dealer Comments,LIKE,*P0216*,NULL,Or
+1854-10,1854,10,NULL,Correction Comments,LIKE,*P0216*,),Or
+1854-11,1854,11,(,Customer Comments,LIKE,*P2150*,NULL,Or
+1854-12,1854,12,NULL,Dealer Comments,LIKE,*P2150*,NULL,Or
+1854-13,1854,13,NULL,Correction Comments,LIKE,*P2150*,)),NULL
+1853-1,1853,1,(,Customer Category,=,Check Engine Light,NULL,Or
+1853-2,1853,2,NULL,Customer Category,=,DTC identified in Ford Pass,),Or
+1853-3,1853,3,NULL,Claim Category,=,S/W update - SSM 50694,NULL,NULL
+1852-1,1852,1,NULL,Product Description,=,NULL,NULL,Or
+1852-2,1852,2,NULL,Customer,=,GM,NULL,And
+1852-3,1852,3,(,Datalink,LIKE,FuelRailDMAX,NULL,Or
+1852-4,1852,4,NULL,Datalink,LIKE,FuelPressureSensorDMAX,),And
+1852-5,1852,5,NULL,Model Year,>=,2020,NULL,And
+1852-6,1852,6,NULL,Model Year,<,2026,NULL,And
+1852-7,1852,7,(,Claim Category,LIKE,P1089,NULL,Or
+1852-8,1852,8,NULL,Claim Category,LIKE,P0191,NULL,Or
+1852-9,1852,9,NULL,Claim Category,LIKE,PRV.Pref,NULL,Or
+1852-10,1852,10,NULL,Claim Category,LIKE,SCV.Pref,NULL,Or
+1852-11,1852,11,NULL,Claim Category,LIKE,P0087,NULL,Or
+1852-12,1852,12,NULL,Claim Category,LIKE,P228A/B,),NULL
+1851-1,1851,1,(,Customer Category,=,Preferences - not saving,NULL,And
+1851-2,1851,2,NULL,Claim Category,=,S/W update,NULL,Or
+1851-3,1851,3,NULL,Claim Category,=,S/W update- TSB 22-2186,),And
+1851-4,1851,4,(,Model,=,F150,),NULL
+1850-1,1850,1,NULL,Customer,=,GM,NULL,And
+1850-2,1850,2,NULL,Model Year,>=,2021,NULL,And
+1850-3,1850,3,NULL,Product Description,=,O2 Sensor,NULL,And
+1850-4,1850,4,(,Engine Family,=,GEN 5+,NULL,Or
+1850-5,1850,5,NULL,Engine Family,=,GEN 5,NULL,Or
+1850-6,1850,6,NULL,Engine Family,=,CSS675T,),And
+1850-7,1850,7,(,Engine,=,L84,NULL,Or
+1850-8,1850,8,NULL,Engine,=,L87,NULL,Or
+1850-9,1850,9,NULL,Engine,=,L8T,NULL,Or
+1850-10,1850,10,NULL,Engine,=,L82,NULL,Or
+1850-11,1850,11,NULL,Engine,=,LCV,NULL,Or
+1850-12,1850,12,NULL,Engine,=,L3B,),And
+1850-13,1850,13,NULL,Claim Category,=,DTC P0132,NULL,NULL
+1849-1,1849,1,NULL,Model Year,>=,2019,NULL,And
+1849-2,1849,2,NULL,model,=,Ram HD,NULL,And
+1849-3,1849,3,NULL,Product Description,=,Starter,NULL,And
+1849-4,1849,4,(,Engine,=,ETK,NULL,Or
+1849-5,1849,5,NULL,Engine,=,ETL,NULL,Or
+1849-6,1849,6,NULL,Engine,=,ETM,NULL,Or
+1849-7,1849,7,NULL,Engine,=,ETN,),And
+1849-8,1849,8,NULL,Vehicle Build Date,>=,4/14/2021,NULL,And
+1849-9,1849,9,NULL,Vehicle Build Date,<=,7/21/2022,NULL,NULL
+1846-1,1846,1,NULL,Model Year,>=,2021,NULL,And
+1846-2,1846,2,(,Model Platform,=,WK,NULL,Or
+1846-3,1846,3,NULL,Model Platform,=,WD,NULL,Or
+1846-4,1846,4,NULL,Model Platform,=,WL,),And
+1846-5,1846,5,NULL,Product Description,=,Alternator,NULL,And
+1846-6,1846,6,(,Customer Comments,LIKE,*noise*,NULL,Or
+1846-7,1846,7,NULL,Customer Comments,LIKE,*noisy*,NULL,Or
+1846-8,1846,8,NULL,Failure Code Desc,LIKE,*noise*,NULL,Or
+1846-9,1846,9,NULL,Failure Code Desc,LIKE,*noisy*,),NULL
+1844-1,1844,1,NULL,Customer,=,Toyota,NULL,And
+1844-2,1844,2,NULL,Model Year,=,2022,NULL,And
+1844-3,1844,3,(,Model,=,Tundra,NULL,Or
+1844-4,1844,4,NULL,Model,=,Tacoma,NULL,Or
+1844-5,1844,5,NULL,Model,=,RX,NULL,Or
+1844-6,1844,6,NULL,Model,=,ES,NULL,Or
+1844-7,1844,7,(,Model,=,Camry,NULL,And
+1844-8,1844,8,NULL,Engine,=,2GR-FKS,)),And
+1844-9,1844,9,(,Vehicle Build Date,<,7/1/2022,NULL,And
+1844-10,1844,10,NULL,Vehicle Build Date,>=,3/1/2022,),And
+1844-11,1844,11,NULL,Claimed Part Number,LIKE,77020*,NULL,And
+1844-12,1844,12,NULL,Issue ID,IS NULL,NULL,NULL,NULL
+1843-1,1843,1,NULL,Customer,=,Honda,NULL,And
+1843-2,1843,2,NULL,Claimed Part Number,=,76852,NULL,And
+1843-3,1843,3,((,Model,=,Civic,NULL,And
+1843-4,1843,4,NULL,Model Year,>=,2022,),Or
+1843-5,1843,5,(,Model,=,CRV,NULL,And
+1843-6,1843,6,NULL,Model Year,>=,2023,)),NULL
+1841-1,1841,1,(,Model,=,Wagoneer WS,NULL,And
+1841-2,1841,2,NULL,Claimed Part Desc,=,A/C AND HEATER-HOUSING,NULL,And
+1841-3,1841,3,(,Dealer Comments,LIKE,*pop out*,NULL,Or
+1841-4,1841,4,NULL,Dealer Comments,LIKE,*B11CB-92*,NULL,Or
+1841-5,1841,5,NULL,Dealer Comments,LIKE,*peg*,NULL,Or
+1841-6,1841,6,NULL,Dealer Comments,LIKE,*pin out*,)),NULL
+1839-1,1839,1,(,Customer Category,=,Cluster Inoperable,NULL,Or
+1839-2,1839,2,NULL,Customer Category,=,Display issues,NULL,Or
+1839-3,1839,3,NULL,Customer Category,=,Display issue- Black screen,NULL,Or
+1839-4,1839,4,NULL,Customer Category,=,Display issue- Blank screen,),And
+1839-5,1839,5,NULL,Claim Category,=,Replaced meter,NULL,And
+1839-6,1839,6,(,Model,=,F150,NULL,Or
+1839-7,1839,7,NULL,Model,=,Expedition,),NULL
+1838-1,1838,1,NULL,customer,=,Subaru,NULL,And
+1838-2,1838,2,NULL,Dealer Comments,LIKE,*B179*,NULL,And
+1838-3,1838,3,NULL,Vehicle Build Date,>=,12/01/2019,NULL,And
+1838-4,1838,4,NULL,Vehicle Build Date,<=,01/01/2021,NULL,NULL
+1837-1,1837,1,NULL,Customer,=,GM,NULL,And
+1837-2,1837,2,NULL,Model Year,>=,2021,NULL,And
+1837-3,1837,3,NULL,Product Description,=,O2 Sensor,NULL,And
+1837-4,1837,4,(,Engine Family,=,GEN 5+,NULL,Or
+1837-5,1837,5,NULL,Engine Family,=,GEN 5,NULL,Or
+1837-6,1837,6,NULL,Engine Family,=,CSS675T,),And
+1837-7,1837,7,(,Engine,=,L84,NULL,Or
+1837-8,1837,8,NULL,Engine,=,L87,NULL,Or
+1837-9,1837,9,NULL,Engine,=,L8T,NULL,Or
+1837-10,1837,10,NULL,Engine,=,L82,NULL,Or
+1837-11,1837,11,NULL,Engine,=,LCV,NULL,Or
+1837-12,1837,12,NULL,Engine,=,L3B,),And
+1837-13,1837,13,NULL,Claim Category,=,DCT P0131,NULL,NULL
+1836-1,1836,1,NULL,Customer,=,GM,NULL,And
+1836-2,1836,2,NULL,Datalink,LIKE,*Purge*,NULL,And
+1836-3,1836,3,(,Issue ID,IS NULL,NULL,NULL,Or
+1836-4,1836,4,NULL,Issue ID,=,0,),And
+1836-5,1836,5,(,Customer Category,LIKE,*P0496*,NULL,Or
+1836-6,1836,6,NULL,Claim Category,LIKE,*P0496*,),NULL
+1835-0,1835,0,NULL,Customer,=,GM,NULL,And
+1835-1,1835,1,NULL,Datalink,LIKE,*Purge*,NULL,And
+1835-2,1835,2,(,Issue ID,IS NULL,NULL,NULL,Or
+1835-4,1835,4,NULL,Issue ID,=,0,),And
+1835-5,1835,5,(,Claim Category,LIKE,*P0442*,NULL,Or
+1835-6,1835,6,NULL,Claim Category,LIKE,*P0455*,NULL,Or
+1835-7,1835,7,NULL,Claim Category,LIKE,*Leak*,NULL,Or
+1835-8,1835,8,NULL,Customer Category,LIKE,*Leak*,NULL,Or
+1835-9,1835,9,NULL,Customer Category,LIKE,*P0442*,NULL,Or
+1835-10,1835,10,NULL,Customer Category,LIKE,*P0455*,),NULL
+1834-0,1834,0,((,Model Platform,=,DT,NULL,And
+1834-1,1834,1,NULL,Model Year,>=,2020,),And
+1834-2,1834,2,(,Customer Comments,LIKE,*leak*,NULL,Or
+1834-3,1834,3,NULL,Customer Comments,LIKE,*water*,),And
+1834-5,1834,5,NULL,Dealer Comments,LIKE,*drain*,),NULL
+1833-1,1833,1,(,Customer,=,Toyota,NULL,And
+1833-2,1833,2,NULL,Issue ID,IS NULL,NULL,NULL,And
+1833-3,1833,3,NULL,Model Year,=,2022,NULL,And
+1833-4,1833,4,NULL,Model,=,Tundra,),And
+1833-5,1833,5,(,Claimed Part Number,=,894670C040,NULL,Or
+1833-6,1833,6,NULL,Claimed Part Number,=,894670C080,),NULL
+1832-1,1832,1,(,Model,=,Ram DT,NULL,And
+1832-2,1832,2,NULL,Claimed Part Number,=,68430021AA,),And
+1832-3,1832,3,(,Customer Comments,LIKE,*leak*,NULL,Or
+1832-4,1832,4,NULL,Dealer Comments,LIKE,*leak*,),NULL
+1828-1,1828,1,(,Customer,=,Toyota,NULL,And
+1828-2,1828,2,NULL,Issue ID,IS NULL,NULL,NULL,And
+1828-3,1828,3,NULL,Model Year,=,2022,NULL,And
+1828-4,1828,4,NULL,Model,=,Tundra,NULL,And
+1828-5,1828,5,NULL,Customer Claim Number,=,871070C070,NULL,And
+1828-6,1828,6,NULL,Complaint Code,LIKE,64,),NULL
+1826-1,1826,1,NULL,Model Year,>=,2021,NULL,And
+1826-2,1826,2,(,Model Platform,=,DJ,NULL,Or
+1826-3,1826,3,NULL,Model Platform,=,DP,NULL,Or
+1826-4,1826,4,NULL,Model Platform,=,D2,NULL,Or
+1826-5,1826,5,NULL,Model Platform,=,DD,),And
+1826-6,1826,6,NULL,Product Description,=,Exhaust Gas Temperature Sensor,NULL,And
+1826-7,1826,7,(,Dealer Comments,LIKE,*P0545*,NULL,Or
+1826-8,1826,8,NULL,Dealer Comments,LIKE,*P0544*,NULL,Or
+1826-9,1826,9,NULL,Dealer Comments,LIKE,*P0546*,),NULL
+1824-1,1824,1,(,Model Year,>=,2022,NULL,And
+1824-2,1824,2,(,Model,=,Ram DT,NULL,Or
+1824-3,1824,3,NULL,model,=,Ram HD,),And
+1824-4,1824,4,(,Customer Comments,LIKE,*blower*,NULL,Or
+1824-5,1824,5,NULL,Customer Comments,LIKE,*air flow*,NULL,Or
+1824-6,1824,6,NULL,Customer Comments,LIKE,*not working*,NULL,Or
+1824-7,1824,7,NULL,Customer Comments,LIKE,*water*,NULL,Or
+1824-8,1824,8,NULL,Dealer Comments,LIKE,*water*,NULL,Or
+1824-9,1824,9,NULL,Dealer Comments,LIKE,*ice*,NULL,Or
+1824-10,1824,10,NULL,Dealer Comments,LIKE,*no air*,NULL,Or
+1824-11,1824,11,NULL,Dealer Comments,LIKE,*no heat*,NULL,Or
+1824-12,1824,12,NULL,Dealer Comments,LIKE,*block*,)),NULL
+1822-1,1822,1,NULL,Model Year,=,2021,NULL,And
+1822-2,1822,2,(,Model,=,Aviator Hybrid,NULL,Or
+1822-3,1822,3,NULL,Model,=,F150 Hybrid,NULL,Or
+1822-4,1822,4,NULL,Model,=,Escape Hybrid,),And
+1822-5,1822,5,(,Dealer Comments,LIKE,*P2D44*,NULL,And
+1822-6,1822,6,NULL,Dealer Comments,LIKE,*B11EE*,),NULL
+1821-1,1821,1,NULL,Product Description,=,Cabin Air Filter,NULL,And
+1821-2,1821,2,(,Model,=,Ram DS,NULL,Or
+1821-3,1821,3,NULL,Model,=,Ram DT,NULL,Or
+1821-4,1821,4,NULL,Model,=,Ram HD,NULL,Or
+1821-5,1821,5,NULL,Model,=,Wagoneer,),And
+1821-7,1821,7,(,Dealer Comments,LIKE,*frozen*,NULL,Or
+1821-9,1821,9,NULL,Dealer Comments,LIKE,* ice*,NULL,Or
+1821-10,1821,10,NULL,Dealer Comments,LIKE,* ice*,),NULL
+1820-1,1820,1,NULL,Model,=,Cherokee,NULL,And
+1820-2,1820,2,NULL,Model Year,=,2021,NULL,And
+1820-3,1820,3,NULL,Product Description,=,Wiper Arm,NULL,And
+1820-4,1820,4,NULL,Vehicle Build Date,>,12/1/2020,NULL,And
+1820-5,1820,5,NULL,Vehicle Build Date,<=,5/17/2021,NULL,NULL
+1819-1,1819,1,(,Customer Category,=,Front parking sensors issue,NULL,Or
+1819-2,1819,2,NULL,Customer Category,=,Parking sensor issue,),Or
+1819-3,1819,3,NULL,Claim Category,=,Not meter - Reprogrammed TSB 22-2038A,NULL,Or
+1819-4,1819,4,NULL,Claim Category,=,Not meter - Reprogrammed TSB 22-2094,NULL,NULL
+1816-1,1816,1,NULL,Model Year,>=,2019,NULL,And
+1816-2,1816,2,NULL,Model Year,<=,2022,NULL,And
+1816-3,1816,3,NULL,model,=,Rav4,NULL,And
+1816-4,1816,4,(,Customer Comments,LIKE,*P0087*,NULL,Or
+1816-5,1816,5,NULL,Customer Comments,LIKE,*P107A2A*,NULL,Or
+1816-6,1816,6,NULL,Dealer Comments,LIKE,*P0087*,NULL,Or
+1816-7,1816,7,NULL,Dealer Comments,LIKE,*P107A2A*,NULL,Or
+1816-8,1816,8,NULL,Dealer Comments,LIKE,*EL9069*,NULL,Or
+1816-9,1816,9,NULL,Correction Comments,LIKE,*P0087*,NULL,Or
+1816-10,1816,10,NULL,Correction Comments,LIKE,*P107A2A*,NULL,Or
+1816-11,1816,11,NULL,Correction Comments,LIKE,*EL9069*,NULL,Or
+1816-12,1816,12,NULL,Labor Code,LIKE,*EL9069*,),NULL
+1813-1,1813,1,NULL,Dealer Comments,LIKE,*U0155*,NULL,And
+1813-2,1813,2,(,Customer Category,=,Cluster Inoperable,NULL,Or
+1813-3,1813,3,NULL,Customer Category,=,Display issue- Black screen,NULL,Or
+1813-4,1813,4,NULL,Customer Category,=,Display issue,),And
+1813-5,1813,5,NULL,Model,=,F250/350/450/550,NULL,NULL
+1812-1,1812,1,NULL,Customer Category,=,Power window issue,NULL,And
+1812-2,1812,2,(,Claim Category,=,Not meter - Reprogrammed Power Windows,NULL,Or
+1812-3,1812,3,NULL,Claim Category,=,S/W update,NULL,Or
+1812-4,1812,4,NULL,Claim Category,=,Reprogramming issue,),NULL
+1811-1,1811,1,NULL,model,=,Tundra,NULL,And
+1811-2,1811,2,NULL,Model Year,=,2022,NULL,And
+1811-3,1811,3,(,Customer Comments,LIKE,*stall*,NULL,Or
+1811-4,1811,4,NULL,Customer Comments,LIKE,*X0800*,NULL,Or
+1811-5,1811,5,NULL,Dealer Comments,LIKE,*stall*,NULL,Or
+1811-6,1811,6,NULL,Dealer Comments,LIKE,*X0800*,NULL,Or
+1811-7,1811,7,NULL,Correction Comments,LIKE,*X0800*,),NULL
+1809-1,1809,1,NULL,Customer,=,Ford,NULL,And
+1809-2,1809,2,(,Claim Comment,=,P0A7A,NULL,Or
+1809-3,1809,3,NULL,Claim Comment,=,P0A7A P0613,NULL,Or
+1809-4,1809,4,NULL,Claim Comment,=,P0A78,NULL,Or
+1809-5,1809,5,NULL,Claim Comment,=,P0A78 P0C19,NULL,Or
+1809-6,1809,6,NULL,Claim Comment,=,P0C19 P0A78,),NULL
+1808-1,1808,1,NULL,Claimed Part Number Desc,LIKE,0R010,NULL,NULL
+1807-1,1807,1,NULL,Customer,=,GM,NULL,And
+1807-2,1807,2,NULL,Datalink,=,StarterGen5,NULL,And
+1807-3,1807,3,NULL,Model Year,>=,2019,NULL,And
+1807-4,1807,4,NULL,Model Year,<=,2022,NULL,And
+1807-5,1807,5,NULL,Claim Category,=,Valve Lifter History,NULL,And
+1807-6,1807,6,(,Issue ID,=,0,NULL,Or
+1807-7,1807,7,NULL,Issue ID,=,416,NULL,Or
+1807-8,1807,8,NULL,Issue ID,IS NULL,NULL,),NULL
+1806-1,1806,1,NULL,Customer,=,GM,NULL,And
+1806-2,1806,2,NULL,Datalink,=,FuelInjectorCSS3L,NULL,And
+1806-3,1806,3,(,Model Year,>=,2020,NULL,And
+1806-4,1806,4,NULL,Model Year,<=,2022,),And
+1806-5,1806,5,(,Vehicle Build Date,>=,1/1/2019,NULL,And
+1806-6,1806,6,NULL,Vehicle Build Date,<=,7/01/2024,),And
+1806-7,1806,7,(,Issue ID,=,0,NULL,Or
+1806-8,1806,8,NULL,Issue ID,IS NULL,NULL,),And
+1806-10,1806,10,(,Claim Category,LIKE,*INJ.C*,NULL,Or
+1806-11,1806,11,NULL,Claim Category,LIKE,*P020*,),NULL
+1805-1,1805,1,NULL,Customer,=,Subaru,NULL,And
+1805-2,1805,2,(,Customer Category,=,Black Screen,NULL,Or
+1805-3,1805,3,NULL,Customer Category,=,Black Screen/Freezing,),And
+1805-4,1805,4,NULL,Claim Comment,=,RC2103,NULL,NULL
+1804-1,1804,1,NULL,Customer,=,Subaru,NULL,And
+1804-2,1804,2,(,Customer Category,=,Black Screen,NULL,Or
+1804-3,1804,3,NULL,Customer Category,=,Black Screen/Freezing,),And
+1804-4,1804,4,NULL,Claim Comment,=,RC2011,NULL,NULL
+1803-1,1803,1,NULL,Customer,=,Subaru,NULL,And
+1803-2,1803,2,(,Customer Category,=,Black Screen,NULL,Or
+1803-3,1803,3,NULL,Customer Category,=,Black Screen/Freezing,),And
+1803-4,1803,4,NULL,Claim Comment,=,RC2003,NULL,NULL
+1800-1,1800,1,NULL,Customer,=,subaru,NULL,And
+1800-2,1800,2,NULL,Customer Category,=,abnormal Noise,NULL,NULL
+1799-1,1799,1,NULL,Claimed Part Number,=,177050C121,NULL,And
+1799-2,1799,2,NULL,Vehicle Build Date,>=,1/19/2021,NULL,And
+1799-3,1799,3,NULL,Vehicle Build Date,<=,2/15/2021,NULL,NULL
+1798-1,1798,1,NULL,Customer,=,Ford,NULL,And
+1798-2,1798,2,(,Model Year,>=,2020,NULL,And
+1798-3,1798,3,NULL,Model Year,<=,2021,),And
+1798-4,1798,4,NULL,Claim Category,LIKE,*Reprogram all modules*,NULL,And
+1798-5,1798,5,(,Issue ID,IS NULL,NULL,NULL,Or
+1798-6,1798,6,NULL,Issue ID,=,0,),NULL
+1793-1,1793,1,NULL,Model Platform,=,WS,NULL,And
+1793-2,1793,2,(,Customer Comments,LIKE,*water*,NULL,Or
+1793-3,1793,3,NULL,Customer Comments,LIKE,*leak*,NULL,Or
+1793-4,1793,4,NULL,Customer Comments,LIKE,*Wet*,NULL,Or
+1793-5,1793,5,NULL,Dealer Comments,LIKE,*Wet*,),NULL
+1789-1,1789,1,(,Model Platform,=,DT,NULL,And
+1789-2,1789,2,NULL,Engine Desc,=,ESD: 6.2L Supercharged HEMI V8 SRT Engine,),And
+1789-3,1789,3,(,Dealer Comments,LIKE,*leak*,NULL,And
+1789-4,1789,4,(,Dealer Comments,LIKE,*tube*,NULL,Or
+1789-5,1789,5,NULL,Dealer Comments,LIKE,*center*,NULL,Or
+1789-6,1789,6,NULL,Dealer Comments,LIKE,*middle*,)),NULL
+1788-1,1788,1,((,Model Platform,=,DT,NULL,And
+1788-2,1788,2,NULL,Engine Desc,=,ESD: 6.2L Supercharged HEMI V8 SRT Engine,),And
+1788-3,1788,3,(,Dealer Comments,LIKE,*leak*,NULL,Or
+1788-4,1788,4,NULL,Customer Comments,LIKE,*leak*,),And
+1788-5,1788,5,(,Dealer Comments,LIKE,*pipe*,NULL,Or
+1788-6,1788,6,NULL,Dealer Comments,LIKE,*hose*,NULL,Or
+1788-7,1788,7,NULL,Dealer Comments,LIKE,*weld*,NULL,Or
+1788-8,1788,8,NULL,Dealer Comments,LIKE,*jumper tube*,NULL,Or
+1788-9,1788,9,NULL,Dealer Comments,LIKE,*crimp*,)),NULL
+1787-1,1787,1,NULL,Customer,=,GM,NULL,And
+1787-2,1787,2,NULL,Datalink,=,StarterGen5,NULL,And
+1787-3,1787,3,NULL,Model Year,=,2022,NULL,And
+1787-4,1787,4,NULL,Model Year,=,2022,NULL,And
+1787-5,1787,5,NULL,Vehicle Build Date,>,1/1/2021,NULL,And
+1787-6,1787,6,NULL,Vehicle Build Date,<=,1/1/2023,NULL,And
+1787-7,1787,7,(,Issue ID,=,0,NULL,Or
+1787-8,1787,8,NULL,Issue ID,=,416,NULL,Or
+1787-9,1787,9,NULL,Issue ID,IS NULL,NULL,),And
+1787-10,1787,10,(,Customer Comments,LIKE,*e32*,NULL,Or
+1787-11,1787,11,NULL,Dealer Comments,LIKE,*e32*,NULL,Or
+1787-12,1787,12,NULL,Correction Comments,LIKE,*e32*,NULL,Or
+1787-13,1787,13,NULL,Customer Comments,LIKE,*e37*,NULL,Or
+1787-14,1787,14,NULL,Dealer Comments,LIKE,*e37*,NULL,Or
+1787-15,1787,15,NULL,Correction Comments,LIKE,*e37*,),NULL
+1786-1,1786,1,NULL,Customer,=,Ford,NULL,And
+1786-2,1786,2,NULL,Issue ID,IS NULL,NULL,NULL,And
+1786-3,1786,3,(,Claim Category 2,=,Dealer Chargeback,NULL,Or
+1786-4,1786,4,NULL,Claim Category 2,=,Part Charge Back,NULL,Or
+1786-5,1786,5,NULL,Claim Category 2,=,Will Be Dealer Chargeback,),NULL
+1782-1,1782,1,NULL,Customer,=,Ford,NULL,And
+1782-2,1782,2,(,Model Year,>=,2021,NULL,And
+1782-3,1782,3,NULL,Model Year,<=,2021,),And
+1782-4,1782,4,NULL,Claim Category 2,LIKE,*49962*,NULL,And
+1782-5,1782,5,(,Issue ID,IS NULL,NULL,NULL,Or
+1782-6,1782,6,NULL,Issue ID,=,0,),NULL
+1781-1,1781,1,NULL,Customer,=,Ford,NULL,And
+1781-2,1781,2,NULL,Issue ID,IS NULL,NULL,NULL,And
+1781-3,1781,3,(,Claim Category,=,Calibration Update,NULL,Or
+1781-4,1781,4,NULL,Claim Category,=,Reporgrammed ISC,),NULL
+1779-1,1779,1,NULL,Customer,=,Ford,NULL,And
+1779-2,1779,2,NULL,Issue ID,IS NULL,NULL,NULL,And
+1779-3,1779,3,NULL,Claim Comment,=,P2BEF,NULL,NULL
+1778-1,1778,1,(,Model Year,=,2019,NULL,Or
+1778-2,1778,2,NULL,Model Year,=,2020,),And
+1778-3,1778,3,NULL,Product Description,=,Engine ECU,NULL,And
+1778-4,1778,4,(,Dealer Comments,LIKE,*92-20*,NULL,Or
+1778-5,1778,5,NULL,Correction Comments,LIKE,*92-20*,NULL,Or
+1778-6,1778,6,NULL,Dealer Comments,LIKE,*TC1910*,NULL,Or
+1778-7,1778,7,NULL,Correction Comments,LIKE,*TC1910*,),And
+1778-8,1778,8,NULL,Model,=,Tacoma,NULL,NULL
+1772-1,1772,1,NULL,Model,=,F150,NULL,And
+1772-2,1772,2,NULL,Model Year,>=,2021,NULL,And
+1772-3,1772,3,NULL,Model Year,<=,2021,NULL,And
+1772-4,1772,4,(,Issue ID,IS NULL,NULL,NULL,Or
+1772-5,1772,5,NULL,Issue ID,=,0,),And
+1772-6,1772,6,NULL,Customer Category,LIKE,*Message - Reverse Brake Assist Unavailable*,NULL,NULL
+1771-1,1771,1,NULL,Customer,=,Ford,NULL,And
+1771-2,1771,2,(,Claim Category,=,Fuel in Valve,NULL,Or
+1771-3,1771,3,NULL,Claim Category,=,Gas Filler Pipe Replaced,NULL,Or
+1771-4,1771,4,NULL,Claim Category,=,Canister Vent Valve,NULL,Or
+1771-5,1771,5,NULL,Claim Category,=,Canister Vent Valve Loose,NULL,Or
+1771-6,1771,6,NULL,Claim Category,=,Air Box Cracked,NULL,Or
+1771-7,1771,7,NULL,Claim Category,=,Pinched Evap Hose,NULL,Or
+1771-8,1771,8,NULL,Claim Category,=,Damaged Hose,NULL,Or
+1771-9,1771,9,NULL,Claim Category,=,Kinked Hose,NULL,Or
+1771-10,1771,10,NULL,Claim Category,=,Canister Hose Leaking,NULL,Or
+1771-11,1771,11,NULL,Claim Category,=,Canister Vent Tube Pinched,NULL,Or
+1771-12,1771,12,NULL,Claim Category,=,Cleaned filler neck,NULL,Or
+1771-13,1771,13,NULL,Claim Category,=,Filler Neck Loose,NULL,Or
+1771-14,1771,14,NULL,Claim Category,=,Fuel Cap Issue,NULL,Or
+1771-15,1771,15,NULL,Claim Category,=,Fuel Cap Loose,),NULL
+1770-1,1770,1,NULL,Customer,=,Ford,NULL,And
+1770-2,1770,2,(,Claim Category,=,Part Not Replaced,NULL,Or
+1770-3,1770,3,NULL,Claim Category,=,No Part Replaced,NULL,Or
+1770-4,1770,4,NULL,Claim Category,=,NTF,NULL,Or
+1770-5,1770,5,NULL,Claim Category,=,NPF,),NULL
+1769-1,1769,1,NULL,Engine Family,=,5.0L Engine,NULL,And
+1769-2,1769,2,NULL,Model Year,=,2021,NULL,And
+1769-3,1769,3,(,Claim Comment,=,P02EE,NULL,Or
+1769-4,1769,4,NULL,Claim Comment,=,P02EF,NULL,Or
+1769-5,1769,5,NULL,Claim Comment,=,P02EF U0284 P0306 P3442,),NULL
+1762-1,1762,1,NULL,Customer,=,Toyota,NULL,And
+1762-2,1762,2,NULL,Issue ID,IS NULL,NULL,NULL,And
+1762-3,1762,3,NULL,Model Year,=,2021,NULL,And
+1762-4,1762,4,NULL,Model,=,Rav4,NULL,And
+1762-5,1762,5,NULL,Asm Plant Desc,LIKE,TMMK*,NULL,And
+1762-6,1762,6,NULL,Claimed Part Number,LIKE,87050*,NULL,And
+1762-7,1762,7,(,Dealer Comments,LIKE,*hole*,NULL,Or
+1762-8,1762,8,NULL,Dealer Comments,LIKE,*leak*,NULL,Or
+1762-9,1762,9,NULL,Dealer Comments,LIKE,*pin*,),NULL
+1760-1,1760,1,NULL,Customer,=,GM,NULL,And
+1760-2,1760,2,(,VIN,=,1GNSKGKT2MR331934,NULL,Or
+1760-3,1760,3,NULL,VIN,=,1GKS2DKTXMR322541,NULL,Or
+1760-4,1760,4,NULL,VIN,=,3GCUYEET3MG320232,NULL,Or
+1760-5,1760,5,NULL,VIN,=,1GNSKGKT4MR302578,NULL,Or
+1760-6,1760,6,NULL,VIN,=,1GYS4GKT1MR334045,NULL,Or
+1760-7,1760,7,NULL,VIN,=,3GTU9BET2MG338006,NULL,Or
+1760-8,1760,8,NULL,VIN,=,1GNSKGKT4MR394646,NULL,Or
+1760-9,1760,9,NULL,VIN,=,3GCUYEET3LG263335,NULL,Or
+1760-10,1760,10,NULL,VIN,=,3GCUYDET5MG274512,NULL,Or
+1760-11,1760,11,NULL,VIN,=,3GCPWEETXMG269315,),NULL
+1757-1,1757,1,NULL,Customer,=,GM,NULL,And
+1757-2,1757,2,NULL,Product Description,=,Body ECU,NULL,And
+1757-3,1757,3,(,Issue ID,IS NULL,NULL,NULL,Or
+1757-4,1757,4,NULL,Issue ID,=,0,),And
+1757-5,1757,5,(,Claim Category,=,Bent Pin,NULL,Or
+1757-6,1757,6,NULL,Claim Category,=,P2535/P0607,),NULL
+1756-1,1756,1,NULL,Customer,=,Ford,NULL,And
+1756-2,1756,2,NULL,Model Year,=,2021,NULL,And
+1756-3,1756,3,NULL,Model,=,Mustang Mach E,NULL,And
+1756-4,1756,4,NULL,Claim Category,=,Reprogram,NULL,And
+1756-5,1756,5,(,Issue ID,IS NULL,NULL,NULL,Or
+1756-6,1756,6,NULL,Issue ID,=,0,),NULL
+1755-1,1755,1,NULL,Customer,=,Ford,NULL,And
+1755-2,1755,2,(,Model Year,>=,2020,NULL,And
+1755-3,1755,3,NULL,Model Year,<=,2022,),And
+1755-4,1755,4,NULL,Claim Comment,LIKE,*50077*,NULL,And
+1755-5,1755,5,(,Issue ID,IS NULL,NULL,NULL,Or
+1755-6,1755,6,NULL,Issue ID,=,0,),NULL
+1754-1,1754,1,NULL,Customer,=,Ford,NULL,And
+1754-2,1754,2,NULL,Issue ID,IS NULL,NULL,NULL,And
+1754-3,1754,3,(,Claim Comment,=,U012D,NULL,Or
+1754-4,1754,4,NULL,Claim Comment,=,U012D AND U042E,NULL,Or
+1754-5,1754,5,NULL,Claim Comment,=,U012D U0284,NULL,Or
+1754-6,1754,6,NULL,Claim Comment,=,U012D U0284 U042E,NULL,Or
+1754-7,1754,7,NULL,Claim Comment,=,U012D U042E,NULL,Or
+1754-8,1754,8,NULL,Claim Comment,=,U0284,NULL,Or
+1754-9,1754,9,NULL,Claim Comment,=,U042E,NULL,Or
+1754-10,1754,10,NULL,Claim Comment,=,U042E U012D,NULL,Or
+1754-11,1754,11,NULL,Claim Comment,=,U042E U0284 U012D,NULL,Or
+1754-12,1754,12,NULL,Claim Comment,=,U012D U0284 U0285 U0645,NULL,Or
+1754-13,1754,13,NULL,Claim Comment,=,U012D U0284 U0645,NULL,Or
+1754-14,1754,14,NULL,Claim Comment,=,U012D U0645 U0284 U0285,NULL,Or
+1754-15,1754,15,NULL,Claim Comment,=,U0284 U0265 U012D U0285 U042E,NULL,Or
+1754-16,1754,16,NULL,Claim Comment,=,U0284 U0285 U012D U042E,NULL,Or
+1754-17,1754,17,NULL,Claim Comment,=,U0284 U0285 U0645,NULL,Or
+1754-18,1754,18,NULL,Claim Comment,=,U0284 U042E,NULL,Or
+1754-19,1754,19,NULL,Claim Comment,=,U0284 U0645 U012D U042E,NULL,Or
+1754-20,1754,20,NULL,Claim Comment,=,U0645 U02845 U0120 U0285,NULL,Or
+1754-21,1754,21,NULL,Claim Comment,=,U042E U012D U0645 U0284 U0285,),And
+1754-22,1754,22,(,Claim Category,=,Replaced Alternator,NULL,Or
+1754-23,1754,23,NULL,Claim Category,=,Replaced Grill Shutter and Alternator,NULL,Or
+1754-24,1754,24,NULL,Claim Category,IS NULL,NULL,),NULL
+1753-1,1753,1,NULL,customer,=,Honda,NULL,And
+1753-2,1753,2,NULL,Product Description,=,Infotainment Control Unit,NULL,And
+1753-3,1753,3,NULL,Customer Category,=,Slow Performance,NULL,NULL
+1751-1,1751,1,NULL,Customer,=,Ford,NULL,And
+1751-2,1751,2,(,Model Year,=,2020,NULL,Or
+1751-3,1751,3,NULL,Model Year,=,2021,),And
+1751-4,1751,4,(,Claim Category,=,Compressor failed PPT (displacement),NULL,Or
+1751-5,1751,5,NULL,Claim Category,=,Compressor failed PPT,),NULL
+1746-1,1746,1,NULL,Customer,=,GM,NULL,And
+1746-2,1746,2,NULL,Model Year,>=,2020,NULL,And
+1746-3,1746,3,NULL,Product Description,=,O2 Sensor,NULL,And
+1746-4,1746,4,NULL,Engine Family,=,GEN 5+,NULL,And
+1746-5,1746,5,(,Engine,=,L84,NULL,Or
+1746-6,1746,6,NULL,Engine,=,L87,),And
+1746-7,1746,7,NULL,Claim Category,=,DTC P0300,NULL,NULL
+1745-1,1745,1,NULL,Claimed Part Desc,=,COMPRESSOR - A/C,NULL,And
+1745-2,1745,2,NULL,Model Year,=,2020,NULL,And
+1745-3,1745,3,(,Model,=,Explorer,NULL,Or
+1745-4,1745,4,NULL,Model,=,Aviator,),And
+1745-5,1745,5,NULL,Vehicle Build Date,<=,8-19-2019,NULL,And
+1745-6,1745,6,(,Claim Category,=,Insufficient Charge,NULL,Or
+1745-7,1745,7,NULL,Claim Category,=," 	Seized",NULL,Or
+1745-8,1745,8,NULL,Claim Category,=,A/C Hose Leak,NULL,Or
+1745-9,1745,9,NULL,Claim Category,=,Low charge,),NULL
+1744-1,1744,1,NULL,Customer,=,Ford,NULL,And
+1744-2,1744,2,(,Model Year,>=,2020,NULL,And
+1744-3,1744,3,NULL,Model Year,<=,2021,),And
+1744-4,1744,4,NULL,Claim Comment,LIKE,*49968*,NULL,And
+1744-5,1744,5,(,Issue ID,IS NULL,NULL,NULL,Or
+1744-6,1744,6,NULL,Issue ID,=,0,),NULL
+1743-1,1743,1,NULL,Customer,=,Ford,NULL,And
+1743-2,1743,2,NULL,Model Year,=,2021,NULL,And
+1743-3,1743,3,NULL,Model,=,Mustang Mach E,NULL,And
+1743-4,1743,4,(,Issue ID,IS NULL,NULL,NULL,Or
+1743-5,1743,5,NULL,Issue ID,=,0,),And
+1743-6,1743,6,NULL,Claim Category,LIKE,*21B36*,NULL,NULL
+1741-1,1741,1,((,Model Platform,=,DT,NULL,And
+1741-2,1741,2,NULL,Model Year,>=,2021,),And
+1741-3,1741,3,(,Customer Comments,LIKE,*inop*,NULL,Or
+1741-4,1741,4,NULL,Customer Comments,LIKE,*warm*,NULL,Or
+1741-5,1741,5,NULL,Customer Comments,LIKE,*hot*,NULL,Or
+1741-6,1741,6,NULL,Customer Comments,LIKE,*no AC*,)),NULL
+1740-1,1740,1,NULL,Model,=,Compass MP,NULL,And
+1740-2,1740,2,NULL,Vehicle Build Date,>,9/1/2020,NULL,And
+1740-3,1740,3,NULL,Vehicle Build Date,<=,9/30/2020,NULL,NULL
+1739-1,1739,1,NULL,Customer,=,Toyota,NULL,And
+1739-2,1739,2,NULL,Issue ID,IS NULL,NULL,NULL,And
+1739-3,1739,3,NULL,Model,=,Highlander,NULL,And
+1739-4,1739,4,(,Model Year,=,2020,NULL,Or
+1739-5,1739,5,NULL,Model Year,=,2021,),And
+1739-6,1739,6,(,Customer Comments,LIKE,*21TC05*,NULL,Or
+1739-7,1739,7,NULL,Dealer Comments,LIKE,*21TC05*,NULL,Or
+1739-8,1739,8,NULL,Correction Comments,LIKE,*21TC05*,),And
+1739-9,1739,9,NULL,Vehicle Repair Date,<=,5/13/2022,NULL,NULL
+1737-1,1737,1,NULL,Customer,=,Subaru,NULL,And
+1737-2,1737,2,NULL,Customer Category,LIKE,*BT/Phone*,NULL,NULL
+1736-1,1736,1,NULL,Customer,=,Subaru,NULL,And
+1736-2,1736,2,NULL,Claim Category,LIKE,*Contact*,NULL,NULL
+1735-1,1735,1,NULL,Customer,=,Subaru,NULL,And
+1735-2,1735,2,NULL,Claim Category,LIKE,*rub*,NULL,NULL
+1735-3,1735,3,NULL,Make,NULL,NULL,NULL,NULL
+1734-1,1734,1,NULL,Model,=,F150,NULL,And
+1734-2,1734,2,NULL,Model Year,>=,2021,NULL,And
+1734-3,1734,3,NULL,Model Year,<=,2021,NULL,And
+1734-4,1734,4,(,Issue ID,IS NULL,NULL,NULL,Or
+1734-5,1734,5,NULL,Issue ID,=,0,),And
+1734-6,1734,6,NULL,Customer Category,LIKE,*PRE COLLISION WARNING*,NULL,NULL
+1733-1,1733,1,NULL,Model,=,F150,NULL,And
+1733-2,1733,2,NULL,Model Year,>=,2021,NULL,And
+1733-3,1733,3,NULL,Model Year,<=,2021,NULL,And
+1733-4,1733,4,(,Issue ID,IS NULL,NULL,NULL,Or
+1733-5,1733,5,NULL,Issue ID,=,0,),And
+1733-6,1733,6,NULL,Customer Category,LIKE,*Power window issue*,NULL,NULL
+1732-1,1732,1,NULL,Model,=,F150,NULL,And
+1732-2,1732,2,NULL,Model Year,>=,2021,NULL,And
+1732-3,1732,3,NULL,Model Year,<=,2021,NULL,And
+1732-4,1732,4,(,Issue ID,IS NULL,NULL,NULL,Or
+1732-5,1732,5,NULL,Issue ID,=,0,),And
+1732-6,1732,6,NULL,Customer Category,LIKE,*Preferences - not saving*,NULL,NULL
+1731-1,1731,1,NULL,Model,=,F150,NULL,And
+1731-2,1731,2,NULL,Model Year,>=,2021,NULL,And
+1731-3,1731,3,NULL,Model Year,<=,2021,NULL,And
+1731-4,1731,4,(,Issue ID,IS NULL,NULL,NULL,Or
+1731-5,1731,5,NULL,Issue ID,=,0,),And
+1731-6,1731,6,NULL,Customer Category,=,Inaccurate Trans Temp Gauge,NULL,NULL
+1730-1,1730,1,NULL,Model,=,F150,NULL,And
+1730-2,1730,2,NULL,Model Year,>=,2021,NULL,And
+1730-3,1730,3,NULL,Model Year,<=,2021,NULL,And
+1730-4,1730,4,(,Issue ID,IS NULL,NULL,NULL,Or
+1730-5,1730,5,NULL,Issue ID,=,0,),And
+1730-6,1730,6,NULL,Customer Category,=,Inop,NULL,NULL
+1729-1,1729,1,NULL,Model,=,F-STRIPPED CHASSIS,NULL,And
+1729-2,1729,2,NULL,Model Year,>=,2020,NULL,And
+1729-3,1729,3,NULL,Model Year,<=,2021,NULL,And
+1729-4,1729,4,(,Issue ID,IS NULL,NULL,NULL,Or
+1729-5,1729,5,NULL,Issue ID,=,0,),And
+1729-6,1729,6,NULL,Customer Category,LIKE,*4x4*,NULL,NULL
+1728-1,1728,1,NULL,Model,=,F-STRIPPED CHASSIS,NULL,And
+1728-2,1728,2,(,Model Year,>=,2022,NULL,And
+1728-3,1728,3,NULL,Model Year,<=,2021,),And
+1728-4,1728,4,(,Issue ID,IS NULL,NULL,NULL,Or
+1728-5,1728,5,NULL,Issue ID,=,0,),And
+1728-6,1728,6,NULL,Customer Category,LIKE,*Display issue*,NULL,NULL
+1727-1,1727,1,NULL,Model,=,F-STRIPPED CHASSIS,NULL,And
+1727-2,1727,2,(,Model Year,>=,2020,NULL,And
+1727-3,1727,3,NULL,Model Year,<=,2021,),And
+1727-4,1727,4,(,Issue ID,IS NULL,NULL,NULL,Or
+1727-5,1727,5,NULL,Issue ID,=,0,),And
+1727-6,1727,6,NULL,Customer Category,LIKE,*Inop*,NULL,NULL
+1726-1,1726,1,(,Model Year,=,2020,NULL,Or
+1726-2,1726,2,NULL,Model Year,=,2021,),And
+1726-3,1726,3,NULL,Model,=,F250/350/450/550,NULL,And
+1726-4,1726,4,(,Claim Comment,LIKE,*49853*,NULL,Or
+1726-5,1726,5,NULL,Dealer Comments,LIKE,*49853*,),And
+1726-6,1726,6,(,Issue ID,IS NULL,NULL,NULL,Or
+1726-7,1726,7,NULL,Issue ID,=,0,),NULL
+1721-1,1721,1,NULL,Claim Category,=,Potenital KAM Loss Issue,NULL,Or
+1721-2,1721,2,NULL,Claim Category,=,KAM Loss Issue,NULL,NULL
+1720-0,1720,0,NULL,Product Description,=,NULL,NULL,Or
+1720-1,1720,1,NULL,Model Year,>=,2016,NULL,And
+1720-2,1720,2,NULL,Model Year,<=,2022,NULL,And
+1720-4,1720,4,(,Issue ID,=,0,NULL,Or
+1720-5,1720,5,NULL,Issue ID,IS NULL,NULL,),And
+1720-6,1720,6,NULL,Claim Category,LIKE,*TAC*,NULL,And
+1720-7,1720,7,NULL,Customer,=,GM,NULL,And
+1720-8,1720,8,(,Datalink,LIKE,*DMAX*,NULL,Or
+1720-10,1720,10,NULL,Datalink,LIKE,*CSS3L*,),NULL
+1719-1,1719,1,NULL,Customer,=,GM,NULL,And
+1719-2,1719,2,NULL,Model Year,>=,2020,NULL,And
+1719-3,1719,3,NULL,Product Description,=,Compressor,NULL,And
+1719-4,1719,4,NULL,Datalink,=,CompressorVan,NULL,And
+1719-5,1719,5,(,Claim Category,=,Belt Fell Off,NULL,Or
+1719-6,1719,6,NULL,Claim Category,=,Belt broken,),And
+1719-7,1719,7,(,Issue ID,IS NULL,NULL,NULL,Or
+1719-8,1719,8,NULL,Issue ID,=,0,NULL,Or
+1719-10,1719,10,NULL,Issue ID,=,1719,),NULL
+1718-1,1718,1,NULL,Customer,=,GM,NULL,And
+1718-2,1718,2,NULL,Datalink,LIKE,*Purge*,NULL,And
+1718-3,1718,3,(,Claim Category,=,Purge Valve Not Replaced,NULL,Or
+1718-4,1718,4,NULL,Customer Category,=,Purge Valve Not Replaced,),And
+1718-5,1718,5,NULL,Issue ID,IS NULL,NULL,NULL,NULL
+1717-1,1717,1,NULL,Customer,=,GM,NULL,And
+1717-2,1717,2,NULL,Datalink,LIKE,*Purge*,NULL,And
+1717-3,1717,3,(,Claim Category,=,Noise,NULL,Or
+1717-4,1717,4,NULL,Customer Category,=,Noise,),And
+1717-5,1717,5,(,Issue ID,=,0,NULL,Or
+1717-6,1717,6,NULL,Issue ID,IS NULL,NULL,),NULL
+1714-1,1714,1,(,Model,=,Highlander,NULL,And
+1714-2,1714,2,NULL,Model Year,=,2017,NULL,Or
+1714-3,1714,3,NULL,Model Year,=,2018,NULL,Or
+1714-4,1714,4,NULL,Model Year,=,2019,NULL,Or
+1714-5,1714,5,NULL,Model Year,=,2020,NULL,And
+1714-6,1714,6,NULL,Product Description,=,Variable Cam Timing,),Or
+1714-7,1714,7,(,Model,=,Camry,NULL,And
+1714-8,1714,8,NULL,Model Year,=,2018,NULL,Or
+1714-9,1714,9,NULL,Model Year,=,2019,NULL,Or
+1714-10,1714,10,NULL,Model Year,=,2020,NULL,And
+1714-11,1714,11,NULL,Product Description,=,Variable Cam Timing,),Or
+1714-12,1714,12,(,Model,=,Avalon,NULL,And
+1714-13,1714,13,NULL,Model Year,=,2019,NULL,Or
+1714-14,1714,14,NULL,Model Year,=,2020,NULL,Or
+1714-15,1714,15,NULL,Model Year,=,2021,NULL,And
+1714-16,1714,16,NULL,Product Description,=,Variable Cam Timing,),Or
+1714-17,1714,17,(,Model,=,Sienna,NULL,And
+1714-18,1714,18,NULL,Model Year,=,2017,NULL,Or
+1714-19,1714,19,NULL,Model Year,=,2018,NULL,Or
+1714-20,1714,20,NULL,Model Year,=,2019,NULL,Or
+1714-21,1714,21,NULL,Model Year,=,2020,NULL,And
+1714-22,1714,22,NULL,Product Description,=,Variable Cam Timing,),Or
+1714-23,1714,23,(,Model,=,ES,NULL,And
+1714-24,1714,24,NULL,Model Year,=,2019,NULL,Or
+1714-25,1714,25,NULL,Model Year,=,2020,NULL,And
+1714-26,1714,26,NULL,Product Description,=,Variable Cam Timing,),NULL
+1711-1,1711,1,((,Model Platform,=,DS,NULL,Or
+1711-2,1711,2,NULL,Model Platform,=,DT,),And
+1711-3,1711,3,NULL,Claimed Part Number,LIKE,68447796AA,NULL,And
+1711-4,1711,4,NULL,Model Year,>=,2020,),And
+1711-5,1711,5,(,Dealer Comments,LIKE,*leak*,NULL,Or
+1711-6,1711,6,NULL,Customer Comments,LIKE,*leak*,),And
+1711-7,1711,7,(,Dealer Comments,LIKE,*plug*,NULL,Or
+1711-8,1711,8,NULL,Dealer Comments,LIKE,*lower*,),NULL
+1710-1,1710,1,((,Model Year,>=,2019,NULL,And
+1710-2,1710,2,NULL,Model,=,Ram HD,),And
+1710-3,1710,3,(,Customer Comments,LIKE,*leak*,NULL,Or
+1710-4,1710,4,NULL,Customer Comments,LIKE,*loss of power*,NULL,Or
+1710-5,1710,5,NULL,Dealer Comments,LIKE,*leak*,),And
+1710-6,1710,6,(,Dealer Comments,LIKE,*tube burst*,NULL,Or
+1710-7,1710,7,NULL,Dealer Comments,LIKE,*burst tube*,NULL,Or
+1710-8,1710,8,NULL,Dealer Comments,LIKE,*crack*,NULL,Or
+1710-9,1710,9,NULL,Dealer Comments,LIKE,*damage*,)),NULL
+1707-1,1707,1,NULL,Customer,=,Toyota,NULL,And
+1707-2,1707,2,NULL,Issue ID,IS NULL,NULL,NULL,And
+1707-3,1707,3,((,Model,=,Rav4,NULL,And
+1707-4,1707,4,NULL,Model Year,>=,2019,NULL,And
+1707-5,1707,5,NULL,Model Year,<=,2022,),Or
+1707-6,1707,6,(,Model,=,Highlander,NULL,And
+1707-7,1707,7,NULL,Model Year,>=,2020,NULL,And
+1707-8,1707,8,NULL,Model Year,<=,2022,),Or
+1707-9,1707,9,(,Model,=,Tundra,NULL,And
+1707-10,1707,10,NULL,Model Year,=,2022,)),And
+1707-11,1707,11,(,Dealer Comments,LIKE,*swollen*,NULL,Or
+1707-12,1707,12,NULL,Dealer Comments,LIKE,*loose*,NULL,Or
+1707-13,1707,13,NULL,Dealer Comments,LIKE,*oil*,NULL,Or
+1707-14,1707,14,NULL,Dealer Comments,LIKE,*stretched*,NULL,Or
+1707-15,1707,15,NULL,Dealer Comments,LIKE,*attached*,NULL,Or
+1707-16,1707,16,NULL,Dealer Comments,LIKE,*deformed*,NULL,Or
+1707-17,1707,17,NULL,Dealer Comments,LIKE,*fit*,),And
+1707-18,1707,18,(,Claimed Part Number,LIKE,88539*,NULL,Or
+1707-19,1707,19,NULL,Claimed Part Number,LIKE,87050*,),NULL
+1703-1,1703,1,NULL,Customer Category,=,Leak,NULL,And
+1703-2,1703,2,(,Model,=,Pilot,NULL,Or
+1703-3,1703,3,NULL,Model,=,Passport,),And
+1703-4,1703,4,NULL,Vehicle Build Date,<,9/1/2021,NULL,NULL
+1698-1,1698,1,NULL,Customer,=,Toyota,NULL,And
+1698-2,1698,2,NULL,Issue ID,IS NULL,NULL,NULL,And
+1698-3,1698,3,(,Model,=,Highlander,NULL,Or
+1698-4,1698,4,NULL,Model,=,Tundra,NULL,Or
+1698-5,1698,5,NULL,Model,=,Tacoma,NULL,Or
+1698-6,1698,6,NULL,Model,=,Sequoia,NULL,Or
+1698-7,1698,7,NULL,Model,=,RX,),And
+1698-8,1698,8,NULL,Model Year,>=,2020,NULL,And
+1698-9,1698,9,NULL,Vehicle Build Date,<=,7/1/2021,NULL,And
+1698-10,1698,10,(,Customer Comments,LIKE,*shut*,NULL,Or
+1698-11,1698,11,NULL,Customer Comments,LIKE,*running*,NULL,Or
+1698-12,1698,12,NULL,Customer Comments,LIKE,*turn off*,),NULL
+1696-0,1696,0,NULL,Customer,=,Toyota,NULL,And
+1696-1,1696,1,NULL,Issue ID,IS NULL,NULL,NULL,And
+1696-2,1696,2,NULL,Model,=,Sienna,NULL,And
+1696-3,1696,3,NULL,Model Year,>=,2021,NULL,And
+1696-4,1696,4,(,Customer Comments,LIKE,*3/4*,NULL,Or
+1696-5,1696,5,NULL,Customer Comments,LIKE,*1/2*,NULL,Or
+1696-6,1696,6,NULL,Customer Comments,LIKE,*gage*,NULL,Or
+1696-7,1696,7,NULL,Customer Comments,LIKE,*gauge*,NULL,Or
+1696-8,1696,8,NULL,Customer Comments,LIKE,*drop*,NULL,Or
+1696-10,1696,10,NULL,Customer Comments,LIKE,*half*,NULL,Or
+1696-11,1696,11,NULL,Customer Comments,LIKE,*full*,NULL,Or
+1696-12,1696,12,NULL,Customer Comments,LIKE,*fuel*,NULL,Or
+1696-13,1696,13,NULL,Customer Comments,LIKE,*inaccurate*,),NULL
+1693-1,1693,1,NULL,customer,=,Subaru,NULL,And
+1693-2,1693,2,NULL,Claim Category 2,LIKE,EXTERNAL: HANDLING DAMAGE,NULL,And
+1693-3,1693,3,NULL,Issue ID,IS NULL,NULL,NULL,NULL
+1692-1,1692,1,NULL,Customer,=,GM,NULL,And
+1692-2,1692,2,NULL,Datalink,LIKE,*BCM*,NULL,And
+1692-3,1692,3,(,Claim Category,LIKE,*P2535*,NULL,Or
+1692-4,1692,4,NULL,Customer Category,LIKE,*P2535*,),And
+1692-5,1692,5,(,Issue ID,IS NULL,NULL,NULL,Or
+1692-6,1692,6,NULL,Issue ID,=,0,),NULL
+1691-1,1691,1,NULL,Model Year,=,2021,NULL,And
+1691-2,1691,2,NULL,Model Platform,=,KL,NULL,And
+1691-3,1691,3,NULL,Vehicle Build Date,<=,2/1/2021,NULL,And
+1691-4,1691,4,NULL,Vehicle Build Date,>,1/10/2021,NULL,And
+1691-5,1691,5,(,Dealer Comments,LIKE,*leak*,NULL,Or
+1691-6,1691,6,NULL,Customer Comments,LIKE,*leak*,),NULL
+1690-1,1690,1,NULL,Product Description,=,,NULL,Or
+1690-2,1690,2,(,Customer,=,GM,NULL,And
+1690-3,1690,3,NULL,Datalink,LIKE,*DMAX*,NULL,And
+1690-4,1690,4,NULL,Datalink,LIKE,*Fuel*,NULL,And
+1690-5,1690,5,(,Issue ID,=,0,NULL,Or
+1690-6,1690,6,NULL,Issue ID,IS NULL,NULL,),And
+1690-7,1690,7,NULL,Vehicle Repair Date,>=,11/16/2020,NULL,And
+1690-8,1690,8,NULL,Vehicle Repair Date,<=,03/04/2021,NULL,And
+1690-9,1690,9,NULL,Claim Category,=,P026C,),NULL
+1689-1,1689,1,NULL,Customer,=,GM,NULL,And
+1689-2,1689,2,NULL,Labor Code,=,2070260,NULL,And
+1689-3,1689,3,NULL,Vehicle Build Date,<=,03/01/2022,NULL,And
+1689-4,1689,4,NULL,Dealer Country,=,China,NULL,NULL
+1688-1,1688,1,NULL,Product Description,=,Alternator,NULL,And
+1688-2,1688,2,(,model,=,Giulia,NULL,Or
+1688-3,1688,3,NULL,model,=,Stelvio,),NULL
+1687-1,1687,1,NULL,Product Description,=,Blower Motor,NULL,And
+1687-2,1687,2,(,model,=,Stelvio,NULL,Or
+1687-3,1687,3,NULL,model,=,Giulia,NULL,Or
+1687-4,1687,4,NULL,model,=,Renegade,NULL,Or
+1687-5,1687,5,NULL,model,=,Compass M1,NULL,Or
+1687-6,1687,6,NULL,model,=,Compass M4,NULL,Or
+1687-7,1687,7,NULL,model,=,Compass M6,NULL,Or
+1687-8,1687,8,NULL,model,=,Compass M7,NULL,Or
+1687-9,1687,9,NULL,model,=,500X,),NULL
+1686-1,1686,1,NULL,Model,=,F150,NULL,And
+1686-2,1686,2,NULL,Model Year,=,2021,NULL,And
+1686-3,1686,3,(,Issue ID,IS NULL,NULL,NULL,Or
+1686-4,1686,4,NULL,Issue ID,=,0,),And
+1686-5,1686,5,NULL,Customer Category,LIKE,*Display issue*,NULL,NULL
+1685-1,1685,1,NULL,Model,=,F-STRIPPED CHASSIS,NULL,And
+1685-2,1685,2,NULL,Model Year,>=,2020,NULL,And
+1685-3,1685,3,NULL,Model Year,<=,2021,NULL,And
+1685-4,1685,4,(,Issue ID,IS NULL,NULL,NULL,Or
+1685-5,1685,5,NULL,Issue ID,=,0,),NULL
+1684-1,1684,1,NULL,Model,=,F150,NULL,And
+1684-2,1684,2,NULL,Model Year,=,2021,NULL,And
+1684-3,1684,3,(,Issue ID,IS NULL,NULL,NULL,Or
+1684-4,1684,4,NULL,Issue ID,=,0,),And
+1684-5,1684,5,(,Dealer Comments,LIKE,*21B06*,NULL,Or
+1684-6,1684,6,NULL,Customer Comments,LIKE,*21B06*,),NULL
+1683-1,1683,1,NULL,NULL,NULL,NULL,NULL,NULL
+1683-2,1683,2,NULL,NULL,NULL,NULL,NULL,NULL
+1683-3,1683,3,NULL,NULL,NULL,NULL,NULL,NULL
+1682-1,1682,1,NULL,Customer,=,Subaru,NULL,And
+1682-2,1682,2,NULL,Claim Category,LIKE,*TXV*,NULL,And
+1682-3,1682,3,NULL,Claim Category,IS NULL,NULL,NULL,NULL
+1681-1,1681,1,NULL,Customer,=,GM,NULL,And
+1681-2,1681,2,NULL,Datalink,=,DeltaPressureSensorCSS3L,NULL,And
+1681-3,1681,3,NULL,Model Year,>=,2020,NULL,And
+1681-4,1681,4,NULL,Model Year,<=,2021,NULL,And
+1681-5,1681,5,NULL,Vehicle Build Date,>=,1/1/2016,NULL,And
+1681-6,1681,6,NULL,Vehicle Build Date,<=,1/1/2023,NULL,And
+1681-7,1681,7,NULL,Claim Category,LIKE,*P238*,NULL,NULL
+1680-1,1680,1,(,Model Year,=,2020,NULL,And
+1680-2,1680,2,NULL,Model Year,=,2021,),And
+1680-3,1680,3,NULL,Model,=,Explorer,NULL,And
+1680-4,1680,4,(,Customer Category,LIKE,*Noise*,NULL,Or
+1680-5,1680,5,NULL,Claim Category,LIKE,*Noise*,),And
+1680-6,1680,6,NULL,Issue ID,IS NULL,NULL,NULL,NULL
+1679-1,1679,1,NULL,DN Part ID,=,0,NULL,Or
+1679-2,1679,2,(,Customer,=,Honda,NULL,And
+1679-3,1679,3,(,Product Description,=,Compressor,NULL,Or
+1679-4,1679,4,NULL,Product Description,=,clutch,NULL,Or
+1679-5,1679,5,NULL,Product Description,=,stator,),And
+1679-6,1679,6,NULL,Model,=,HRV,NULL,And
+1679-7,1679,7,NULL,Model Year,>=,2019,NULL,And
+1679-8,1679,8,(,Customer Category,=,A/C Inop,NULL,Or
+1679-9,1679,9,NULL,Customer Category,=,Seized,NULL,Or
+1679-10,1679,10,NULL,Customer Category,=,Noise,),And
+1679-11,1679,11,(,Issue ID,IS NULL,NULL,NULL,Or
+1679-12,1679,12,NULL,Issue ID,=,365,NULL,Or
+1679-13,1679,13,NULL,Issue ID,=,369,NULL,Or
+1679-14,1679,14,NULL,Issue ID,=,370,)),NULL
+1678-1,1678,1,NULL,Issue ID,IS NULL,NULL,NULL,And
+1678-2,1678,2,NULL,Model,=,F250/350/450/550,NULL,And
+1678-3,1678,3,NULL,Customer Category,LIKE,*Display issue*,NULL,And
+1678-4,1678,4,(,Model Year,=,2020,NULL,Or
+1678-5,1678,5,NULL,Model Year,=,2021,),NULL
+1677-1,1677,1,NULL,customer,=,Subaru,NULL,And
+1677-2,1677,2,NULL,Claim Category 2,LIKE,EXTERNAL: NO DSP,NULL,And
+1677-3,1677,3,NULL,Issue ID,IS NULL,NULL,NULL,NULL
+1676-1,1676,1,NULL,Customer,=,Ford,NULL,And
+1676-2,1676,2,(,Claim Category,=,Line Leak,NULL,Or
+1676-3,1676,3,NULL,Claim Category,=,Hose Leaking,),NULL
+1675-1,1675,1,NULL,Customer,=,gm,NULL,And
+1675-2,1675,2,NULL,Datalink,LIKE,*starter*,NULL,And
+1675-3,1675,3,NULL,Model Year,>,2016,NULL,And
+1675-4,1675,4,NULL,Model Year,<,2026,NULL,And
+1675-5,1675,5,(,Issue ID,=,0,NULL,Or
+1675-6,1675,6,NULL,Issue ID,=,416,NULL,Or
+1675-7,1675,7,NULL,Issue ID,IS NULL,NULL,),And
+1675-8,1675,8,(,Claim Category,LIKE,*Engine Replacement*,),NULL
+1673-1,1673,1,NULL,Engine,LIKE,*A25A*,NULL,And
+1673-2,1673,2,(,Complaint Code Desc,=,ABNORMAL SMELL,NULL,Or
+1673-3,1673,3,NULL,Complaint Code Desc,=,FUEL ODOR,),And
+1673-4,1673,4,(,Issue ID,IS NULL,NULL,NULL,Or
+1673-5,1673,5,NULL,Issue ID,=,0,),And
+1673-6,1673,6,NULL,Vehicle Build Date,<=,1/1/2022,NULL,NULL
+1672-1,1672,1,NULL,Model,=,Rav4,NULL,And
+1672-2,1672,2,NULL,Model Year,=,2019,NULL,And
+1672-3,1672,3,NULL,Engine,=,A25AFKS,NULL,And
+1672-4,1672,4,NULL,Vehicle Repair Date,>=,3/1/2021,NULL,And
+1672-5,1672,5,NULL,Claimed Part Number,LIKE,83320*,NULL,And
+1672-6,1672,6,(,Issue ID,IS NULL,NULL,NULL,Or
+1672-7,1672,7,NULL,Issue ID,=,0,),And
+1672-8,1672,8,(,Customer Comments,LIKE,*20TA02*,NULL,Or
+1672-9,1672,9,NULL,Customer Comments,LIKE,*recall*,),NULL
+1664-1,1664,1,NULL,Model,=,Rav4,NULL,And
+1664-2,1664,2,NULL,Model Year,>=,2020,NULL,And
+1664-3,1664,3,NULL,Customer Category,LIKE,noise,NULL,NULL
+1664-4,1664,4,NULL,NULL,NULL,NULL,NULL,NULL
+1664-5,1664,5,NULL,NULL,NULL,NULL,NULL,NULL
+1661-1,1661,1,NULL,Model,=,Sienna,NULL,And
+1661-2,1661,2,NULL,Model Year,>=,2021,NULL,And
+1661-3,1661,3,(,Customer Comments,LIKE,*flashing*,NULL,Or
+1661-4,1661,4,NULL,Customer Comments,LIKE,*ignition on*,),And
+1661-5,1661,5,(,Issue ID,IS NULL,NULL,NULL,Or
+1661-6,1661,6,NULL,Issue ID,=,0,),NULL
+1658-1,1658,1,NULL,Customer,=,Honda,NULL,And
+1658-2,1658,2,(,Model,=,Accord,NULL,Or
+1658-3,1658,3,NULL,Model,=,Insight,),And
+1658-4,1658,4,NULL,Product Description,=,Meter,NULL,And
+1658-5,1658,5,NULL,Customer Category,=,Display Inop,NULL,NULL
+1656-1,1656,1,NULL,Customer,=,Ford,NULL,And
+1656-2,1656,2,NULL,Model Year,=,2020,NULL,And
+1656-3,1656,3,NULL,Model,=,Explorer,NULL,And
+1656-4,1656,4,NULL,Issue ID,IS NULL,NULL,NULL,And
+1656-5,1656,5,NULL,Claim Comment,=,P0456,NULL,NULL
+1655-1,1655,1,NULL,Customer,=,Subaru,NULL,And
+1655-2,1655,2,NULL,Dealer Comments,LIKE,*B1610*,NULL,NULL
+1650-1,1650,1,NULL,Model,=,Tacoma,NULL,And
+1650-2,1650,2,NULL,Claimed Part Number,LIKE,8922004E7*,NULL,And
+1650-3,1650,3,NULL,Vehicle Repair Date,<=,6/30/2021,NULL,And
+1650-4,1650,4,(,Issue ID,IS NULL,NULL,NULL,Or
+1650-5,1650,5,NULL,Issue ID,=,0,),NULL
+1644-1,1644,1,(,Model,=,Ram DT,NULL,And
+1644-2,1644,2,NULL,Model Year,=,2021,),And
+1644-3,1644,3,(,Dealer Comments,LIKE,*leak*,NULL,Or
+1644-4,1644,4,NULL,Customer Comments,LIKE,*leak*,),NULL
+1643-1,1643,1,NULL,Customer,=,GM,NULL,And
+1643-2,1643,2,NULL,Model Year,>=,2019,NULL,And
+1643-3,1643,3,NULL,Product Description,=,O2 Sensor,NULL,And
+1643-4,1643,4,(,Engine Family,=,GEN 5+,NULL,Or
+1643-5,1643,5,NULL,Engine Family,=,GEN 5,),And
+1643-6,1643,6,(,Engine,=,L84,NULL,Or
+1643-7,1643,7,NULL,Engine,=,L87,),And
+1643-8,1643,8,NULL,Claim Category,=,DTC P015B,NULL,NULL
+1642-1,1642,1,NULL,Customer,=,Ford,NULL,And
+1642-2,1642,2,NULL,Model Year,=,2021,NULL,And
+1642-3,1642,3,NULL,Model,=,MUSTANG MACH E,NULL,And
+1642-4,1642,4,(,Claim Comment,LIKE,*49730*,NULL,Or
+1642-5,1642,5,NULL,Dealer Comments,LIKE,*49730*,),And
+1642-6,1642,6,(,Issue ID,IS NULL,NULL,NULL,Or
+1642-7,1642,7,NULL,Issue ID,=,0,),NULL
+1641-1,1641,1,NULL,customer,=,Honda,NULL,And
+1641-2,1641,2,NULL,Product Description,=,Meter,NULL,And
+1641-3,1641,3,NULL,Customer Category,=,DTC U0155,NULL,NULL
+1640-1,1640,1,NULL,Customer,=,Honda,NULL,And
+1640-2,1640,2,NULL,Product Description,=,Meter,NULL,And
+1640-3,1640,3,(,Model,=,Pilot,NULL,Or
+1640-4,1640,4,NULL,Model,=,Passport,NULL,Or
+1640-5,1640,5,NULL,Model,=,Odyssey,),And
+1640-6,1640,6,NULL,Vehicle Build Date,<,07/15/2020,NULL,And
+1640-7,1640,7,NULL,Vehicle Repair Date,>,08/01/2020,NULL,And
+1640-8,1640,8,NULL,Claim Cost Total,<,100,NULL,And
+1640-9,1640,9,NULL,Issue ID,IS NULL,NULL,NULL,NULL
+1639-1,1639,1,NULL,Customer,=,GM,NULL,And
+1639-2,1639,2,NULL,Model Year,>=,2020,NULL,And
+1639-3,1639,3,NULL,Product Description,=,Compressor,NULL,And
+1639-4,1639,4,NULL,Model,=,Blazer,NULL,And
+1639-5,1639,5,NULL,Claim Category,=,H2O2 contamination,NULL,NULL
+1638-1,1638,1,NULL,Make,=,Honda,NULL,And
+1638-2,1638,2,NULL,Product Description,=,Infotainment Control Unit,NULL,And
+1638-3,1638,3,NULL,Customer Category,LIKE,*rearview camera recall*,NULL,And
+1638-4,1638,4,NULL,Issue ID,IS NULL,NULL,NULL,NULL
+1637-1,1637,1,(,Model Year,=,2020,NULL,Or
+1637-2,1637,2,NULL,Model Year,=,2021,),And
+1637-3,1637,3,NULL,Model,=,F250/350/450/550,NULL,And
+1637-4,1637,4,NULL,Customer Category,LIKE,*illumination*,NULL,And
+1637-5,1637,5,(,Issue ID,IS NULL,NULL,NULL,Or
+1637-6,1637,6,NULL,Issue ID,=,0,),NULL
+1636-1,1636,1,NULL,customer,=,Subaru,NULL,And
+1636-2,1636,2,NULL,Claimed Part Number,LIKE,*73431*,NULL,And
+1636-3,1636,3,NULL,Claim Category,=,Recall/Campaign,NULL,And
+1636-4,1636,4,(,Dealer Comments,LIKE,*WRF*,NULL,Or
+1636-5,1636,5,NULL,Dealer Comments,LIKE,*WRK*,NULL,Or
+1636-6,1636,6,NULL,Claimed Part Number Desc,LIKE,*WRF*,NULL,Or
+1636-7,1636,7,NULL,Claimed Part Number Desc,LIKE,*WRK*,),And
+1636-8,1636,8,NULL,Claim Category,IS NULL,NULL,NULL,NULL
+1635-1,1635,1,NULL,Customer,=,Subaru,NULL,And
+1635-2,1635,2,NULL,Claim Category 2,=,Unused,NULL,And
+1635-3,1635,3,NULL,Claim Category 2,IS NULL,NULL,NULL,NULL
+1633-1,1633,1,NULL,customer,=,Subaru,NULL,And
+1633-2,1633,2,NULL,Claim Comment,=,Unused,NULL,NULL
+1628-1,1628,1,((,model,=,Tundra,NULL,And
+1628-2,1628,2,NULL,Model Year,>=,2009,NULL,And
+1628-3,1628,3,NULL,Model Year,<=,2019,),Or
+1628-4,1628,4,(,model,=,Sequoia,NULL,And
+1628-5,1628,5,NULL,Model Year,>=,2009,NULL,And
+1628-6,1628,6,NULL,Model Year,<=,2018,)),And
+1628-7,1628,7,(,Customer Comments,LIKE,*P0171*,NULL,Or
+1628-8,1628,8,NULL,Customer Comments,LIKE,*P0174*,NULL,Or
+1628-9,1628,9,NULL,Customer Comments,LIKE,*P0172*,NULL,Or
+1628-10,1628,10,NULL,Customer Comments,LIKE,*P0175*,NULL,Or
+1628-11,1628,11,NULL,Customer Comments,LIKE,*P1604*,NULL,Or
+1628-12,1628,12,NULL,Dealer Comments,LIKE,*P0171*,NULL,Or
+1628-13,1628,13,NULL,Dealer Comments,LIKE,*P0174*,NULL,Or
+1628-14,1628,14,NULL,Dealer Comments,LIKE,*P0172*,NULL,Or
+1628-15,1628,15,NULL,Dealer Comments,LIKE,*P0175*,NULL,Or
+1628-16,1628,16,NULL,Dealer Comments,LIKE,*P1604*,NULL,Or
+1628-17,1628,17,NULL,Dealer Comments,LIKE,*0166-19*,NULL,Or
+1628-18,1628,18,NULL,Correction Comments,LIKE,*0166-19*,NULL,Or
+1628-19,1628,19,NULL,Dealer Comments,LIKE,*EG1904*,NULL,Or
+1628-20,1628,20,NULL,Correction Comments,LIKE,*EG1904*,NULL,Or
+1628-21,1628,21,NULL,Labor Code,LIKE,*EG1904*,),NULL
+1627-1,1627,1,NULL,customer,=,Subaru,NULL,And
+1627-2,1627,2,NULL,Customer Category,=,Flashing/Flickering,NULL,And
+1627-3,1627,3,NULL,Vehicle Build Date,>=,11/16/2020,NULL,NULL
+1626-1,1626,1,NULL,Customer,=,Subaru,NULL,And
+1626-2,1626,2,NULL,Customer Category,=,BT/Phone Issue,NULL,And
+1626-3,1626,3,NULL,Claim Comment,=,RC2011,NULL,And
+1626-4,1626,4,NULL,Issue ID,IS NULL,NULL,NULL,NULL
+1625-1,1625,1,NULL,Customer,=,Subaru,NULL,And
+1625-2,1625,2,NULL,Customer Category,=,BT/Phone Issue,NULL,And
+1625-3,1625,3,(,Claim Comment,=,RC1,NULL,Or
+1625-4,1625,4,NULL,Claim Comment,=,RC1912,NULL,Or
+1625-5,1625,5,NULL,Claim Comment,=,RC2003,NULL,Or
+1625-6,1625,6,NULL,Claim Comment,=,RC2003FOTA,NULL,Or
+1625-7,1625,7,NULL,Claim Comment,=,SOP,),And
+1625-8,1625,8,NULL,Issue ID,IS NULL,NULL,NULL,NULL
+1624-1,1624,1,NULL,customer,=,Subaru,NULL,And
+1624-2,1624,2,NULL,Customer Category,=,Volume Issue,NULL,And
+1624-3,1624,3,NULL,Claim Comment,=,RC2011,NULL,And
+1624-4,1624,4,NULL,Issue ID,IS NULL,NULL,NULL,NULL
+1623-1,1623,1,NULL,customer,=,Subaru,NULL,And
+1623-2,1623,2,NULL,Customer Category,=,Volume Issue,NULL,And
+1623-3,1623,3,(,Claim Comment,=,RC1,NULL,Or
+1623-4,1623,4,NULL,Claim Comment,=,RC1912,NULL,Or
+1623-5,1623,5,NULL,Claim Comment,=,RC2003,NULL,Or
+1623-6,1623,6,NULL,Claim Comment,=,RC2003FOTA,NULL,Or
+1623-7,1623,7,NULL,Claim Comment,=,SOP,NULL,Or
+1623-8,1623,8,NULL,Claim Comment,=,RC1912,),And
+1623-9,1623,9,NULL,Issue ID,IS NULL,NULL,NULL,NULL
+1622-1,1622,1,NULL,customer,=,Subaru,NULL,And
+1622-2,1622,2,(,Claim Category,=,Recall Issue,NULL,Or
+1622-3,1622,3,NULL,Claim Category,=,Update Failure,),And
+1622-4,1622,4,NULL,Claim Comment,=,RC2011,NULL,And
+1622-5,1622,5,NULL,Issue ID,IS NULL,NULL,NULL,NULL
+1621-1,1621,1,(,Model Year,=,2020,NULL,Or
+1621-2,1621,2,NULL,Model Year,=,2021,),And
+1621-3,1621,3,NULL,Model,=,F250/350/450/550,NULL,And
+1621-4,1621,4,(,Claim Comment,LIKE,*49584*,NULL,Or
+1621-5,1621,5,NULL,Claim Comment,LIKE,*49088*,NULL,Or
+1621-6,1621,6,NULL,Dealer Comments,LIKE,*49584*,),And
+1621-7,1621,7,(,Issue ID,IS NULL,NULL,NULL,Or
+1621-8,1621,8,NULL,Issue ID,=,0,),NULL
+1620-1,1620,1,NULL,Claim Category,LIKE,Non Denso claim,NULL,NULL
+1619-1,1619,1,NULL,Model Year,=,2020,NULL,And
+1619-2,1619,2,NULL,Model,=,Explorer,NULL,And
+1619-3,1619,3,NULL,Claim Category,=,Deodorized,NULL,NULL
+1618-1,1618,1,NULL,Model Year,=,2020,NULL,And
+1618-2,1618,2,NULL,Model,LIKE,Explorer,NULL,And
+1618-3,1618,3,NULL,Claim Category,LIKE,Evap Core Leak,NULL,NULL
+1617-1,1617,1,NULL,Claim Category,=,Not-Evaporator,NULL,And
+1617-2,1617,2,NULL,Model Year,=,2020,NULL,And
+1617-3,1617,3,NULL,Model,=,Explorer,NULL,NULL
+1616-1,1616,1,NULL,Customer,=,Ford,NULL,And
+1616-2,1616,2,(,Claim Category,=,Damaged Hose,NULL,Or
+1616-3,1616,3,NULL,Claim Category,=,Loose Fuel Line,NULL,Or
+1616-4,1616,4,NULL,Claim Category,=,Loose Hose,NULL,Or
+1616-5,1616,5,NULL,Claim Category,=,Loose Purge Hose,NULL,Or
+1616-6,1616,6,NULL,Claim Category,=,Hose Disconnected,NULL,Or
+1616-7,1616,7,NULL,Claim Category,=,Loose Evap Hose,),NULL
+1614-1,1614,1,NULL,Model Year,=,2020,NULL,And
+1614-2,1614,2,NULL,Model,=,Expedition,NULL,And
+1614-3,1614,3,(,Dealer Comments,LIKE,*SSM 49258*,NULL,Or
+1614-4,1614,4,NULL,Claim Category,LIKE,*SW Update- SSM 49258*,NULL,Or
+1614-5,1614,5,NULL,Dealer Comments,LIKE,*42958*,),NULL
+1613-1,1613,1,NULL,Model Year,=,2021,NULL,And
+1613-2,1613,2,NULL,Failure Code Desc,=,MISSING PART/PARTING LINE DEFECT FOR TWO TONE,NULL,And
+1613-3,1613,3,NULL,Additional Claimed Part Numbers,LIKE,900808702*,NULL,NULL
+1612-1,1612,1,NULL,customer,=,Subaru,NULL,And
+1612-2,1612,2,NULL,Dealer Comments,LIKE,*update*,NULL,And
+1612-3,1612,3,NULL,Dealer Comments,LIKE,*black*,NULL,And
+1611-1,1611,1,NULL,Model Year,>=,2019,NULL,And
+1611-2,1611,2,NULL,Claimed Part Number,=,68244159AA,NULL,NULL
+1610-1,1610,1,(,model,=,Ram DT,NULL,Or
+1610-2,1610,2,(,model,=,Ram HD,NULL,And
+1610-4,1610,4,NULL,Model Year,>=,2019,),Or
+1610-5,1610,5,NULL,Model,=,Wagoneer WS,),And
+1610-6,1610,6,NULL,Claimed Part Number Desc,LIKE,*Dist*,NULL,And
+1610-7,1610,7,(,Dealer Comments,LIKE,*B11C2*,NULL,Or
+1610-8,1610,8,NULL,Dealer Comments,LIKE,*broke*,NULL,Or
+1610-9,1610,9,NULL,Dealer Comments,LIKE,*damag*,),NULL
+1609-1,1609,1,(,model,=,Ram DT,NULL,Or
+1609-2,1609,2,(,model,=,Ram HD,NULL,And
+1609-3,1609,3,NULL,Model Year,>=,2019,)),And
+1609-4,1609,4,(,Customer Comments,LIKE,*TSB 24*,NULL,Or
+1609-5,1609,5,NULL,Dealer Comments,LIKE,*TSB 24*,),Or
+1609-6,1609,6,NULL,Failure Code,=,service action,NULL,NULL
+1608-1,1608,1,(,model,=,Ram DT,NULL,Or
+1608-2,1608,2,(,model,=,Ram HD,NULL,And
+1608-3,1608,3,NULL,Model Year,>=,2019,)),And
+1608-4,1608,4,(,Customer Comments,LIKE,*stuck*,NULL,Or
+1608-5,1608,5,NULL,Dealer Comments,LIKE,*bind*,NULL,Or
+1608-6,1608,6,NULL,Customer Comments,LIKE,*t move*,NULL,Or
+1608-7,1608,7,NULL,Dealer Comments,LIKE,*stuck*,NULL,Or
+1608-8,1608,8,NULL,Dealer Comments,LIKE,*temp*,NULL,Or
+1608-10,1608,10,NULL,Dealer Comments,LIKE,*blend*,NULL,Or
+1608-11,1608,11,NULL,Customer Comments,LIKE,*blend*,NULL,Or
+1608-12,1608,12,NULL,Customer Comments,LIKE,*B11CB*,NULL,Or
+1608-13,1608,13,NULL,Dealer Comments,LIKE,*B11CB*,),NULL
+1607-1,1607,1,(,Model,=,Compass MP,NULL,Or
+1607-2,1607,2,NULL,Model,=,Compass M4,NULL,Or
+1607-3,1607,3,NULL,model,=,Stelvio,NULL,Or
+1607-4,1607,4,NULL,Model,=,Renegade,),And
+1607-5,1607,5,(,Model Year,>=,2020,),And
+1607-6,1607,6,(,Customer Comments,LIKE,*nois*,NULL,Or
+1607-7,1607,7,NULL,Dealer Comments,LIKE,*nois*,),NULL
+1606-1,1606,1,NULL,Model,=,Avalon,NULL,And
+1606-2,1606,2,(,Vehicle Build Date,<,03/01/2019,NULL,And
+1606-3,1606,3,NULL,Vehicle Build Date,>,09/01/2018,),And
+1606-4,1606,4,NULL,Failure Code Desc,=,POOR PROGRAMMING,NULL,NULL
+1605-1,1605,1,NULL,Model,=,Avalon,NULL,And
+1605-2,1605,2,(,Vehicle Build Date,<=,09/01/2018,NULL,And
+1605-3,1605,3,NULL,Vehicle Build Date,>,05/01/2018,),And
+1605-4,1605,4,NULL,Failure Code Desc,=,POOR PROGRAMMING,NULL,And
+1605-5,1605,5,NULL,Claimed Part Number,=,8816207020,NULL,NULL
+1604-1,1604,1,NULL,customer,=,Subaru,NULL,And
+1604-2,1604,2,NULL,Claim Category 2,LIKE,*post rc2011dash*,NULL,And
+1604-3,1604,3,NULL,Customer Category,=,Navi Issue,NULL,And
+1604-4,1604,4,NULL,Issue ID,IS NULL,NULL,NULL,NULL
+1603-1,1603,1,((,Model,=,Ram DT,NULL,Or
+1603-2,1603,2,(,Model,=,Ram HD,NULL,And
+1603-3,1603,3,NULL,Model Year,<=,2020,)),And
+1603-4,1603,4,NULL,Claimed Part Number,LIKE,*6059A*,),And
+1603-5,1603,5,(,Customer Comments,LIKE,*defrost*,NULL,Or
+1603-6,1603,6,NULL,Dealer Comments,LIKE,*defrost*,NULL,Or
+1603-7,1603,7,NULL,Customer Comments,LIKE,*foot*,NULL,Or
+1603-8,1603,8,NULL,Dealer Comments,LIKE,*foot*,NULL,Or
+1603-9,1603,9,NULL,Customer Comments,LIKE,*face*,NULL,Or
+1603-10,1603,10,NULL,Dealer Comments,LIKE,*face*,NULL,Or
+1603-11,1603,11,NULL,Customer Comments,LIKE,*mode*,NULL,Or
+1603-12,1603,12,NULL,Dealer Comments,LIKE,*B11C2-92*,NULL,Or
+1603-13,1603,13,NULL,Customer Comments,LIKE,*B11C2-92*,NULL,Or
+1603-14,1603,14,NULL,Dealer Comments,LIKE,*mode*,),NULL
+1601-1,1601,1,(,Model Platform,=,DT,),And
+1601-2,1601,2,(,Customer Comments,LIKE,*inop*,NULL,Or
+1601-3,1601,3,NULL,Customer Comments,LIKE,*not work*,NULL,Or
+1601-4,1601,4,NULL,Customer Comments,LIKE,*hot*,NULL,Or
+1601-5,1601,5,NULL,Customer Comments,LIKE,*no co*,NULL,Or
+1601-6,1601,6,NULL,Customer Comments,LIKE,*not co*,NULL,Or
+1601-7,1601,7,NULL,Customer Comments,LIKE,* warm*,),NULL
+1599-1,1599,1,NULL,customer,=,Subaru,NULL,And
+1599-2,1599,2,(,Customer Category,=,Black Screen,NULL,Or
+1599-3,1599,3,NULL,Customer Category,=,Black Screen/Freezing,),And
+1599-4,1599,4,NULL,Claim Comment,=,RC2011,NULL,And
+1599-5,1599,5,NULL,Issue ID,IS NULL,NULL,NULL,NULL
+1598-1,1598,1,NULL,Customer,=,GM,NULL,And
+1598-2,1598,2,NULL,Datalink,LIKE,*BCM*,NULL,And
+1598-3,1598,3,NULL,Datalink,LIKE,*Reprogram*,NULL,And
+1598-4,1598,4,(,Issue ID,IS NULL,NULL,NULL,Or
+1598-5,1598,5,NULL,Issue ID,=,0,),NULL
+1595-1,1595,1,(,Claimed Part Number,=,68306261AB,NULL,Or
+1595-2,1595,2,NULL,Claimed Part Number,=,68306261AA,),And
+1595-3,1595,3,(,Customer Comments,LIKE,*P2481*,NULL,Or
+1595-4,1595,4,NULL,Customer Comments,LIKE,*P2482*,NULL,Or
+1595-5,1595,5,NULL,Customer Comments,LIKE,*P2483*,NULL,Or
+1595-6,1595,6,NULL,Dealer Comments,LIKE,*P2481*,NULL,Or
+1595-7,1595,7,NULL,Dealer Comments,LIKE,*P2482*,NULL,Or
+1595-8,1595,8,NULL,Dealer Comments,LIKE,*P2483*,),NULL
+1594-1,1594,1,(,Claimed Part Number,=,68306262AB,NULL,Or
+1594-2,1594,2,NULL,Claimed Part Number,=,68306262AA,),And
+1594-3,1594,3,(,Customer Comments,LIKE,*P2470*,NULL,Or
+1594-4,1594,4,NULL,Customer Comments,LIKE,*P2471*,NULL,Or
+1594-5,1594,5,NULL,Customer Comments,LIKE,*P2472*,NULL,Or
+1594-6,1594,6,NULL,Dealer Comments,LIKE,*P2470*,NULL,Or
+1594-7,1594,7,NULL,Dealer Comments,LIKE,*P2471*,NULL,Or
+1594-8,1594,8,NULL,Dealer Comments,LIKE,*P2472*,),NULL
+1593-1,1593,1,(,Claimed Part Number,=,68306261AA,NULL,Or
+1593-2,1593,2,NULL,Claimed Part Number,=,68306261AB,),And
+1593-3,1593,3,(,Customer Comments,LIKE,*P242B*,NULL,Or
+1593-4,1593,4,NULL,Customer Comments,LIKE,*P242C*,NULL,Or
+1593-5,1593,5,NULL,Customer Comments,LIKE,*P242D*,NULL,Or
+1593-6,1593,6,NULL,Dealer Comments,LIKE,*P242B*,NULL,Or
+1593-7,1593,7,NULL,Dealer Comments,LIKE,*P242C*,NULL,Or
+1593-8,1593,8,NULL,Dealer Comments,LIKE,*P242D*,),NULL
+1592-1,1592,1,(,Claimed Part Number,=,68306262AA,NULL,Or
+1592-2,1592,2,NULL,Claimed Part Number,=,68306262AB,),And
+1592-3,1592,3,(,Customer Comments,LIKE,*P2031*,NULL,Or
+1592-4,1592,4,NULL,Customer Comments,LIKE,*P2032*,NULL,Or
+1592-5,1592,5,NULL,Customer Comments,LIKE,*P2033*,NULL,Or
+1592-6,1592,6,NULL,Dealer Comments,LIKE,*P2031*,NULL,Or
+1592-7,1592,7,NULL,Dealer Comments,LIKE,*P2032*,NULL,Or
+1592-8,1592,8,NULL,Dealer Comments,LIKE,*P2033*,),NULL
+1591-1,1591,1,(,Claimed Part Number,=,68306261AB,NULL,Or
+1591-2,1591,2,NULL,Claimed Part Number,=,68306261AA,),And
+1591-3,1591,3,(,Customer Comments,LIKE,*P0544*,NULL,Or
+1591-4,1591,4,NULL,Customer Comments,LIKE,*P0545*,NULL,Or
+1591-5,1591,5,NULL,Customer Comments,LIKE,*P0546*,NULL,Or
+1591-6,1591,6,NULL,Dealer Comments,LIKE,*P0544*,NULL,Or
+1591-7,1591,7,NULL,Dealer Comments,LIKE,*P0545*,NULL,Or
+1591-8,1591,8,NULL,Dealer Comments,LIKE,*P0546*,),NULL
+1588-1,1588,1,NULL,customer,=,Subaru,NULL,And
+1588-2,1588,2,NULL,Claim Category,=,DTC P0137,NULL,NULL
+1587-1,1587,1,NULL,customer,=,Subaru,NULL,And
+1587-2,1587,2,(,Claim Category,=,DTC B1610,NULL,Or
+1587-3,1587,3,NULL,Claim Category,=,DTC B1610 B1615,NULL,Or
+1587-4,1587,4,NULL,Claim Category,=,Right Front Sensor,),And
+1587-5,1587,5,NULL,Issue ID,IS NULL,NULL,NULL,NULL
+1586-1,1586,1,NULL,customer,=,Subaru,NULL,And
+1586-2,1586,2,NULL,Customer Category,=,Freezing,NULL,And
+1586-3,1586,3,NULL,Claim Comment,=,RC2011,NULL,And
+1586-4,1586,4,NULL,Issue ID,IS NULL,NULL,NULL,NULL
+1585-0,1585,0,NULL,customer,=,Subaru,NULL,And
+1585-1,1585,1,NULL,Customer Category,=,Freezing,NULL,And
+1585-2,1585,2,(,Claim Comment,=,RC1,NULL,Or
+1585-3,1585,3,NULL,Claim Comment,=,RC1912,NULL,Or
+1585-5,1585,5,NULL,Claim Comment,=,RC2003FOTA,NULL,Or
+1585-6,1585,6,NULL,Claim Comment,=,SOP,),And
+1585-7,1585,7,NULL,Issue ID,IS NULL,NULL,NULL,NULL
+1583-1,1583,1,NULL,Model Platform,=,DT,NULL,And
+1583-2,1583,2,(,Customer Comments,LIKE,*Nois*,NULL,Or
+1583-3,1583,3,NULL,Dealer Comments,LIKE,*Nois*,),NULL
+1581-1,1581,1,((,Model Platform,LIKE,*DT*,NULL,And
+1581-2,1581,2,NULL,Vehicle Build Date,>=,08/01/2021,NULL,And
+1581-3,1581,3,NULL,Vehicle Build Date,<,08/29/2022,),And
+1581-4,1581,4,(,Customer Comments,LIKE,*whistle noise*,NULL,Or
+1581-5,1581,5,NULL,Customer Comments,LIKE,*wind noise*,NULL,Or
+1581-6,1581,6,NULL,Dealer Comments,LIKE,*S2224000010*,NULL,Or
+1581-7,1581,7,NULL,Dealer Comments,LIKE,*wind noise*,NULL,Or
+1581-8,1581,8,NULL,Customer Comments,LIKE,*whirl**noise*,NULL,Or
+1581-9,1581,9,NULL,Customer Comments,LIKE,*noise*,NULL,Or
+1581-10,1581,10,NULL,Dealer Comments,LIKE,*whistle noise*,)),NULL
+1577-1,1577,1,(,Model,=,Corolla,NULL,Or
+1577-2,1577,2,NULL,Model,=,Highlander,),And
+1577-3,1577,3,(,Model Year,=,2020,NULL,Or
+1577-4,1577,4,NULL,Model Year,=,2021,),And
+1577-5,1577,5,NULL,Vehicle Build Date,<=,1/28/2021,NULL,And
+1577-6,1577,6,(,Complaint Code,=,62,NULL,Or
+1577-7,1577,7,NULL,Failure Code,=,57,),And
+1577-8,1577,8,(,Issue ID,IS NULL,NULL,NULL,Or
+1577-9,1577,9,NULL,Issue ID,=,0,),NULL
+1575-1,1575,1,NULL,Make,=,Toyota,NULL,And
+1575-2,1575,2,NULL,Model,=,RX,NULL,And
+1575-3,1575,3,(,Model Year,<=,2018,NULL,And
+1575-4,1575,4,NULL,Model Year,>=,2017,),And
+1575-5,1575,5,NULL,Claim Category,=,NULL,NULL,NULL
+1574-1,1574,1,(,Model Year,=,2020,NULL,Or
+1574-2,1574,2,NULL,Model Year,=,2021,NULL,Or
+1574-3,1574,3,NULL,Model Year,=,2022,),And
+1574-4,1574,4,NULL,Vehicle Build Date,<=,2/3/2022,NULL,And
+1574-5,1574,5,NULL,model,=,Camry,NULL,And
+1574-6,1574,6,NULL,Engine,=,A25AFKS,NULL,And
+1574-7,1574,7,(,Dealer Comments,LIKE,*05-22*,NULL,Or
+1574-8,1574,8,NULL,Correction Comments,LIKE,*05-22*,NULL,Or
+1574-9,1574,9,NULL,Dealer Comments,LIKE,*5501*,NULL,Or
+1574-10,1574,10,NULL,Correction Comments,LIKE,*5501*,NULL,Or
+1574-11,1574,11,NULL,Dealer Comments,LIKE,*800279*,NULL,Or
+1574-12,1574,12,NULL,Correction Comments,LIKE,*800279*,),NULL
+1558-1,1558,1,NULL,Model Year,=,2020,NULL,And
+1558-2,1558,2,NULL,Model,=,Sienna,NULL,And
+1558-3,1558,3,NULL,Vehicle Build Date,>=,3/5/2020,NULL,And
+1558-4,1558,4,NULL,Vehicle Build Date,<=,3/31/2020,NULL,And
+1558-5,1558,5,(,Complaint Code Desc,=,ABNORMAL SMELL,NULL,Or
+1558-6,1558,6,NULL,Complaint Code Desc,=,"WATER LEAK,WATER ENTERING",),And
+1558-7,1558,7,(,Issue ID,IS NULL,NULL,NULL,Or
+1558-8,1558,8,NULL,Issue ID,=,0,),NULL
+1551-1,1551,1,NULL,Customer,=,Subaru,NULL,And
+1551-2,1551,2,(,Dealer Comments,LIKE,*o-ring*,NULL,Or
+1551-3,1551,3,NULL,Dealer Comments,LIKE,*oring*,NULL,Or
+1551-4,1551,4,NULL,Dealer Comments,LIKE,*o-rings*,NULL,Or
+1551-5,1551,5,NULL,Dealer Comments,LIKE,*orings*,),NULL
+1512-1,1512,1,NULL,Customer,=,GM,NULL,And
+1512-2,1512,2,NULL,Datalink,=,StarterHFV6Gen1,NULL,And
+1512-3,1512,3,NULL,Vehicle Build Date,>=,1/1/2019,NULL,And
+1512-4,1512,4,NULL,Vehicle Build Date,<,1/1/2020,NULL,And
+1512-5,1512,5,(,Claim Category,LIKE,*blown*,NULL,Or
+1512-6,1512,6,NULL,Claim Category,LIKE,*flex*,),NULL
+1502-1,1502,1,NULL,Customer,=,Toyota,NULL,And
+1502-2,1502,2,((,Model Year,=,2020,NULL,And
+1502-3,1502,3,NULL,Model,=,Highlander,),Or
+1502-4,1502,4,(,Model Year,=,2021,NULL,And
+1502-5,1502,5,NULL,Model,=,Highlander,),Or
+1502-6,1502,6,(,Model Year,=,2021,NULL,And
+1502-7,1502,7,NULL,Model,=,Sienna,)),And
+1502-8,1502,8,(,Correction Comments,LIKE,*049-21*,NULL,Or
+1502-9,1502,9,NULL,Dealer Comments,LIKE,*049-21*,NULL,Or
+1502-10,1502,10,NULL,Correction Comments,LIKE,*800269*,NULL,Or
+1502-11,1502,11,NULL,Dealer Comments,LIKE,*800269*,NULL,Or
+1502-12,1502,12,NULL,Labor Code,LIKE,*800269*,),NULL
+1498-1,1498,1,NULL,customer,=,Subaru,NULL,And
+1498-2,1498,2,(,Claim Category,LIKE,*B1610*,NULL,And
+1498-3,1498,3,NULL,Claim Category,LIKE,*B1615*,),NULL
+1497-1,1497,1,NULL,Customer,=,Subaru,NULL,And
+1497-2,1497,2,(,Claim Category,=,DTC B1610,NULL,Or
+1497-3,1497,3,NULL,Dealer Comments,LIKE,*right front*,NULL,Or
+1497-4,1497,4,NULL,Dealer Comments,LIKE,*front RH*,),NULL
+1493-1,1493,1,NULL,customer,=,Subaru,NULL,And
+1493-2,1493,2,NULL,Claim Category,LIKE,*pressure Sensor*,NULL,And
+1493-3,1493,3,NULL,Model Year,>,2019,NULL,NULL
+1492-1,1492,1,NULL,customer,=,Subaru,NULL,And
+1492-2,1492,2,NULL,Claim Category,LIKE,*leak*,NULL,NULL
+1491-1,1491,1,NULL,customer,=,Subaru,NULL,And
+1491-2,1491,2,NULL,Claim Category,LIKE,*weak Signal*,NULL,NULL
+1489-1,1489,1,NULL,Customer,=,Subaru,NULL,And
+1489-2,1489,2,NULL,Customer Category,=,Lines on Display,NULL,And
+1489-3,1489,3,NULL,Issue ID,IS NULL,NULL,NULL,NULL
+1488-1,1488,1,NULL,customer,=,Subaru,NULL,And
+1488-2,1488,2,NULL,Customer Category,=,Black Screen,NULL,And
+1488-3,1488,3,(,Claim Comment,=,RC1,NULL,Or
+1488-4,1488,4,NULL,Claim Comment,=,RC1912,NULL,Or
+1488-5,1488,5,NULL,Claim Comment,=,RC2003FOTA,NULL,Or
+1488-6,1488,6,NULL,Claim Comment,=,SOP,NULL,Or
+1488-7,1488,7,NULL,Claim Comment,=,RC2003,),And
+1488-8,1488,8,NULL,Issue ID,IS NULL,NULL,NULL,NULL
+1487-1,1487,1,NULL,customer,=,Subaru,NULL,And
+1487-2,1487,2,NULL,Customer Category,=,Resetting,NULL,And
+1487-3,1487,3,NULL,Claim Comment,=,RC2011,NULL,And
+1487-4,1487,4,NULL,Issue ID,IS NULL,NULL,NULL,NULL
+1486-1,1486,1,NULL,Customer,=,Subaru,NULL,And
+1486-2,1486,2,NULL,Claim Category,LIKE,*Clamp Puncture*,NULL,NULL
+1485-1,1485,1,NULL,customer,=,Subaru,NULL,And
+1485-2,1485,2,(,Claim Category,LIKE,*DTC B1794*,NULL,Or
+1485-3,1485,3,NULL,Claim Category,LIKE,*DTC B1793*,NULL,Or
+1485-4,1485,4,NULL,Claim Category,LIKE,*DTC B1788*,),NULL
+1484-1,1484,1,(,Model,=,Compass MP,NULL,Or
+1484-2,1484,2,NULL,Model,=,Journey,),And
+1484-3,1484,3,(,Vehicle Build Date,>=,9/1/2020,NULL,And
+1484-4,1484,4,NULL,Vehicle Build Date,<,10/1/2020,),NULL
+1483-1,1483,1,NULL,Model,=,Rav4,NULL,And
+1483-2,1483,2,NULL,Claim Category,=,Reprogram,NULL,And
+1483-3,1483,3,(,Issue ID,IS NULL,NULL,NULL,Or
+1483-4,1483,4,NULL,Issue ID,=,0,),NULL
+1482-1,1482,1,NULL,Model,=,Rav4,NULL,And
+1482-2,1482,2,NULL,Claim Category,LIKE,*TSB*,NULL,And
+1482-3,1482,3,(,Issue ID,IS NULL,NULL,NULL,Or
+1482-4,1482,4,NULL,Issue ID,=,0,),NULL
+1480-0,1480,0,NULL,Model,=,Camry,NULL,And
+1480-1,1480,1,((,Claimed Part Number,LIKE,*88710*,NULL,And
+1480-3,1480,3,NULL,Vehicle Build Date,<=,3/20/2020,),Or
+1480-4,1480,4,(,Claimed Part Number,LIKE,*88716*,NULL,And
+1480-5,1480,5,NULL,Vehicle Build Date,<=,5/22/2019,),Or
+1480-6,1480,6,(,Claimed Part Number,LIKE,*88707*,NULL,And
+1480-7,1480,7,NULL,Vehicle Build Date,<=,8/22/2019,)),And
+1480-8,1480,8,NULL,Model Year,>=,2018,NULL,NULL
+1479-1,1479,1,NULL,Customer,=,Subaru,NULL,And
+1479-2,1479,2,NULL,Claim Comment,=,RC2011,NULL,And
+1479-3,1479,3,NULL,Issue ID,IS NULL,NULL,NULL,NULL
+1478-1,1478,1,NULL,Datalink,=,FuelInjectorDMAX,NULL,And
+1478-2,1478,2,NULL,Customer,=,GM,NULL,And
+1478-3,1478,3,NULL,Model Year,>=,2016,NULL,And
+1478-4,1478,4,NULL,Model Year,<=,2023,NULL,And
+1478-5,1478,5,(,Issue ID,IS NULL,NULL,NULL,Or
+1478-6,1478,6,NULL,Issue ID,=,0,),And
+1478-7,1478,7,NULL,Claim Category,=,Leak,NULL,NULL
+1477-1,1477,1,NULL,Customer,=,Ford,NULL,And
+1477-2,1477,2,NULL,Issue ID,IS NULL,NULL,NULL,And
+1477-3,1477,3,NULL,Vehicle Build Date,<,10/1/19,NULL,And
+1477-4,1477,4,NULL,Model Year,=,2020,NULL,And
+1477-5,1477,5,NULL,Model,LIKE,*Aviator*,NULL,NULL
+1476-1,1476,1,NULL,Customer,=,Ford,NULL,And
+1476-2,1476,2,NULL,Issue ID,IS NULL,NULL,NULL,And
+1476-3,1476,3,NULL,Model Year,=,2020,NULL,And
+1476-4,1476,4,NULL,Datalink,=,CondenserCD6,NULL,NULL
+1475-1,1475,1,NULL,customer,=,Subaru,NULL,And
+1475-2,1475,2,NULL,Customer Category,=,Update Failure,NULL,And
+1475-3,1475,3,(,Claim Comment,=,RC1,NULL,Or
+1475-4,1475,4,NULL,Claim Comment,=,RC1912,NULL,Or
+1475-5,1475,5,NULL,Claim Comment,=,RC2003,NULL,Or
+1475-6,1475,6,NULL,Claim Comment,=,RC2003FOTA,NULL,Or
+1475-7,1475,7,NULL,Claim Comment,=,SOP,),And
+1475-8,1475,8,NULL,Issue ID,IS NULL,NULL,NULL,NULL
+1474-1,1474,1,NULL,Customer,=,GM,NULL,And
+1474-2,1474,2,NULL,Model Year,=,2020,NULL,And
+1474-3,1474,3,NULL,Product Description,=,TXV Expansion Valve,NULL,And
+1474-4,1474,4,NULL,Claim Category,=,Noisy,NULL,And
+1474-5,1474,5,(,Issue ID,=,0,NULL,Or
+1474-6,1474,6,NULL,Issue ID,IS NULL,NULL,),NULL
+1472-1,1472,1,NULL,model,LIKE,*D*,NULL,And
+1472-2,1472,2,NULL,Vehicle Build Date,>,03/20/2020,NULL,And
+1472-3,1472,3,(,Customer Comments,LIKE,*10EB-19*,NULL,Or
+1472-4,1472,4,NULL,Dealer Comments,LIKE,*10EB-19*,NULL,Or
+1472-5,1472,5,NULL,Customer Comments,LIKE,*over cur*,NULL,Or
+1472-6,1472,6,NULL,Dealer Comments,LIKE,*over cur*,NULL,Or
+1472-7,1472,7,NULL,Dealer Comments,LIKE,*overcur*,NULL,Or
+1472-8,1472,8,NULL,Customer Comments,LIKE,*overcur*,NULL,Or
+1472-9,1472,9,NULL,Customer Comments,LIKE,*-19*,NULL,Or
+1472-10,1472,10,NULL,Dealer Comments,LIKE,*-19*,),NULL
+1471-1,1471,1,NULL,Model,LIKE,*D*,NULL,And
+1471-2,1471,2,NULL,Vehicle Build Date,>,12/19/2019,NULL,And
+1471-3,1471,3,(,Customer Comments,LIKE,*B10EB-4B*,NULL,Or
+1471-4,1471,4,NULL,Dealer Comments,LIKE,*B10EB-4B*,NULL,Or
+1471-5,1471,5,NULL,Customer Comments,LIKE,*over temp*,NULL,Or
+1471-6,1471,6,NULL,Dealer Comments,LIKE,*over temp*,NULL,Or
+1471-7,1471,7,NULL,Dealer Comments,LIKE,*overtemp*,NULL,Or
+1471-8,1471,8,NULL,Customer Comments,LIKE,*overtemp*,NULL,Or
+1471-9,1471,9,NULL,Dealer Comments,LIKE,*4B*,),NULL
+1470-1,1470,1,(,Model Code,LIKE,*DT*,NULL,Or
+1470-2,1470,2,(,model,=,Ram HD,NULL,And
+1470-3,1470,3,NULL,Model Year,>=,2019,)),And
+1470-4,1470,4,(,Customer Comments,LIKE,*whistle*,NULL,Or
+1470-5,1470,5,NULL,Customer Comments,LIKE,*wind*,NULL,Or
+1470-6,1470,6,NULL,Dealer Comments,LIKE,*whistle*,NULL,Or
+1470-7,1470,7,NULL,Dealer Comments,LIKE,*wind*,),NULL
+1469-1,1469,1,((,Model,=,Ram DT,NULL,Or
+1469-2,1469,2,NULL,Model,=,Ram HD,),And
+1469-3,1469,3,NULL,Claimed Part Number,LIKE,68396062A*,),And
+1469-4,1469,4,(,Customer Comments,LIKE,*water*,NULL,Or
+1469-5,1469,5,NULL,Customer Category 2,LIKE,*Corrosion*,NULL,Or
+1469-6,1469,6,NULL,Dealer Comments,LIKE,*inop*,NULL,Or
+1469-7,1469,7,NULL,Dealer Comments,LIKE,*stuck*,NULL,Or
+1469-8,1469,8,NULL,Dealer Comments,LIKE,*water*,),NULL
+1468-1,1468,1,(,Model Platform,LIKE,*DT*,NULL,Or
+1468-2,1468,2,(,model,=,Ram HD,NULL,And
+1468-3,1468,3,NULL,Model Year,>=,2019,)),And
+1468-4,1468,4,(,Dealer Comments,LIKE,*engine off*,NULL,Or
+1468-5,1468,5,NULL,Dealer Comments,LIKE,*shut down*,NULL,Or
+1468-6,1468,6,NULL,Dealer Comments,LIKE,*shutdown*,NULL,Or
+1468-7,1468,7,NULL,Customer Comments,LIKE,*engine off*,NULL,Or
+1468-8,1468,8,NULL,Customer Comments,LIKE,*shut down*,NULL,Or
+1468-9,1468,9,NULL,Customer Comments,LIKE,*Nois*,NULL,Or
+1468-10,1468,10,NULL,Customer Comments,LIKE,*shutdown*,),And
+1468-11,1468,11,NULL,Vehicle Build Date,<,11/3/2021,NULL,NULL
+1467-1,1467,1,NULL,Customer,=,GM,NULL,And
+1467-2,1467,2,NULL,Model Year,=,2020,NULL,And
+1467-3,1467,3,NULL,Product Description,=,Actuator,NULL,And
+1467-4,1467,4,NULL,Claim Category,=,Inop,NULL,And
+1467-5,1467,5,(,Issue ID,=,0,NULL,Or
+1467-6,1467,6,NULL,Issue ID,IS NULL,NULL,),NULL
+1466-1,1466,1,NULL,Customer,=,GM,NULL,And
+1466-2,1466,2,NULL,Model Year,>=,2016,NULL,And
+1466-3,1466,3,NULL,Claim Category,=,Leak,NULL,And
+1466-4,1466,4,(,Issue ID,=,0,NULL,Or
+1466-5,1466,5,NULL,Issue ID,IS NULL,NULL,),NULL
+1465-1,1465,1,NULL,Customer,=,GM,NULL,And
+1465-2,1465,2,NULL,Model Year,>=,2020,NULL,And
+1465-3,1465,3,NULL,Datalink,LIKE,*Compressor*,NULL,And
+1465-4,1465,4,NULL,Claim Category,=,A/C Inop,NULL,And
+1465-5,1465,5,(,Issue ID,=,0,NULL,Or
+1465-6,1465,6,NULL,Issue ID,IS NULL,NULL,),NULL
+1464-1,1464,1,NULL,Customer,=,Ford,NULL,And
+1464-2,1464,2,NULL,Issue ID,IS NULL,NULL,NULL,And
+1464-3,1464,3,NULL,Vehicle Build Date,<,10/1/19,NULL,And
+1464-4,1464,4,NULL,Model Year,=,2020,NULL,And
+1464-5,1464,5,NULL,Model,LIKE,*Aviator*,NULL,NULL
+1463-1,1463,1,((,Model Platform,LIKE,*DT*,NULL,And
+1463-2,1463,2,NULL,Vehicle Build Date,<,02/03/2020,),And
+1463-3,1463,3,(,Dealer Comments,LIKE,*B11FE*,NULL,Or
+1463-4,1463,4,NULL,Dealer Comments,LIKE,*Short to ground*,NULL,Or
+1463-5,1463,5,NULL,Dealer Comments,LIKE,*V04*,NULL,Or
+1463-6,1463,6,NULL,Customer Comments,LIKE,*B11FE*,NULL,Or
+1463-7,1463,7,NULL,Customer Comments,LIKE,*Short to ground*,NULL,Or
+1463-8,1463,8,NULL,Customer Comments,LIKE,*V04*,)),NULL
+1462-1,1462,1,((,Model Platform,LIKE,*DT*,NULL,And
+1462-2,1462,2,NULL,Vehicle Build Date,>,02/03/2020,),And
+1462-3,1462,3,(,Dealer Comments,LIKE,*XY350A*,NULL,Or
+1462-4,1462,4,NULL,Dealer Comments,LIKE,*B11FE*,NULL,Or
+1462-5,1462,5,NULL,Dealer Comments,LIKE,*XY322A*,NULL,Or
+1462-6,1462,6,NULL,Dealer Comments,LIKE,*Z911*,NULL,Or
+1462-7,1462,7,NULL,Customer Comments,LIKE,*XY350A*,NULL,Or
+1462-8,1462,8,NULL,Customer Comments,LIKE,*B11FE*,NULL,Or
+1462-9,1462,9,NULL,Customer Comments,LIKE,*XY322A*,NULL,Or
+1462-10,1462,10,NULL,Customer Comments,LIKE,*Z911*,)),NULL
+1461-1,1461,1,(,Model Platform,LIKE,*DT*,NULL,And
+1461-2,1461,2,(,Dealer Comments,LIKE,*XY350A*,NULL,Or
+1461-3,1461,3,NULL,Dealer Comments,LIKE,*B11FE*,NULL,Or
+1461-4,1461,4,NULL,Dealer Comments,LIKE,*X322A*,NULL,Or
+1461-5,1461,5,NULL,Dealer Comments,LIKE,*Z911*,NULL,Or
+1461-6,1461,6,NULL,Customer Comments,LIKE,*XY350A*,NULL,Or
+1461-7,1461,7,NULL,Customer Comments,LIKE,*B11FE*,NULL,Or
+1461-8,1461,8,NULL,Customer Comments,LIKE,*X322A*,NULL,Or
+1461-9,1461,9,NULL,Customer Comments,LIKE,*Z911*,)),NULL
+1460-1,1460,1,(,Model Platform,LIKE,*DT*,NULL,And
+1460-2,1460,2,(,Dealer Comments,LIKE,*XY350A*,NULL,Or
+1460-3,1460,3,NULL,Dealer Comments,LIKE,*B11FE*,NULL,Or
+1460-4,1460,4,NULL,Dealer Comments,LIKE,*XY322A*,NULL,Or
+1460-5,1460,5,NULL,Dealer Comments,LIKE,*Z911*,NULL,Or
+1460-6,1460,6,NULL,Customer Comments,LIKE,*XY350A*,NULL,Or
+1460-7,1460,7,NULL,Customer Comments,LIKE,*B11FE*,NULL,Or
+1460-9,1460,9,NULL,Customer Comments,LIKE,*XY322A*,NULL,Or
+1460-10,1460,10,NULL,Customer Comments,LIKE,*Z911*,)),NULL
+1459-1,1459,1,NULL,Customer,=,GM,NULL,And
+1459-2,1459,2,NULL,Datalink,=,FuelInjectorDMAX,NULL,And
+1459-3,1459,3,NULL,Engine,=,L5D,NULL,And
+1459-4,1459,4,(,Model Year,>=,2019,NULL,Or
+1459-5,1459,5,NULL,Model Year,<=,2023,),And
+1459-6,1459,6,(,Issue ID,LIKE,*TBD*,NULL,Or
+1459-7,1459,7,NULL,Issue ID,=,0,),And
+1459-8,1459,8,NULL,Mileage,>=,36000,NULL,NULL
+1456-1,1456,1,NULL,customer,=,Subaru,NULL,And
+1456-2,1456,2,NULL,Dealer Comments,LIKE,DTC 1195,NULL,And
+1456-3,1456,3,NULL,Vehicle Build Date,>,10/1/2020,NULL,NULL
+452-1,452,1,NULL,Customer,=,GM,NULL,And
+452-2,452,2,NULL,Datalink,=,FuelInjectorCSS3L,NULL,And
+452-3,452,3,(,Model Year,>=,2020,NULL,And
+452-4,452,4,NULL,Model Year,<=,2023,),And
+452-5,452,5,(,Vehicle Build Date,>=,1/15/2019,NULL,And
+452-6,452,6,NULL,Vehicle Build Date,<=,1/1/2024,),And
+452-7,452,7,(,Issue ID,=,0,NULL,Or
+452-8,452,8,NULL,Issue ID,=,0,NULL,Or
+452-9,452,9,NULL,Issue ID,IS NULL,NULL,),And
+452-10,452,10,(,Claim Category,LIKE,*INJ.C*,NULL,Or
+452-11,452,11,NULL,Claim Category,LIKE,*Inj.C*,NULL,Or
+452-12,452,12,NULL,Claim Category,LIKE,*Connector issues*,NULL,Or
+452-13,452,13,NULL,Claim Category,LIKE,*P020*,),NULL
+452-14,452,14,NULL,Claim Category,LIKE,*High Resistance*,NULL,Or
+451-1,451,1,NULL,customer,=,Subaru,NULL,And
+451-2,451,2,(,Vehicle Build Date,=,1/1/2018,NULL,Or
+451-3,451,3,NULL,Vehicle Build Date,=,2/1/2019,),And
+451-4,451,4,(,Claimed Part Number,=,73431FL11A,NULL,Or
+451-5,451,5,NULL,Claimed Part Number,=,73431FL10A,NULL,Or
+451-6,451,6,NULL,Claimed Part Number,=,73431XC00A,),And
+451-7,451,7,NULL,Issue ID,IS NULL,NULL,NULL,NULL
+450-1,450,1,NULL,Customer,=,Subaru,NULL,And
+450-2,450,2,NULL,Model Year,=,2020,NULL,And
+450-3,450,3,NULL,Claim Category,=,High Side Leak,NULL,NULL
+449-1,449,1,NULL,customer,=,Subaru,NULL,And
+449-2,449,2,NULL,Model Year,=,2020,NULL,And
+449-3,449,3,(,Dealer Comments,LIKE,*leaking hose*,NULL,Or
+449-4,449,4,NULL,Dealer Comments,LIKE,*hose leak*,),NULL
+448-1,448,1,NULL,Customer,=,Subaru,NULL,And
+448-2,448,2,NULL,Model Year,=,2020,NULL,And
+448-3,448,3,NULL,Dealer Comments,LIKE,*Leak*,NULL,And
+448-4,448,4,NULL,Dealer Comments,LIKE,*Crimp*,NULL,NULL
+447-1,447,1,NULL,customer,=,Subaru,NULL,And
+447-2,447,2,NULL,Model Year,=,2020,NULL,And
+447-3,447,3,NULL,Dealer Comments,LIKE,*leak*,NULL,And
+447-4,447,4,(,Dealer Comments,LIKE,*solder*,NULL,Or
+447-5,447,5,NULL,Dealer Comments,LIKE,*weld*,),And
+447-6,447,6,NULL,Dealer Comments,IS NULL,NULL,NULL,NULL
+445-1,445,1,NULL,Customer,=,Subaru,NULL,And
+445-2,445,2,NULL,Customer Category,=,Update Failure,NULL,And
+445-3,445,3,NULL,Issue ID,IS NULL,NULL,NULL,NULL
+444-1,444,1,NULL,customer,=,Subaru,NULL,And
+444-2,444,2,NULL,Claim Category,LIKE,*Damaged Display*,NULL,NULL
+443-1,443,1,NULL,customer,=,Subaru,NULL,And
+443-2,443,2,NULL,Customer Category,LIKE,*FOTA*,NULL,And
+443-3,443,3,NULL,Issue ID,IS NULL,NULL,NULL,NULL
+442-0,442,0,NULL,Customer,=,Subaru,NULL,And
+442-1,442,1,NULL,Customer Category,LIKE,*FOTA*,NULL,And
+442-3,442,3,(,Claim Comment,=,RC1,NULL,Or
+442-4,442,4,NULL,Claim Comment,=,RC1912,NULL,Or
+442-5,442,5,NULL,Claim Comment,=,RC2003,NULL,Or
+442-6,442,6,NULL,Claim Comment,=,RC2003FOTA,NULL,Or
+442-7,442,7,NULL,Claim Comment,=,SOP,),And
+442-8,442,8,NULL,Issue ID,IS NULL,NULL,NULL,NULL
+441-1,441,1,NULL,Customer,=,Honda,NULL,And
+441-2,441,2,NULL,Product Description,=,Horn,NULL,And
+441-3,441,3,(,Dealer Country,LIKE,*United*,NULL,Or
+441-4,441,4,NULL,Dealer Country,LIKE,*Canada*,),And
+441-5,441,5,NULL,Customer Category,LIKE,*inop*,NULL,NULL
+440-1,440,1,NULL,Customer,=,GM,NULL,And
+440-2,440,2,NULL,Datalink,LIKE,*Compressor*,NULL,And
+440-3,440,3,NULL,Claim Category,=,Compressor Cracking,NULL,And
+440-4,440,4,NULL,Issue ID,IS NULL,NULL,NULL,NULL
+439-1,439,1,NULL,Customer,=,GM,NULL,And
+439-2,439,2,NULL,Datalink,=,TMAPL5P,NULL,And
+439-3,439,3,NULL,Model Year,=,2020,NULL,And
+439-4,439,4,(,Dealer Comments,LIKE,*P0106*,NULL,Or
+439-5,439,5,NULL,Dealer Comments,LIKE,*0106*,NULL,Or
+439-6,439,6,NULL,Dealer Comments,LIKE,*Po106*,NULL,Or
+439-7,439,7,NULL,Correction Comments,LIKE,*Po106*,NULL,Or
+439-8,439,8,NULL,Correction Comments,LIKE,*P0106*,NULL,Or
+439-9,439,9,NULL,Correction Comments,LIKE,*0106*,),NULL
+438-1,438,1,NULL,Customer,=,GM,NULL,And
+438-2,438,2,(,Datalink,=,SparkPlugGen5+,NULL,Or
+438-3,438,3,NULL,Datalink,=,SparkPlugGen5,),And
+438-4,438,4,NULL,Model Year,>=,2020,NULL,And
+438-5,438,5,(,Dealer Comments,LIKE,*P0300*,NULL,Or
+438-6,438,6,NULL,Dealer Comments,LIKE,*Po300*,NULL,Or
+438-7,438,7,NULL,Dealer Comments,LIKE,*0300*,NULL,Or
+438-8,438,8,NULL,Correction Comments,LIKE,*P0300*,NULL,Or
+438-9,438,9,NULL,Correction Comments,LIKE,*Po300*,NULL,Or
+438-10,438,10,NULL,Correction Comments,LIKE,*0300*,NULL,Or
+438-11,438,11,NULL,Dealer Comments,LIKE,*misfire*,NULL,Or
+438-12,438,12,NULL,Correction Comments,LIKE,*misfire*,),NULL
+437-1,437,1,NULL,Customer,=,GM,NULL,And
+437-2,437,2,NULL,Datalink,=,CamSensorCSS45T,NULL,And
+437-3,437,3,(,Model,=,Encore GX,NULL,Or
+437-4,437,4,NULL,Model,=,Encore,NULL,Or
+437-5,437,5,NULL,Model,=,Trailblazer 9B,),And
+437-6,437,6,NULL,Model Year,>=,2020,NULL,NULL
+436-1,436,1,NULL,Customer,=,GM,NULL,And
+436-2,436,2,NULL,Datalink,=,TMAPL5P,NULL,And
+436-3,436,3,NULL,Model Year,>=,2021,NULL,And
+436-4,436,4,(,Dealer Comments,LIKE,*P0106*,NULL,Or
+436-5,436,5,NULL,Dealer Comments,LIKE,*0106*,NULL,Or
+436-6,436,6,NULL,Dealer Comments,LIKE,*po106*,NULL,Or
+436-7,436,7,NULL,Correction Comments,LIKE,*P0106*,NULL,Or
+436-8,436,8,NULL,Correction Comments,LIKE,*0106*,NULL,Or
+436-9,436,9,NULL,Correction Comments,LIKE,*po106*,),NULL
+431-1,431,1,NULL,Customer,=,GM,NULL,And
+431-2,431,2,NULL,Datalink,=,FuelInjectorDMAX,NULL,And
+431-3,431,3,NULL,Model Year,>=,2017,NULL,And
+431-4,431,4,NULL,Model Year,<=,2024,NULL,And
+431-5,431,5,(,Issue ID,IS NULL,NULL,NULL,Or
+431-6,431,6,NULL,Issue ID,=,0,),And
+431-7,431,7,((,Customer Comments,LIKE,*P0201*,NULL,Or
+431-8,431,8,NULL,Customer Comments,LIKE,*P0202*,NULL,Or
+431-9,431,9,NULL,Customer Comments,LIKE,*P0203*,NULL,Or
+431-10,431,10,NULL,Customer Comments,LIKE,*P0204*,NULL,Or
+431-11,431,11,NULL,Customer Comments,LIKE,*P0205*,NULL,Or
+431-12,431,12,NULL,Customer Comments,LIKE,*P0206*,NULL,Or
+431-13,431,13,NULL,Customer Comments,LIKE,*P0207*,NULL,Or
+431-14,431,14,NULL,Customer Comments,LIKE,*P0208*,NULL,Or
+431-15,431,15,NULL,Dealer Comments,LIKE,*P0201*,NULL,Or
+431-16,431,16,NULL,Dealer Comments,LIKE,*P0202*,NULL,Or
+431-17,431,17,NULL,Dealer Comments,LIKE,*P0203*,NULL,Or
+431-18,431,18,NULL,Dealer Comments,LIKE,*P0204*,NULL,Or
+431-19,431,19,NULL,Dealer Comments,LIKE,*P0205*,NULL,Or
+431-20,431,20,NULL,Dealer Comments,LIKE,*P0206*,NULL,Or
+431-21,431,21,NULL,Dealer Comments,LIKE,*P0207*,NULL,Or
+431-22,431,22,NULL,Dealer Comments,LIKE,*P0208*,NULL,Or
+431-23,431,23,NULL,Correction Comments,LIKE,*P0201*,NULL,Or
+431-24,431,24,NULL,Correction Comments,LIKE,*P0202*,NULL,Or
+431-25,431,25,NULL,Correction Comments,LIKE,*P0203*,NULL,Or
+431-26,431,26,NULL,Correction Comments,LIKE,*P0204*,NULL,Or
+431-27,431,27,NULL,Correction Comments,LIKE,*P0205*,NULL,Or
+431-28,431,28,NULL,Correction Comments,LIKE,*P0206*,NULL,Or
+431-29,431,29,NULL,Correction Comments,LIKE,*P0207*,NULL,Or
+431-30,431,30,NULL,Claim Category,LIKE,*Inj.C*,NULL,Or
+431-31,431,31,NULL,Correction Comments,LIKE,*P0208*,),And
+431-32,431,32,(,Claim Category,LIKE,*p030x*,NULL,Or
+431-33,431,33,NULL,Claim Category,LIKE,*TBD*,NULL,Or
+431-34,431,34,NULL,Claim Category,LIKE,*inj.C*,),Or
+431-35,431,35,NULL,Claim Category,LIKE,*inj.c*,NULL,Or
+431-36,431,36,NULL,Claim Category,=,P020x,),And
+431-37,431,37,NULL,Vehicle Build Date,>=,5/15/2021,NULL,NULL
+427-1,427,1,NULL,Product Description,=,Infotainment Control Unit,NULL,And
+427-2,427,2,NULL,Make,=,Honda,NULL,And
+427-3,427,3,(,Model,=,Pilot,NULL,Or
+427-4,427,4,NULL,Model,=,Passport,NULL,Or
+427-5,427,5,NULL,Model,=,Odyssey,NULL,Or
+427-6,427,6,NULL,Model,=,RDX,),And
+427-7,427,7,(,Customer Category,=,Blank Display,NULL,Or
+427-8,427,8,NULL,Customer Category,=,Speaker Noise,NULL,Or
+427-9,427,9,NULL,Customer Category,=,Audio Inop,NULL,Or
+427-10,427,10,NULL,Customer Category,=,Backup Camera,NULL,Or
+427-11,427,11,NULL,Customer Category,=,Network Connection Message,),And
+427-12,427,12,NULL,Issue ID,IS NULL,NULL,NULL,NULL
+426-1,426,1,NULL,Make,=,Honda,NULL,And
+426-2,426,2,(,model,=,Pilot,NULL,Or
+426-3,426,3,NULL,model,=,Passport,NULL,Or
+426-4,426,4,NULL,model,=,Odyssey,),And
+426-5,426,5,(,Customer Category,=,Speaker Noise,NULL,Or
+426-6,426,6,NULL,Customer Category,=,Blank Display,NULL,Or
+426-7,426,7,NULL,Customer Category,=,Meter Reset,NULL,Or
+426-8,426,8,NULL,Customer Category,=,No Speedometer,NULL,Or
+426-9,426,9,NULL,Customer Category,=,Network Communication Message,NULL,Or
+426-10,426,10,NULL,Customer Category,=,No Backup Camera,),And
+426-11,426,11,NULL,Issue ID,IS NULL,NULL,NULL,NULL
+425-1,425,1,NULL,Make,=,Honda,NULL,And
+425-2,425,2,NULL,Model,=,HRV,NULL,And
+425-3,425,3,(,Customer Category,=,LCD Defect,NULL,Or
+425-4,425,4,NULL,Customer Category,=,Odometer,NULL,Or
+425-5,425,5,NULL,Customer Category,=,Fuel Gauge,NULL,Or
+425-6,425,6,NULL,Customer Category,=,Blank Display,NULL,Or
+425-7,425,7,NULL,Customer Category,=,Flicker,),And
+425-8,425,8,NULL,Issue ID,IS NULL,NULL,NULL,NULL
+424-1,424,1,NULL,Model Year,=,2020,NULL,And
+424-2,424,2,NULL,Model,=,Pilot,NULL,And
+424-3,424,3,(,Customer Category,=,Overheat,NULL,Or
+424-4,424,4,NULL,Customer Category,=,Leak,),NULL
+423-1,423,1,((,Model,=,Ram DT,NULL,Or
+423-2,423,2,(,Model,=,Ram HD,NULL,And
+423-3,423,3,NULL,Model Year,>=,2019,)),And
+423-4,423,4,NULL,Claimed Part Number,LIKE,*6062A*,),And
+423-5,423,5,(,Customer Comments,LIKE,*temp*,NULL,Or
+423-6,423,6,NULL,Customer Comments,LIKE,*cold*,NULL,Or
+423-7,423,7,NULL,Dealer Comments,LIKE,*temp*,NULL,Or
+423-8,423,8,NULL,Dealer Comments,LIKE,*blend*,),NULL
+421-1,421,1,NULL,customer,=,Subaru,NULL,And
+421-2,421,2,NULL,Model Year,=,2020,NULL,And
+421-3,421,3,(,Customer Comments,LIKE,*stall*,NULL,Or
+421-4,421,4,NULL,Customer Comments,LIKE,*no start*,),NULL
+420-1,420,1,NULL,Customer,=,Ford,NULL,And
+420-2,420,2,NULL,Issue ID,IS NULL,NULL,NULL,And
+420-3,420,3,(,Model Year,=,2019,NULL,Or
+420-4,420,4,NULL,Model Year,=,2020,),And
+420-5,420,5,NULL,Dealer Comments,LIKE,*P020*,NULL,NULL
+419-1,419,1,NULL,Customer,=,Ford,NULL,And
+419-2,419,2,NULL,Issue ID,IS NULL,NULL,NULL,And
+419-3,419,3,(,Model Year,=,2019,NULL,Or
+419-4,419,4,NULL,Model Year,=,2020,),And
+419-5,419,5,(,Dealer Comments,LIKE,*P065B*,NULL,Or
+419-6,419,6,NULL,Dealer Comments,LIKE,*PO65B*,),And
+419-7,419,7,(,Claim Category,=,GENMON and GENCMD within 5%,NULL,Or
+419-8,419,8,NULL,Claim Category,=,H8 undr 20KOhms,NULL,Or
+419-9,419,9,NULL,Claim Category,=,Replaced Alternator,NULL,Or
+419-10,419,10,NULL,Claim Category,=,Charging System Light,NULL,Or
+419-11,419,11,NULL,Claim Category,=,Output - High,NULL,Or
+419-12,419,12,NULL,Claim Category,=,Output - Low,NULL,Or
+419-13,419,13,NULL,Claim Category,=,Internal Fault,),NULL
+418-1,418,1,NULL,Customer,=,Ford,NULL,And
+418-2,418,2,(,Issue ID,IS NULL,NULL,NULL,Or
+418-3,418,3,NULL,Issue ID,=,0,),And
+418-4,418,4,(,Model Year,=,2019,NULL,Or
+418-5,418,5,NULL,Model Year,=,2020,),And
+418-6,418,6,(,Dealer Comments,LIKE,*P1450*,NULL,Or
+418-7,418,7,NULL,Dealer Comments,LIKE,*P145O*,NULL,Or
+418-8,418,8,NULL,Dealer Comments,LIKE,*P 1450*,),NULL
+417-1,417,1,NULL,Customer,=,Ford,NULL,And
+417-2,417,2,NULL,Issue ID,IS NULL,NULL,NULL,And
+417-3,417,3,(,Model Year,=,2019,NULL,Or
+417-4,417,4,NULL,Model Year,=,2020,),And
+417-5,417,5,(,Dealer Comments,LIKE,*P03*,NULL,Or
+417-6,417,6,NULL,Dealer Comments,LIKE,*PO3*,),NULL
+416-1,416,1,NULL,Customer,=,GM,NULL,And
+416-2,416,2,NULL,Datalink,=,StarterGen5,NULL,And
+416-3,416,3,NULL,Model Year,>=,2019,NULL,And
+416-4,416,4,NULL,Model Year,<=,2023,NULL,And
+416-5,416,5,NULL,Vehicle Build Date,>=,9/01/2018,NULL,And
+416-6,416,6,NULL,Vehicle Build Date,<=,12/31/2022,NULL,And
+416-7,416,7,(,Issue ID,IS NULL,NULL,NULL,Or
+416-8,416,8,NULL,Issue ID,=,0,),And
+416-9,416,9,(,customer category,=,No Start,NULL,Or
+416-10,416,10,NULL,Claim Category,=,replaced suspect starter,NULL,Or
+416-11,416,11,NULL,Claim Category,=,Shorted,NULL,Or
+416-12,416,12,NULL,Claim Category,LIKE,*Blown Fuse*,),NULL
+415-1,415,1,NULL,Customer,=,Ford,NULL,And
+415-2,415,2,NULL,Model Year,=,2019,NULL,And
+415-3,415,3,NULL,Model,=,F150,NULL,And
+415-4,415,4,(,Issue ID,=,0,NULL,Or
+415-5,415,5,NULL,Issue ID,IS NULL,NULL,),And
+415-6,415,6,(,Dealer Comments,LIKE,*P04F0*,NULL,Or
+415-7,415,7,NULL,Dealer Comments,LIKE,*PO4F0*,NULL,Or
+415-8,415,8,NULL,Dealer Comments,LIKE,*PO4FO*,NULL,Or
+415-9,415,9,NULL,Dealer Comments,LIKE,*P144C*,),And
+415-10,415,10,NULL,Vehicle Build Date,<,8/1/2019,NULL,NULL
+414-1,414,1,NULL,Customer,=,Ford,NULL,And
+414-2,414,2,NULL,Issue ID,IS NULL,NULL,NULL,And
+414-3,414,3,NULL,Customer Category,LIKE,*FCS Claim*,NULL,NULL
+413-1,413,1,NULL,Customer,=,GM,NULL,And
+413-2,413,2,NULL,Datalink,=,FuelPumpMDE,NULL,And
+413-3,413,3,NULL,Model Year,>=,2016,NULL,And
+413-4,413,4,NULL,Model Year,<=,2020,NULL,And
+413-5,413,5,(,Issue ID,IS NULL,NULL,NULL,Or
+413-6,413,6,NULL,Issue ID,=,0,),And
+413-7,413,7,(,Model Series,=,BA7,NULL,Or
+413-8,413,8,NULL,Model Series,=,YA7,),NULL
+412-1,412,1,(,Model Year,=,2019,NULL,Or
+412-2,412,2,NULL,Model Year,=,2020,),And
+412-3,412,3,NULL,model,=,Ram DT,NULL,And
+412-4,412,4,(,Customer Comments,LIKE,*AC not cold*,NULL,Or
+412-5,412,5,NULL,Dealer Comments,LIKE,*AC not cold*,NULL,Or
+412-6,412,6,NULL,Customer Comments,LIKE,*poor cooling*,NULL,Or
+412-7,412,7,NULL,Dealer Comments,LIKE,*poor cooling*,),NULL
+411-1,411,1,NULL,Customer,=,GM,NULL,And
+411-2,411,2,NULL,Datalink,=,FuelInjectorDMAX,NULL,And
+411-3,411,3,NULL,Model Year,>=,2017,NULL,And
+411-4,411,4,NULL,Model Year,<=,2020,NULL,And
+411-5,411,5,(,Issue ID,IS NULL,NULL,NULL,Or
+411-6,411,6,NULL,Issue ID,=,0,),And
+411-7,411,7,NULL,Claim Category,=,Cyl.B,NULL,NULL
+410-1,410,1,NULL,Customer,=,GM,NULL,And
+410-2,410,2,NULL,Datalink,=,FuelPumpXLDE,NULL,And
+410-3,410,3,NULL,Model Year,>=,2016,NULL,And
+410-4,410,4,NULL,Model Year,<=,2020,NULL,And
+410-5,410,5,(,Issue ID,IS NULL,NULL,NULL,Or
+410-6,410,6,NULL,Issue ID,=,0,),And
+410-7,410,7,(,Dealer Country,=,BR,NULL,Or
+410-8,410,8,NULL,Dealer Country,=,AR,NULL,Or
+410-9,410,9,NULL,Dealer Country,=,CO,NULL,Or
+410-10,410,10,NULL,Dealer Country,=,PE,),NULL
+409-1,409,1,NULL,Customer,=,GM,NULL,And
+409-2,409,2,NULL,Datalink,=,FuelInjectorDMAX,NULL,And
+409-3,409,3,(,Issue ID,IS NULL,NULL,NULL,Or
+409-4,409,4,NULL,Issue ID,=,0,),And
+409-5,409,5,NULL,Model Year,>=,2017,NULL,And
+409-6,409,6,NULL,Model Year,<=,2023,NULL,And
+409-7,409,7,NULL,Claim Category,=,QH-QL,NULL,NULL
+408-1,408,1,NULL,Customer,=,GM,NULL,And
+408-2,408,2,NULL,Datalink,=,FuelInjectorCSS3L,NULL,And
+408-3,408,3,NULL,Model Year,>=,2020,NULL,And
+408-4,408,4,NULL,Model Year,<=,2023,NULL,And
+408-5,408,5,(,Issue ID,IS NULL,NULL,NULL,Or
+408-6,408,6,NULL,Issue ID,=,0,),And
+408-7,408,7,NULL,Claim Category,=,Calibration Incorrect,NULL,NULL
+407-1,407,1,NULL,Customer,=,Ford,NULL,And
+407-2,407,2,(,Issue ID,IS NULL,NULL,NULL,Or
+407-3,407,3,NULL,Issue ID,=,0,),And
+407-4,407,4,NULL,Claim Comment,LIKE,*P0496*,NULL,NULL
+406-1,406,1,NULL,Customer,=,GM,NULL,And
+406-2,406,2,NULL,Datalink,=,FuelPumpDMAX,NULL,And
+406-3,406,3,NULL,Model Year,>=,2017,NULL,And
+406-4,406,4,NULL,Model Year,<=,2023,NULL,And
+406-5,406,5,(,Issue ID,IS NULL,NULL,NULL,Or
+406-6,406,6,NULL,Issue ID,=,0,),And
+406-7,406,7,NULL,Claim Category,=,Leak,NULL,NULL
+405-1,405,1,(,Model Platform,LIKE,*DT*,NULL,And
+405-2,405,2,NULL,Dealer Comments,LIKE,*compressor leak*,),NULL
+404-1,404,1,NULL,Model Platform,LIKE,*DT*,NULL,And
+404-2,404,2,(,Dealer Comments,LIKE,*Seized*,NULL,Or
+404-3,404,3,NULL,Customer Comments,LIKE,*lock*,NULL,Or
+404-4,404,4,NULL,Dealer Comments,LIKE,*lock*,),NULL
+403-1,403,1,NULL,customer,=,GM,NULL,And
+403-2,403,2,NULL,Model Year,>=,2020,NULL,And
+403-3,403,3,NULL,Datalink,LIKE,*Compressor*,NULL,And
+403-4,403,4,NULL,Claim Category,=,Seized,NULL,And
+403-5,403,5,(,Issue ID,=,0,NULL,Or
+403-6,403,6,NULL,Issue ID,IS NULL,NULL,),NULL
+402-1,402,1,((,Model Platform,LIKE,*DT*,NULL,And
+402-2,402,2,NULL,Vehicle Build Date,>=,06/01/2018,NULL,And
+402-3,402,3,NULL,Vehicle Build Date,<,08/01/2021,),And
+402-4,402,4,(,Customer Comments,LIKE,*whistle noise*,NULL,Or
+402-5,402,5,NULL,Customer Comments,LIKE,*wind noise*,NULL,Or
+402-6,402,6,NULL,Customer Comments,LIKE,*high**speed*,NULL,Or
+402-7,402,7,NULL,Dealer Comments,LIKE,*wind noise*,NULL,Or
+402-8,402,8,NULL,Customer Comments,LIKE,*whirl**noise*,NULL,Or
+402-9,402,9,NULL,Customer Comments,LIKE,*noise*,NULL,Or
+402-10,402,10,NULL,Dealer Comments,LIKE,*whistle noise*,)),NULL
+401-1,401,1,NULL,Customer,=,Stellantis,NULL,And
+401-2,401,2,(,model,=,Ram DT,NULL,Or
+401-3,401,3,(,model,=,Ram HD,NULL,And
+401-4,401,4,NULL,Model Year,>=,2019,)),And
+401-5,401,5,(,Customer Comments,LIKE,*stuck*,NULL,Or
+401-6,401,6,NULL,Dealer Comments,LIKE,*bind*,NULL,Or
+401-7,401,7,NULL,Dealer Comments,LIKE,*stuck*,NULL,Or
+401-8,401,8,NULL,Customer Comments,LIKE,*t change*,NULL,Or
+401-9,401,9,NULL,Dealer Comments,LIKE,*B11C2*,NULL,Or
+401-10,401,10,NULL,Dealer Comments,LIKE,*foot*,NULL,Or
+401-11,401,11,NULL,Dealer Comments,LIKE,*distribution*,),NULL
+400-1,400,1,NULL,Customer,=,Ford,NULL,And
+400-2,400,2,NULL,Model Year,=,2020,NULL,And
+400-3,400,3,NULL,Issue ID,IS NULL,NULL,NULL,And
+400-4,400,4,(,Dealer Comments,LIKE,*P0563*,NULL,Or
+400-5,400,5,NULL,Dealer Comments,LIKE,*PO563*,NULL,Or
+400-6,400,6,NULL,Dealer Comments,LIKE,*P 0563*,),NULL
+399-1,399,1,NULL,customer,=,Stellantis,NULL,And
+399-2,399,2,NULL,Product Description,=,Alternator,NULL,And
+399-3,399,3,NULL,model,=,ProMaster,NULL,And
+399-4,399,4,(,Customer Comments,LIKE,*pulley*,NULL,Or
+399-5,399,5,NULL,Dealer Comments,LIKE,*pulley*,NULL,Or
+399-6,399,6,NULL,Customer Comments,LIKE,*pully*,NULL,Or
+399-7,399,7,NULL,Dealer Comments,LIKE,*pully*,NULL,Or
+399-8,399,8,NULL,Customer Comments,LIKE,*clutch*,NULL,Or
+399-10,399,10,NULL,Dealer Comments,LIKE,*clutch*,),NULL
+398-1,398,1,NULL,Customer,=,Ford,NULL,And
+398-2,398,2,NULL,Model,=,F250/350/450/550,NULL,And
+398-3,398,3,(,Issue ID,=,0,NULL,Or
+398-4,398,4,NULL,Issue ID,IS NULL,NULL,),And
+398-5,398,5,(,Claim Comment,=,P163B,NULL,Or
+398-6,398,6,NULL,Claim Comment,=,P163B P163C,NULL,Or
+398-7,398,7,NULL,Claim Comment,=,P163C,),NULL
+397-1,397,1,NULL,Customer,=,Ford,NULL,And
+397-2,397,2,NULL,Issue ID,IS NULL,NULL,NULL,And
+397-3,397,3,NULL,Claim Category,LIKE,*FCS Claim*,NULL,NULL
+396-1,396,1,NULL,Customer,=,Ford,NULL,And
+396-2,396,2,NULL,Engine Family,=,2.7L Engine,NULL,And
+396-3,396,3,NULL,Issue ID,IS NULL,NULL,NULL,And
+396-4,396,4,(,Model Year,=,2019,NULL,Or
+396-5,396,5,NULL,Model Year,=,2020,),And
+396-6,396,6,(,Dealer Comments,LIKE,*P2BEE*,NULL,Or
+396-7,396,7,NULL,Dealer Comments,LIKE,*P2BEC*,NULL,Or
+396-8,396,8,NULL,Dealer Comments,LIKE,*P2196*,NULL,Or
+396-9,396,9,NULL,Dealer Comments,LIKE,*P2198*,NULL,Or
+396-10,396,10,NULL,Dealer Comments,LIKE,*P02198*,NULL,Or
+396-11,396,11,NULL,Dealer Comments,LIKE,*P02196*,NULL,Or
+396-12,396,12,NULL,Dealer Comments,LIKE,*P02BEE*,NULL,Or
+396-13,396,13,NULL,Dealer Comments,LIKE,*P02BEC*,NULL,Or
+396-14,396,14,NULL,Dealer Comments,LIKE,*PO2196*,NULL,Or
+396-15,396,15,NULL,Dealer Comments,LIKE,*PO2198*,),NULL
+395-1,395,1,NULL,Customer,=,Ford,NULL,And
+395-2,395,2,NULL,Issue ID,IS NULL,NULL,NULL,And
+395-3,395,3,(,Claim Category,=,Loose Filler Neck,NULL,Or
+395-4,395,4,NULL,Claim Category,=,Loose Fuel Line,NULL,Or
+395-5,395,5,NULL,Claim Category,=,Leaking Fule Line,NULL,Or
+395-6,395,6,NULL,Claim Category,=,Disconnected Fuel Line,NULL,Or
+395-7,395,7,NULL,Claim Category,=,Missing Stud Loose GDI Pump,),NULL
+394-1,394,1,NULL,Customer,=,Ford,NULL,And
+394-2,394,2,NULL,Model,=,F150,NULL,And
+394-3,394,3,(,Model Year,=,2019,NULL,Or
+394-4,394,4,NULL,Model Year,=,2020,),And
+394-5,394,5,NULL,Issue ID,IS NULL,NULL,NULL,And
+394-6,394,6,(,Dealer Comments,LIKE,*P0172*,NULL,Or
+394-7,394,7,NULL,Dealer Comments,LIKE,*PO172*,NULL,Or
+394-8,394,8,NULL,Dealer Comments,LIKE,*172*,NULL,Or
+394-9,394,9,NULL,Dealer Comments,LIKE,*P0175*,NULL,Or
+394-10,394,10,NULL,Dealer Comments,LIKE,*PO175*,NULL,Or
+394-11,394,11,NULL,Dealer Comments,LIKE,*175*,),And
+394-12,394,12,NULL,Engine Family,=,5.0L Engine,NULL,NULL
+393-1,393,1,NULL,Issue ID,IS NULL,NULL,NULL,And
+393-2,393,2,NULL,Model Year,>=,2019,NULL,And
+393-3,393,3,(,Claim Comment,=,P0455,NULL,Or
+393-4,393,4,NULL,Claim Comment,=,P0455 P0456,NULL,Or
+393-5,393,5,NULL,Claim Comment,=,P0456,NULL,Or
+393-6,393,6,NULL,Claim Comment,=,P0456 P0455,NULL,Or
+393-7,393,7,NULL,Claim Comment,=,P0456 P04F0,NULL,Or
+393-8,393,8,NULL,Claim Comment,=,P0455 P04F0,NULL,Or
+393-9,393,9,NULL,Claim Comment,=,P0455 P0456 P04F0,NULL,Or
+393-10,393,10,NULL,Claim Comment,=,P04F0 P0456,),NULL
+392-1,392,1,NULL,Customer,=,Ford,NULL,And
+392-2,392,2,NULL,Issue ID,IS NULL,NULL,NULL,And
+392-3,392,3,(,Claim Category,=,Locked Pulley,NULL,Or
+392-4,392,4,NULL,Claim Category,=,Pulley - Locked,),NULL
+391-1,391,1,NULL,Customer,=,Ford,NULL,And
+391-2,391,2,(,Issue ID,IS NULL,NULL,NULL,Or
+391-3,391,3,NULL,Issue ID,=,0,),And
+391-4,391,4,(,Claim Category,=,Battery Cable Damaged,NULL,Or
+391-5,391,5,NULL,Claim Category,=,BCM Issue,NULL,Or
+391-6,391,6,NULL,Claim Category,=,Connector Damaged,NULL,Or
+391-7,391,7,NULL,Claim Category,=,Connector Loose,NULL,Or
+391-8,391,8,NULL,Claim Category,=,Blown Fuse,NULL,Or
+391-9,391,9,NULL,Claim Category,=,Fuse Blown,NULL,Or
+391-10,391,10,NULL,Claim Category,=,PCM Replaced Also,NULL,Or
+391-11,391,11,NULL,Claim Category,=,Leaking Battery,NULL,Or
+391-12,391,12,NULL,Claim Category,=,Pin Corrosion,NULL,Or
+391-13,391,13,NULL,Claim Category,=,Leaking Battery,NULL,Or
+391-14,391,14,NULL,Claim Category,=,Belt Issue,NULL,Or
+391-15,391,15,NULL,Claim Category,=,Alternator Clip Broken,NULL,Or
+391-16,391,16,NULL,Claim Category,=,Fuse Block Issue,NULL,Or
+391-17,391,17,NULL,Claim Category,=,FDIM Module Issue,NULL,Or
+391-18,391,18,NULL,Claim Category,=,Pin Issue,NULL,Or
+391-19,391,19,NULL,Claim Category,=,Oil Ingress,NULL,Or
+391-20,391,20,NULL,Claim Category,=,Bolts Loose,NULL,Or
+391-21,391,21,NULL,Claim Category,=,High Current BJB Issue,NULL,Or
+391-22,391,22,NULL,Claim Category,=,B Terminal Broken,NULL,Or
+391-23,391,23,NULL,Claim Category,=,Loose Battery,NULL,Or
+391-24,391,24,NULL,Claim Category,=,Pulley Issue,NULL,Or
+391-25,391,25,NULL,Claim Category,=,Belt Broken,NULL,Or
+391-26,391,26,NULL,Claim Category,=,Loose BJB Nut,NULL,Or
+391-27,391,27,NULL,Claim Category,=,Connector - Loose,NULL,Or
+391-28,391,28,NULL,Claim Category,=,B+ Terminal - Damaged,NULL,Or
+391-29,391,29,NULL,Claim Category,=,Connector - Pin,NULL,Or
+391-30,391,30,NULL,Claim Category,=,Connector - Pin Corrosion,NULL,Or
+391-31,391,31,NULL,Claim Category,=,Connector - Dmg,NULL,Or
+391-32,391,32,NULL,Claim Category,=,Battery Cable - Damaged,NULL,Or
+391-33,391,33,NULL,Claim Category,=,Fuse Block - Blown Fuse,NULL,Or
+391-34,391,34,NULL,Claim Category,=,Fuse Block - NG,NULL,Or
+391-35,391,35,NULL,Claim Category,=,GWM Issue,NULL,Or
+391-36,391,36,NULL,Claim Category,=,Loose Connector,NULL,Or
+391-37,391,37,NULL,Claim Category,=,Loose BJB,NULL,Or
+391-38,391,38,NULL,Claim Category,=,Water in Connector,NULL,Or
+391-39,391,39,NULL,Claim Category,=,Melted Parts,NULL,Or
+391-40,391,40,NULL,Claim Category,=,Battery Issue,NULL,Or
+391-41,391,41,NULL,Claim Category,=,Belt Pieces Locking Alternator,),NULL
+390-1,390,1,NULL,Customer,=,Ford,NULL,And
+390-2,390,2,(,Issue ID,IS NULL,NULL,NULL,Or
+390-3,390,3,NULL,Issue ID,=,0,),And
+390-4,390,4,(,Claim Category,=,CORRODED WIRE,NULL,Or
+390-5,390,5,NULL,Claim Category,=,Wiring Issue,NULL,Or
+390-6,390,6,NULL,Claim Category,=,Wiring - Damage,NULL,Or
+390-7,390,7,NULL,Claim Category,=,Wiring - Corrosion,NULL,Or
+390-8,390,8,NULL,Claim Category,=,Water in Connector,),NULL
+389-1,389,1,NULL,Customer,=,Ford,NULL,And
+389-2,389,2,NULL,Issue ID,IS NULL,NULL,NULL,And
+389-3,389,3,NULL,Model,=,F150,NULL,And
+389-4,389,4,(,Claim Category,=,Wiring Damaged - COOLER LINE BRACKET Rubbing,NULL,Or
+389-5,389,5,NULL,Claim Category,=,TRANS Cool Br,),NULL
+388-1,388,1,NULL,Customer,=,Ford,NULL,And
+388-2,388,2,(,Claim Category,=,Loose B+ Nut,NULL,Or
+388-3,388,3,NULL,Claim Category,=,BBT,NULL,Or
+388-4,388,4,NULL,Claim Category,=,B Terminal Wire Hot,NULL,Or
+388-5,388,5,NULL,Claim Category,=,B+ Terminal - Loose Nut,NULL,Or
+388-6,388,6,NULL,Claim Category,=,B+ Terminal - Broken,NULL,Or
+388-7,388,7,NULL,Claim Category,=,B+ Terminal - Damaged,NULL,Or
+388-9,388,9,NULL,Claim Category,=,B + Terminal - Nut Cross Threaded,NULL,Or
+388-10,388,10,NULL,Claim Category,=,B+ Terminal - Burnt,),NULL
+387-1,387,1,NULL,Model Year,>=,2018,NULL,And
+387-2,387,2,NULL,Model,=,Sienna,NULL,And
+387-3,387,3,NULL,Customer Category,=,Rear Not Clearing Center,NULL,NULL
+386-1,386,1,NULL,Model Year,=,2020,NULL,And
+386-2,386,2,NULL,Claim Category,=,DCM Reset,NULL,And
+386-3,386,3,NULL,Issue ID,IS NULL,NULL,NULL,NULL
+385-1,385,1,NULL,Model Year,>=,2016,NULL,And
+385-2,385,2,(,Claim Category,=,Stuck,NULL,Or
+385-3,385,3,NULL,Claim Category,LIKE,*P017*,NULL,Or
+385-4,385,4,NULL,Claim Category,LIKE,*P044*,NULL,Or
+385-5,385,5,NULL,Claim Category,LIKE,*P045*,NULL,Or
+385-6,385,6,NULL,Claim Category,LIKE,*P17*,),And
+385-7,385,7,(,Vehicle Build Date,<=,10/31/2019,NULL,And
+385-8,385,8,NULL,Model,=,Sienna,),NULL
+384-1,384,1,NULL,Model Year,>=,2018,NULL,And
+384-2,384,2,NULL,Model,=,Sienna,NULL,And
+384-3,384,3,NULL,Complaint Code Desc,=,ABNORMAL OR EXCESSIVE NOISE,NULL,And
+384-4,384,4,NULL,Claimed Part Number,LIKE,87130*,NULL,And
+384-5,384,5,NULL,Vehicle Build Date,<=,5/6/2020,NULL,And
+384-6,384,6,(,Issue ID,IS NULL,NULL,NULL,Or
+384-7,384,7,NULL,Issue ID,=,0,),NULL
+383-1,383,1,NULL,Model Year,=,2020,NULL,And
+383-2,383,2,NULL,Model,=,Sienna,NULL,And
+383-3,383,3,NULL,Vehicle Build Date,<,11/1/2019,NULL,NULL
+382-1,382,1,NULL,Model Year,>=,2019,NULL,And
+382-2,382,2,(,Model,=,Sienna,NULL,Or
+382-3,382,3,NULL,Model,=,Camry,NULL,Or
+382-4,382,4,NULL,Model,=,Rav4,NULL,Or
+382-5,382,5,NULL,Model,=,Tacoma,),And
+382-6,382,6,(,Customer Category,=,Front Poor Wipe,NULL,Or
+382-7,382,7,NULL,Customer Category,=,Rear Poor Wipe,NULL,Or
+382-8,382,8,NULL,Customer Category,=,Poor Wipe,),NULL
+381-1,381,1,NULL,customer,=,Stellantis,NULL,And
+381-2,381,2,(,model,=,Gladiator,NULL,Or
+381-3,381,3,NULL,model,=,Wrangler,),And
+381-4,381,4,NULL,Product Description,=,Starter,NULL,And
+381-5,381,5,NULL,Engine Desc,=,ERC: 3.6L V6 24V VVT Engine Upg I w/ESS,NULL,And
+381-6,381,6,(,Dealer Comments,LIKE,*hydro lock*,NULL,Or
+381-7,381,7,NULL,Dealer Comments,LIKE,*piston*,NULL,Or
+381-8,381,8,NULL,Dealer Comments,LIKE,*compression*,NULL,Or
+381-9,381,9,NULL,Dealer Comments,LIKE,* rod *,NULL,Or
+381-10,381,10,NULL,Dealer Comments,LIKE,*head gasket*,),NULL
+380-1,380,1,NULL,Model Year,=,2020,NULL,And
+380-2,380,2,(,Model Platform,=,WD,NULL,Or
+380-3,380,3,NULL,Model Platform,=,WK,),And
+380-4,380,4,NULL,Customer Category,=,No Start,NULL,NULL
+379-1,379,1,NULL,Model Year,=,2020,NULL,And
+379-2,379,2,NULL,Model,=,Rav4,NULL,And
+379-3,379,3,NULL,Product Description,=,RKE Fob,NULL,And
+379-4,379,4,(,Correction Comments,LIKE,*059*,NULL,Or
+379-5,379,5,NULL,Customer Comments,LIKE,*059*,NULL,Or
+379-6,379,6,NULL,Dealer Comments,LIKE,*059*,NULL,Or
+379-7,379,7,NULL,Correction Comments,LIKE,*508*,NULL,Or
+379-8,379,8,NULL,Dealer Comments,LIKE,*508*,NULL,Or
+379-10,379,10,NULL,Customer Comments,LIKE,*508*,),NULL
+378-1,378,1,NULL,Model Year,=,2020,NULL,And
+378-2,378,2,NULL,Model,=,Avalon,NULL,And
+378-3,378,3,NULL,Product Description,=,Fuel Pump Module,NULL,And
+378-4,378,4,NULL,Dealer Code,LIKE,*000000*,NULL,And
+378-5,378,5,NULL,Mileage,<=,50,NULL,NULL
+377-1,377,1,NULL,Model Year,=,2020,NULL,And
+377-2,377,2,NULL,Model,=,Camry,NULL,And
+377-3,377,3,NULL,Product Description,=,Data Communication Module,NULL,NULL
+376-1,376,1,NULL,Model Year,=,2020,NULL,And
+376-2,376,2,NULL,Model,=,ES,NULL,And
+376-3,376,3,NULL,Vehicle Build Date,>=,11/1/2019,NULL,And
+376-4,376,4,NULL,Product Description,=,Data Communication Module,NULL,NULL
+375-1,375,1,NULL,Customer,=,Ford,NULL,And
+375-2,375,2,(,Issue ID,=,0,NULL,Or
+375-3,375,3,NULL,Issue ID,IS NULL,NULL,),And
+375-6,375,6,(,Claim Comment,=,P0620,NULL,Or
+375-8,375,8,NULL,Claim Comment,=,P0620 P065B,),NULL
+374-1,374,1,NULL,Model Year,=,2020,NULL,And
+374-2,374,2,NULL,Model,=,Rav4,NULL,And
+374-3,374,3,NULL,Claimed Part Number,=,894670R100,NULL,And
+374-4,374,4,NULL,Vehicle Build Date,>=,11/14/2019,NULL,And
+374-5,374,5,NULL,Vehicle Build Date,<=,12/2/2019,NULL,NULL
+373-1,373,1,NULL,Customer,=,Ford,NULL,And
+373-2,373,2,NULL,Model,=,F150,NULL,And
+373-3,373,3,NULL,Engine Family,=,2.7L Engine,NULL,And
+373-4,373,4,(,Model Year,=,2019,NULL,Or
+373-5,373,5,NULL,Model Year,=,2020,),And
+373-6,373,6,(,Issue ID,IS NULL,NULL,NULL,Or
+373-7,373,7,NULL,Issue ID,=,0,),And
+373-8,373,8,(,Dealer Comments,LIKE,*P2BEE*,NULL,Or
+373-9,373,9,NULL,Dealer Comments,LIKE,*P2BEC*,NULL,Or
+373-10,373,10,NULL,Dealer Comments,LIKE,*P-2BEC*,NULL,Or
+373-11,373,11,NULL,Dealer Comments,LIKE,*P2196*,NULL,Or
+373-12,373,12,NULL,Dealer Comments,LIKE,*P2198*,),NULL
+372-0,372,0,NULL,Customer,=,Ford,NULL,And
+372-2,372,2,NULL,Model,=,F150,NULL,And
+372-3,372,3,NULL,Engine Family,=,2.7L Engine,NULL,And
+372-4,372,4,(,Model Year,=,2019,NULL,Or
+372-5,372,5,NULL,Model Year,=,2020,),And
+372-6,372,6,(,Issue ID,=,0,NULL,Or
+372-7,372,7,NULL,Issue ID,IS NULL,NULL,),And
+372-8,372,8,(,Dealer Comments,LIKE,*P2BEE*,NULL,Or
+372-9,372,9,NULL,Dealer Comments,LIKE,*P2BEC*,NULL,Or
+372-10,372,10,NULL,Dealer Comments,LIKE,*P-2BEC*,NULL,Or
+372-11,372,11,NULL,Dealer Comments,LIKE,*P2196*,NULL,Or
+372-12,372,12,NULL,Dealer Comments,LIKE,*P2198*,NULL,Or
+372-13,372,13,NULL,Dealer Comments,LIKE,*P02BEE*,),NULL
+371-1,371,1,NULL,Customer,=,GM,NULL,And
+371-2,371,2,NULL,Model Year,=,2020,NULL,And
+371-3,371,3,NULL,Claim Category,=,Leak,NULL,And
+371-4,371,4,NULL,Datalink,LIKE,*condenser*,NULL,And
+371-5,371,5,(,Issue ID,IS NULL,NULL,NULL,Or
+371-6,371,6,NULL,Issue ID,=,0,),NULL
+370-1,370,1,NULL,Customer,=,Honda,NULL,And
+370-2,370,2,NULL,Model,=,HRV,NULL,And
+370-3,370,3,NULL,Model Year,=,2019,NULL,And
+370-4,370,4,(,Customer Comments,LIKE,*inop*,NULL,Or
+370-5,370,5,NULL,Customer Comments,LIKE,*not working*,NULL,Or
+370-6,370,6,NULL,Customer Comments,LIKE,*burning smell*,NULL,Or
+370-7,370,7,NULL,Customer Comments,LIKE,*smoke*,NULL,Or
+370-8,370,8,NULL,Customer Comments,LIKE,*noise*,NULL,Or
+370-9,370,9,NULL,Customer Comments,LIKE,*cold*,NULL,Or
+370-10,370,10,NULL,Customer Comments,LIKE,*cooling*,NULL,Or
+370-11,370,11,NULL,Customer Comments,LIKE,*cool*,NULL,Or
+370-12,370,12,NULL,Customer Comments,LIKE,*hot*,NULL,Or
+370-13,370,13,NULL,Customer Comments,LIKE,*heat*,NULL,Or
+370-14,370,14,NULL,Customer Comments,LIKE,*heating*,NULL,Or
+370-15,370,15,NULL,Customer Comments,LIKE,*warm*,NULL,Or
+370-16,370,16,NULL,Customer Comments,LIKE,*warming*,),NULL
+369-1,369,1,NULL,Customer,=,Honda,NULL,And
+369-2,369,2,NULL,Model,=,HRV,NULL,And
+369-3,369,3,NULL,Model Year,=,2019,NULL,And
+369-4,369,4,(,Customer Comments,LIKE,*inop*,NULL,Or
+369-5,369,5,NULL,Customer Comments,LIKE,*not working*,NULL,Or
+369-6,369,6,NULL,Customer Comments,LIKE,*burning smell*,NULL,Or
+369-7,369,7,NULL,Customer Comments,LIKE,*smoke*,NULL,Or
+369-8,369,8,NULL,Customer Comments,LIKE,*noise*,NULL,Or
+369-9,369,9,NULL,Customer Comments,LIKE,*cold*,NULL,Or
+369-10,369,10,NULL,Customer Comments,LIKE,*cool*,NULL,Or
+369-11,369,11,NULL,Customer Comments,LIKE,*cooling*,NULL,Or
+369-12,369,12,NULL,Customer Comments,LIKE,*hot*,NULL,Or
+369-13,369,13,NULL,Customer Comments,LIKE,*heat*,NULL,Or
+369-14,369,14,NULL,Customer Comments,LIKE,*heating*,NULL,Or
+369-15,369,15,NULL,Customer Comments,LIKE,*warm*,NULL,Or
+369-16,369,16,NULL,Customer Comments,LIKE,*warming*,),NULL
+368-1,368,1,NULL,Customer,=,Toyota,NULL,And
+368-2,368,2,NULL,model,=,Corolla,NULL,And
+368-3,368,3,NULL,Model Year,=,2020,NULL,And
+368-4,368,4,NULL,Product Description,=,Engine ECU,NULL,And
+368-5,368,5,NULL,Engine,=,2ZR-FAE,NULL,And
+368-6,368,6,(,Customer Comments,LIKE,*2646*,NULL,Or
+368-7,368,7,NULL,Dealer Comments,LIKE,*2646*,NULL,Or
+368-8,368,8,NULL,Correction Comments,LIKE,*2646*,NULL,Or
+368-9,368,9,NULL,Customer Comments,LIKE,*265B*,NULL,Or
+368-10,368,10,NULL,Dealer Comments,LIKE,*265B*,NULL,Or
+368-11,368,11,NULL,Correction Comments,LIKE,*265B*,NULL,Or
+368-12,368,12,NULL,Customer Comments,LIKE,*10A0*,NULL,Or
+368-13,368,13,NULL,Dealer Comments,LIKE,*10A0*,NULL,Or
+368-14,368,14,NULL,Correction Comments,LIKE,*10A0*,NULL,Or
+368-15,368,15,NULL,Customer Comments,LIKE,*1055*,NULL,Or
+368-16,368,16,NULL,Dealer Comments,LIKE,*1055*,NULL,Or
+368-17,368,17,NULL,Correction Comments,LIKE,*1055*,NULL,Or
+368-18,368,18,NULL,Customer Comments,LIKE,*98-19*,NULL,Or
+368-19,368,19,NULL,Dealer Comments,LIKE,*98-19*,NULL,Or
+368-20,368,20,NULL,Correction Comments,LIKE,*98-19*,),NULL
+367-1,367,1,(,Model Platform,LIKE,*DT*,NULL,And
+367-2,367,2,(,Dealer Comments,LIKE,*Missing door*,NULL,Or
+367-3,367,3,NULL,Dealer Comments,LIKE,*door missing*,NULL,Or
+367-4,367,4,NULL,Customer Comments,LIKE,*missing door*,NULL,Or
+367-5,367,5,NULL,Customer Comments,LIKE,*door missing*,)),NULL
+366-1,366,1,NULL,Customer,=,Honda,NULL,And
+366-2,366,2,NULL,Model,=,Civic,NULL,NULL
+365-1,365,1,NULL,Customer,=,Honda,NULL,And
+365-2,365,2,NULL,Model,=,HRV,NULL,And
+365-3,365,3,NULL,Model Year,=,2019,NULL,And
+365-4,365,4,(,Customer Comments,LIKE,*inop*,NULL,Or
+365-5,365,5,NULL,Customer Comments,LIKE,*not working*,NULL,Or
+365-6,365,6,NULL,Customer Comments,LIKE,*burning smell*,NULL,Or
+365-7,365,7,NULL,Customer Comments,LIKE,*smoke*,NULL,Or
+365-8,365,8,NULL,Customer Comments,LIKE,*noise*,NULL,Or
+365-9,365,9,NULL,Customer Comments,LIKE,*cold*,NULL,Or
+365-10,365,10,NULL,Customer Comments,LIKE,*cool*,NULL,Or
+365-11,365,11,NULL,Customer Comments,LIKE,*cooling*,NULL,Or
+365-12,365,12,NULL,Customer Comments,LIKE,*hot*,NULL,Or
+365-13,365,13,NULL,Customer Comments,LIKE,*heat*,NULL,Or
+365-14,365,14,NULL,Customer Comments,LIKE,*heating*,NULL,Or
+365-15,365,15,NULL,Customer Comments,LIKE,*warm*,NULL,Or
+365-16,365,16,NULL,Customer Comments,LIKE,*warming*,),NULL
+364-1,364,1,NULL,Customer,=,GM,NULL,And
+364-2,364,2,NULL,Datalink,LIKE,*Compressor*,NULL,And
+364-3,364,3,NULL,Claim Category,=,Clutch Not Engaged,NULL,And
+364-4,364,4,NULL,Issue ID,IS NULL,NULL,NULL,NULL
+363-1,363,1,NULL,Customer,=,GM,NULL,And
+363-2,363,2,NULL,Datalink,LIKE,*Compressor*,NULL,And
+363-3,363,3,NULL,Claim Category,=,Leak,NULL,And
+363-4,363,4,NULL,Issue ID,IS NULL,NULL,NULL,NULL
+362-1,362,1,NULL,Customer,=,GM,NULL,And
+362-2,362,2,NULL,Datalink,LIKE,*Compressor*,NULL,And
+362-3,362,3,NULL,Claim Category,=,Belt Fell Off,NULL,And
+362-4,362,4,NULL,Issue ID,IS NULL,NULL,NULL,NULL
+361-1,361,1,NULL,Customer,=,GM,NULL,And
+361-2,361,2,NULL,Model Year,=,2019,NULL,And
+361-3,361,3,NULL,Model Code,=,GMT-610,NULL,And
+361-4,361,4,NULL,Claim Category,=,Belt Fell Off,NULL,And
+361-5,361,5,NULL,Datalink,LIKE,*Compressor*,NULL,And
+361-6,361,6,NULL,Issue ID,IS NULL,NULL,NULL,NULL
+360-1,360,1,NULL,Customer,=,Stellantis,NULL,And
+360-2,360,2,NULL,Product Description,=,Compressor,NULL,And
+360-3,360,3,(,Customer Comments,LIKE,*lock*,NULL,Or
+360-4,360,4,NULL,Customer Comments,LIKE,*seiz*,NULL,Or
+360-5,360,5,NULL,Dealer Comments,LIKE,*lock*,NULL,Or
+360-6,360,6,NULL,Dealer Comments,LIKE,*seiz*,NULL,Or
+360-7,360,7,NULL,Correction Comments,LIKE,*lock*,NULL,Or
+360-8,360,8,NULL,Correction Comments,LIKE,*seiz*,),And
+360-9,360,9,((,model,=,200,NULL,And
+360-10,360,10,NULL,Vehicle Build Date,<=,5/17/2016,),Or
+360-11,360,11,(,Asm Plant Desc,=,9126 H: BRAMPTON ASSEMBLY PLANT (CANADA),NULL,And
+360-12,360,12,NULL,Vehicle Build Date,<=,5/9/2016,),Or
+360-13,360,13,(,model,=,Cherokee,NULL,And
+360-14,360,14,NULL,Vehicle Build Date,<=,5/16/2016,)),NULL
+359-1,359,1,NULL,Customer,=,Honda,NULL,And
+359-2,359,2,NULL,Engine,LIKE,*J35*,NULL,And
+359-3,359,3,(,Customer Comments,LIKE,*chirp*,NULL,Or
+359-4,359,4,NULL,Customer Comments,LIKE,*whistle*,NULL,Or
+359-5,359,5,NULL,Customer Comments,LIKE,*whine*,NULL,Or
+359-6,359,6,NULL,Customer Comments,LIKE,*ring*,NULL,Or
+359-7,359,7,NULL,Customer Comments,LIKE,*tick*,NULL,Or
+359-8,359,8,NULL,Customer Comments,LIKE,*chirping*,NULL,Or
+359-9,359,9,NULL,Customer Comments,LIKE,*whistling*,NULL,Or
+359-10,359,10,NULL,Customer Comments,LIKE,*whining*,NULL,Or
+359-11,359,11,NULL,Customer Comments,LIKE,*ringing*,NULL,Or
+359-12,359,12,NULL,Customer Comments,LIKE,*ticking*,NULL,Or
+359-13,359,13,NULL,Customer Comments,LIKE,*hum*,NULL,Or
+359-14,359,14,NULL,Customer Comments,LIKE,*humming*,NULL,Or
+359-15,359,15,NULL,Customer Comments,LIKE,*squeal*,NULL,Or
+359-16,359,16,NULL,Customer Comments,LIKE,*squealing*,NULL,Or
+359-17,359,17,NULL,Customer Comments,LIKE,*squeak*,NULL,Or
+359-18,359,18,NULL,Customer Comments,LIKE,*squeaking*,NULL,Or
+359-19,359,19,NULL,Customer Comments,LIKE,*noise*,),NULL
+358-1,358,1,NULL,Issue ID,IS NULL,NULL,NULL,And
+358-2,358,2,NULL,Model,=,Odyssey,NULL,And
+358-3,358,3,NULL,Customer Category,LIKE,*garmin*,NULL,And
+358-4,358,4,NULL,DN Part ID,=,280,NULL,NULL
+357-1,357,1,NULL,Customer,=,Ford,NULL,And
+357-2,357,2,NULL,Model,=,Explorer,NULL,And
+357-3,357,3,NULL,Model Year,=,2020,NULL,And
+357-4,357,4,NULL,Issue ID,IS NULL,NULL,NULL,And
+357-5,357,5,(,Dealer Comments,LIKE,*P04F0*,NULL,Or
+357-6,357,6,NULL,Dealer Comments,LIKE,*P 04F0*,NULL,Or
+357-7,357,7,NULL,Dealer Comments,LIKE,*PO4F*,),And
+357-8,357,8,(,Claim Category,=,NTF,NULL,Or
+357-9,357,9,NULL,Claim Category,=,Faulty Purge,NULL,Or
+357-10,357,10,NULL,Claim Category,=,Inop Sensor,NULL,Or
+357-11,357,11,NULL,Claim Category,=,Replaced Purge Valve,NULL,Or
+357-12,357,12,NULL,Claim Category,=,Rplaced Purge Vlave,NULL,Or
+357-13,357,13,NULL,Claim Category,=,Repalced Purge Valve,NULL,Or
+357-14,357,14,NULL,Claim Category,IS NULL,NULL,),NULL
+356-1,356,1,NULL,Customer,=,Ford,NULL,And
+356-2,356,2,NULL,Issue ID,IS NULL,NULL,NULL,And
+356-3,356,3,(,Claim Comment,=,P04F0,NULL,Or
+356-4,356,4,NULL,Claim Comment,=,P144C,),NULL
+355-1,355,1,NULL,customer,=,Stellantis,NULL,And
+355-2,355,2,NULL,Model,=,Cherokee,NULL,And
+355-3,355,3,NULL,Model Year,=,2019,NULL,And
+355-4,355,4,NULL,Product Description,=,Alternator,NULL,And
+355-5,355,5,NULL,Vehicle Build Date,<=,8/15/2018,NULL,And
+355-6,355,6,(,Customer Comments,LIKE,*622*,NULL,Or
+355-7,355,7,NULL,Customer Comments,LIKE,*63A*,NULL,Or
+355-8,355,8,NULL,Dealer Comments,LIKE,*622*,NULL,Or
+355-9,355,9,NULL,Dealer Comments,LIKE,*63A*,NULL,Or
+355-10,355,10,NULL,Correction Comments,LIKE,*622*,NULL,Or
+355-11,355,11,NULL,Correction Comments,LIKE,*63A*,),NULL
+354-1,354,1,(,Issue ID,IS NULL,NULL,NULL,Or
+354-2,354,2,NULL,Issue ID,=,0,),And
+354-3,354,3,NULL,Customer,=,Ford,NULL,And
+354-4,354,4,NULL,Model,=,F150,NULL,And
+354-5,354,5,NULL,Engine Family,=,5.0L Engine,NULL,And
+354-8,354,8,(,Claim Comment,=,P0172,NULL,Or
+354-9,354,9,NULL,Claim Comment,=,P0172 P0175,NULL,Or
+354-10,354,10,NULL,Claim Comment,=,P0175,),NULL
+353-1,353,1,NULL,Model,=,Explorer,NULL,And
+353-2,353,2,NULL,Issue ID,IS NULL,NULL,NULL,And
+353-3,353,3,(,Dealer Comments,LIKE,*rear*,NULL,Or
+353-4,353,4,NULL,Customer Comments,LIKE,*rear*,NULL,Or
+353-5,353,5,NULL,Customer Comments,LIKE,*aux*,NULL,Or
+353-6,353,6,NULL,Customer Comments,LIKE,*aux*,),NULL
+352-1,352,1,NULL,Customer,=,Ford,NULL,And
+352-2,352,2,NULL,Issue ID,IS NULL,NULL,NULL,And
+352-3,352,3,NULL,Model,=,Explorer,NULL,And
+352-4,352,4,(,Dealer Comments,LIKE,*48268*,NULL,Or
+352-5,352,5,NULL,Customer Comments,LIKE,*48268*,NULL,Or
+352-6,352,6,NULL,Dealer Comments,LIKE,*48544*,NULL,Or
+352-7,352,7,NULL,Customer Comments,LIKE,*48544*,),NULL
+351-1,351,1,NULL,Customer,=,Ford,NULL,And
+351-2,351,2,NULL,Issue ID,IS NULL,NULL,NULL,And
+351-3,351,3,NULL,Model,=,Explorer,NULL,And
+351-4,351,4,NULL,Model Year,=,2020,NULL,And
+351-5,351,5,(,Dealer Comments,LIKE,*48386*,NULL,Or
+351-6,351,6,NULL,Customer Comments,LIKE,*48386*,),NULL
+350-1,350,1,(,Customer Comments,LIKE,*G-Maintenance*,NULL,Or
+350-2,350,2,NULL,Dealer Comments,LIKE,*G-Maintenance*,NULL,Or
+350-3,350,3,NULL,Correction Comments,LIKE,*G-Maintenance*,),And
+350-4,350,4,(,Customer Comments,LIKE,*Payment Code*,NULL,Or
+350-5,350,5,NULL,Dealer Comments,LIKE,*Payment Code*,NULL,Or
+350-6,350,6,NULL,Correction Comments,LIKE,*Payment Code*,),NULL
+349-1,349,1,NULL,Customer,=,GM,NULL,And
+349-2,349,2,NULL,Datalink,LIKE,*Purge*,NULL,And
+349-3,349,3,(,Claim Category,=,Dealer Mis-Binned,NULL,Or
+349-4,349,4,NULL,Customer Category,=,Dealer Mis-Binned,),And
+349-5,349,5,(,Issue ID,IS NULL,NULL,NULL,Or
+349-6,349,6,NULL,Issue ID,=,0,),NULL
+348-1,348,1,NULL,Customer,=,GM,NULL,And
+348-2,348,2,NULL,Datalink,LIKE,*PEPSUID*,NULL,And
+348-3,348,3,(,Claim Category,=,Will Not Program,NULL,Or
+348-4,348,4,NULL,Claim Category,=,VIN No Match,),And
+348-5,348,5,(,Issue ID,IS NULL,NULL,NULL,Or
+348-6,348,6,NULL,Issue ID,=,0,),NULL
+347-1,347,1,NULL,Customer,=,GM,NULL,And
+347-2,347,2,NULL,Datalink,LIKE,*PEPSUID*,NULL,And
+347-3,347,3,(,Customer Category,=,Random Electrical Issues,NULL,Or
+347-4,347,4,NULL,Customer Category,=,Alarm Goes Off,),NULL
+346-1,346,1,NULL,Customer,=,GM,NULL,And
+346-2,346,2,NULL,Datalink,LIKE,*PEPSUID*,NULL,And
+346-3,346,3,(,Customer Category,=,Mixed Fob,NULL,Or
+346-4,346,4,NULL,Claim Category,=,Mixed Fob,),And
+346-5,346,5,(,Issue ID,IS NULL,NULL,NULL,Or
+346-6,346,6,NULL,Issue ID,=,0,),NULL
+345-1,345,1,NULL,Customer,=,GM,NULL,And
+345-2,345,2,NULL,Datalink,LIKE,*PEPSUID*,NULL,And
+345-3,345,3,(,Claim Category,=,Missing Fob,NULL,Or
+345-4,345,4,NULL,Customer Category,=,Missing Fob,),And
+345-5,345,5,(,Issue ID,IS NULL,NULL,NULL,Or
+345-6,345,6,NULL,Issue ID,=,0,),NULL
+344-1,344,1,NULL,Customer,=,GM,NULL,And
+344-2,344,2,NULL,Datalink,LIKE,*PEPSUID*,NULL,And
+344-3,344,3,NULL,Claim Category,=,Reprogrammed,NULL,And
+344-4,344,4,(,Issue ID,IS NULL,NULL,NULL,Or
+344-5,344,5,NULL,Issue ID,=,0,),NULL
+343-1,343,1,NULL,Customer,=,GM,NULL,And
+343-2,343,2,NULL,Datalink,LIKE,*PEPSUID*,NULL,And
+343-3,343,3,NULL,Claim Category,=,Battery Replacement,NULL,And
+343-4,343,4,(,Issue ID,IS NULL,NULL,NULL,Or
+343-5,343,5,NULL,Issue ID,=,0,),NULL
+342-1,342,1,NULL,Customer,=,Honda,NULL,And
+342-2,342,2,NULL,Engine,LIKE,*J35*,NULL,And
+342-3,342,3,(,Model Year,=,2017,NULL,Or
+342-4,342,4,NULL,Model Year,=,2018,NULL,Or
+342-5,342,5,NULL,Model Year,=,2019,NULL,Or
+342-6,342,6,NULL,Model Year,=,2020,NULL,Or
+342-7,342,7,NULL,Model Year,=,2021,NULL,Or
+342-8,342,8,NULL,Model Year,=,2022,),And
+342-9,342,9,(,Failure Code Desc,LIKE,*P044*,NULL,Or
+342-10,342,10,NULL,Failure Code Desc,LIKE,*P04F*,),And
+342-11,342,11,(,Customer Comments,LIKE,*light*,NULL,Or
+342-12,342,12,NULL,Customer Comments,LIKE,*CEL*,NULL,Or
+342-13,342,13,NULL,Customer Comments,LIKE,*lamp*,NULL,Or
+342-14,342,14,NULL,Customer Comments,LIKE,*lite*,NULL,Or
+342-15,342,15,NULL,Customer Comments,LIKE,*warning*,NULL,Or
+342-16,342,16,NULL,Customer Comments,LIKE,*ission*,),And
+342-17,342,17,(,Issue ID,=,0,NULL,Or
+342-18,342,18,NULL,Issue ID,IS NULL,NULL,),NULL
+338-0,338,0,NULL,Customer,=,GM,NULL,And
+338-2,338,2,(,Datalink,=,WiperBladeD2UC,NULL,Or
+338-3,338,3,NULL,Datalink,=,WiperBladeD2UG,),And
+338-4,338,4,NULL,Model Year,>=,2020,NULL,And
+338-5,338,5,NULL,Claim Category,=,Poor Wipe Quality,NULL,NULL
+336-1,336,1,NULL,Customer,=,Honda,NULL,And
+336-2,336,2,NULL,Model,=,CRV,NULL,And
+336-3,336,3,NULL,Engine,=,L15B,NULL,And
+336-4,336,4,(,Model Year,=,2017,NULL,Or
+336-5,336,5,NULL,Model Year,=,2018,NULL,Or
+336-6,336,6,NULL,Model Year,=,2019,NULL,Or
+336-7,336,7,NULL,Model Year,=,2020,),And
+336-8,336,8,(,Failure Code,LIKE,*P04*,NULL,Or
+336-9,336,9,NULL,Customer Comments,LIKE,*light*,NULL,Or
+336-10,336,10,NULL,Customer Comments,LIKE,*CEL*,NULL,Or
+336-11,336,11,NULL,Customer Comments,LIKE,*lamp*,NULL,Or
+336-12,336,12,NULL,Customer Comments,LIKE,*lite*,NULL,Or
+336-13,336,13,NULL,Customer Comments,LIKE,*warning*,NULL,Or
+336-14,336,14,NULL,Customer Comments,LIKE,*ission*,),NULL
+335-1,335,1,NULL,Customer,=,GM,NULL,And
+335-2,335,2,NULL,Datalink,=,CamSensorSGE,NULL,And
+335-3,335,3,NULL,Model,=,Malibu E2,NULL,And
+335-4,335,4,NULL,Model Year,=,2020,NULL,And
+335-5,335,5,NULL,Vehicle Build Date,<,03/29/2020,NULL,And
+335-6,335,6,(,Dealer Comments,LIKE,*P0366*,NULL,Or
+335-7,335,7,NULL,Dealer Comments,LIKE,*P0365*,NULL,Or
+335-8,335,8,NULL,Correction Comments,LIKE,*P0365*,NULL,Or
+335-9,335,9,NULL,Correction Comments,LIKE,*P0366*,NULL,Or
+335-10,335,10,NULL,Claim Category,=,P0365/P0366,),NULL
+333-1,333,1,NULL,Customer,=,Nissan,NULL,And
+333-2,333,2,(,Vehicle Build Date,>,12/1/2019,NULL,And
+333-3,333,3,NULL,Vehicle Build Date,<,09/25/2020,),And
+333-4,333,4,NULL,Issue ID,IS NULL,NULL,NULL,NULL
+331-1,331,1,NULL,Customer,=,GM,NULL,And
+331-2,331,2,NULL,Datalink,=,FuelInjectorDMAX,NULL,And
+331-3,331,3,NULL,Model Year,>=,2017,NULL,And
+331-4,331,4,NULL,Model Year,<=,2024,NULL,And
+331-5,331,5,(,Issue ID,IS NULL,NULL,NULL,Or
+331-6,331,6,NULL,Issue ID,=,0,),And
+331-7,331,7,((,Customer Comments,LIKE,*P0201*,NULL,Or
+331-8,331,8,NULL,Customer Comments,LIKE,*P0202*,NULL,Or
+331-9,331,9,NULL,Customer Comments,LIKE,*P0203*,NULL,Or
+331-10,331,10,NULL,Customer Comments,LIKE,*P0204*,NULL,Or
+331-11,331,11,NULL,Customer Comments,LIKE,*P0205*,NULL,Or
+331-12,331,12,NULL,Customer Comments,LIKE,*P0206*,NULL,Or
+331-13,331,13,NULL,Customer Comments,LIKE,*P0207*,NULL,Or
+331-14,331,14,NULL,Customer Comments,LIKE,*P0208*,NULL,Or
+331-15,331,15,NULL,Dealer Comments,LIKE,*P0201*,NULL,Or
+331-16,331,16,NULL,Dealer Comments,LIKE,*P0202*,NULL,Or
+331-17,331,17,NULL,Dealer Comments,LIKE,*P0203*,NULL,Or
+331-18,331,18,NULL,Dealer Comments,LIKE,*P0204*,NULL,Or
+331-19,331,19,NULL,Dealer Comments,LIKE,*P0205*,NULL,Or
+331-20,331,20,NULL,Dealer Comments,LIKE,*P0206*,NULL,Or
+331-21,331,21,NULL,Dealer Comments,LIKE,*P0207*,NULL,Or
+331-22,331,22,NULL,Dealer Comments,LIKE,*P0208*,NULL,Or
+331-23,331,23,NULL,Correction Comments,LIKE,*P0201*,NULL,Or
+331-24,331,24,NULL,Correction Comments,LIKE,*P0202*,NULL,Or
+331-25,331,25,NULL,Correction Comments,LIKE,*P0203*,NULL,Or
+331-26,331,26,NULL,Correction Comments,LIKE,*P0204*,NULL,Or
+331-27,331,27,NULL,Correction Comments,LIKE,*P0205*,NULL,Or
+331-28,331,28,NULL,Correction Comments,LIKE,*P0206*,NULL,Or
+331-29,331,29,NULL,Correction Comments,LIKE,*P0207*,NULL,Or
+331-30,331,30,NULL,Claim Category,LIKE,*Inj.C*,NULL,Or
+331-31,331,31,NULL,Correction Comments,LIKE,*P0208*,),And
+331-32,331,32,(,Claim Category,LIKE,*p030x*,NULL,Or
+331-33,331,33,NULL,Claim Category,LIKE,*TBD*,NULL,Or
+331-34,331,34,NULL,Claim Category,LIKE,*inj.C*,),Or
+331-35,331,35,NULL,Claim Category,LIKE,*inj.c*,NULL,Or
+331-36,331,36,NULL,Claim Category,=,P020x,),And
+331-37,331,37,NULL,Vehicle Build Date,<,5/15/2021,NULL,NULL
+330-1,330,1,NULL,Customer,=,Nissan,NULL,And
+330-2,330,2,NULL,Claimed Part Number,=,226939HP0A,NULL,And
+330-3,330,3,(,Customer Comments,LIKE,*P2096*,NULL,Or
+330-4,330,4,NULL,Customer Comments,LIKE,*P2097*,NULL,Or
+330-5,330,5,NULL,Customer Comments,LIKE,*P015B*,NULL,Or
+330-6,330,6,NULL,Dealer Comments,LIKE,*P2096*,NULL,Or
+330-7,330,7,NULL,Dealer Comments,LIKE,*P2097*,NULL,Or
+330-8,330,8,NULL,Dealer Comments,LIKE,*P2096*,),And
+330-9,330,9,NULL,Issue ID,IS NULL,NULL,NULL,NULL
+329-1,329,1,NULL,Customer,=,GM,NULL,And
+329-2,329,2,NULL,Datalink,=,FuelInjectorDMAX,NULL,And
+329-3,329,3,NULL,Engine,=,L5D,NULL,And
+329-4,329,4,NULL,Mileage,>=,35000,NULL,And
+329-5,329,5,NULL,Vehicle Build Date,>=,12/1/2018,NULL,And
+329-6,329,6,NULL,Issue ID,=,0,NULL,NULL
+328-1,328,1,NULL,Customer,=,GM,NULL,And
+328-2,328,2,NULL,Datalink,=,StarterHFV6Gen1,NULL,And
+328-3,328,3,NULL,Vehicle Build Date,>=,1/1/2019,NULL,And
+328-4,328,4,(,Issue ID,=,0,NULL,Or
+328-5,328,5,NULL,Issue ID,IS NULL,NULL,),And
+328-6,328,6,(,Model Year,=,2019,NULL,Or
+328-7,328,7,NULL,Model Year,=,2020,),And
+328-8,328,8,(,Claim Category,LIKE,*Blown Fuse*,NULL,Or
+328-9,328,9,NULL,Claim Category,=,Flex plate,),NULL
+327-1,327,1,NULL,Datalink,=,PurgeValveHFV6Gen1,NULL,And
+327-2,327,2,NULL,Model,=,Traverse C1,NULL,And
+327-3,327,3,NULL,Customer,=,GM,NULL,And
+327-4,327,4,NULL,Model Year,=,2020,NULL,And
+327-5,327,5,(,Claim Category,=,Noise,NULL,Or
+327-6,327,6,NULL,Customer Category,=,Noise,),And
+327-7,327,7,(,Issue ID,IS NULL,NULL,NULL,Or
+327-8,327,8,NULL,Issue ID,=,0,),NULL
+326-1,326,1,NULL,Complaint Code Desc,LIKE,"""inop""",NULL,NULL
+325-1,325,1,NULL,customer,=,Stellantis,NULL,And
+325-2,325,2,NULL,Product Description,=,Duct Temp Sensor,NULL,And
+325-3,325,3,NULL,Vehicle Build Date,<=,4/27/2018,NULL,NULL
+324-1,324,1,NULL,Customer,=,Ford,NULL,And
+324-2,324,2,NULL,Model,=,Explorer,NULL,And
+324-3,324,3,(,Dealer Comments,LIKE,*Not connected*,NULL,Or
+324-4,324,4,NULL,Dealer Comments,LIKE,*disconnected*,NULL,Or
+324-5,324,5,NULL,Dealer Comments,LIKE,*not fully seated*,NULL,Or
+324-7,324,7,NULL,Claim Category,=,Loose Purge Hose,NULL,Or
+324-8,324,8,NULL,Claim Category,=,Loose Vapor Line,),NULL
+323-1,323,1,NULL,Customer,=,Ford,NULL,And
+323-2,323,2,(,Issue ID,IS NULL,NULL,NULL,Or
+323-3,323,3,NULL,Issue ID,=,0,),And
+323-4,323,4,(,Claim Comment,=,P0625,NULL,Or
+323-5,323,5,NULL,Claim Comment,=,P0625 P0620,NULL,Or
+323-6,323,6,NULL,Claim Comment,=,P0625 P0620 P065B,NULL,Or
+323-7,323,7,NULL,Claim Comment,=,P0625 P065B,NULL,Or
+323-9,323,9,NULL,Claim Comment,=,P0620 P0625 P065B,NULL,Or
+323-10,323,10,NULL,Claim Comment,=,P0620 P0625,),NULL
+322-1,322,1,NULL,Customer,=,GM,NULL,And
+322-2,322,2,NULL,Datalink,=,FuelInjectorDMAX,NULL,And
+322-3,322,3,NULL,Vehicle Build Date,<,12/10/2021,NULL,And
+322-4,322,4,NULL,Claim Category,=,TL,NULL,And
+322-5,322,5,(,Issue ID,IS NULL,NULL,NULL,Or
+322-6,322,6,NULL,Issue ID,=,0,NULL,Or
+322-7,322,7,NULL,Issue ID,=,0,),NULL
+321-1,321,1,NULL,Customer,=,Honda,NULL,And
+321-2,321,2,NULL,Model Code,=,ACCORD,NULL,And
+321-3,321,3,(,Model Year,=,2018,NULL,Or
+321-4,321,4,NULL,Model Year,=,2019,NULL,Or
+321-5,321,5,NULL,Model Year,=,2020,),And
+321-6,321,6,NULL,Engine,=,L15B,NULL,NULL
+320-1,320,1,NULL,Customer,=,Honda,NULL,And
+320-2,320,2,NULL,Model Code,=,ODYSSEY,NULL,And
+320-3,320,3,(,Model Year,=,2016,NULL,Or
+320-4,320,4,NULL,Model Year,=,2017,NULL,Or
+320-5,320,5,NULL,Model Year,=,2018,NULL,Or
+320-6,320,6,NULL,Model Year,=,2019,),NULL
+319-1,319,1,NULL,Customer,=,Honda,NULL,And
+319-2,319,2,NULL,Complaint Code Desc,LIKE,*1 HOUR PUD*,NULL,NULL
+318-1,318,1,(,Customer,=,Honda,NULL,And
+318-2,318,2,NULL,Model Code,=,CRV,NULL,And
+318-3,318,3,NULL,Engine,=,L15B,),NULL
+317-1,317,1,NULL,customer,=,Toyota,NULL,And
+317-2,317,2,NULL,model,=,Tacoma,NULL,And
+317-3,317,3,NULL,Model Year,=,2016,NULL,And
+317-4,317,4,(,Customer Comments,LIKE,*79-15*,NULL,Or
+317-5,317,5,NULL,Dealer Comments,LIKE,*79-15*,NULL,Or
+317-6,317,6,NULL,Correction Comments,LIKE,*79-15*,NULL,Or
+317-7,317,7,NULL,Customer Comments,LIKE,*4343*,NULL,Or
+317-8,317,8,NULL,Dealer Comments,LIKE,*4343*,NULL,Or
+317-9,317,9,NULL,Correction Comments,LIKE,*4343*,NULL,Or
+317-10,317,10,NULL,Customer Comments,LIKE,*2-3 shift*,NULL,Or
+317-11,317,11,NULL,Dealer Comments,LIKE,*2-3 shift*,NULL,Or
+317-12,317,12,NULL,Correction Comments,LIKE,*2-3 shift*,NULL,Or
+317-13,317,13,NULL,Customer Comments,LIKE,*TC1505*,NULL,Or
+317-14,317,14,NULL,Dealer Comments,LIKE,*TC1505*,NULL,Or
+317-15,317,15,NULL,Correction Comments,LIKE,*TC1505*,),NULL
+316-1,316,1,NULL,Customer,=,Toyota,NULL,And
+316-2,316,2,NULL,Model,=,Tacoma,NULL,And
+316-3,316,3,NULL,Product Description,=,Engine ECU,NULL,And
+316-4,316,4,NULL,Model Year,>=,2016,NULL,And
+316-5,316,5,NULL,Model Year,<=,2017,NULL,And
+316-6,316,6,(,Customer Comments,LIKE,*77-16*,NULL,Or
+316-7,316,7,NULL,Dealer Comments,LIKE,*77-16*,NULL,Or
+316-8,316,8,NULL,Correction Comments,LIKE,*77-16*,NULL,Or
+316-9,316,9,NULL,Customer Comments,LIKE,*4419*,NULL,Or
+316-10,316,10,NULL,Dealer Comments,LIKE,*4419*,NULL,Or
+316-11,316,11,NULL,Correction Comments,LIKE,*4419*,NULL,Or
+316-12,316,12,NULL,Customer Comments,LIKE,*TC1601*,NULL,Or
+316-13,316,13,NULL,Dealer Comments,LIKE,*TC1601*,NULL,Or
+316-14,316,14,NULL,Correction Comments,LIKE,*TC1601*,NULL,Or
+316-15,316,15,NULL,Customer Comments,LIKE,*shift feeling*,NULL,Or
+316-16,316,16,NULL,Dealer Comments,LIKE,*shift feeling*,NULL,Or
+316-17,316,17,NULL,Customer Comments,LIKE,*shift feeling*,),NULL
+315-1,315,1,NULL,Customer,=,Toyota,NULL,And
+315-2,315,2,NULL,model,=,Tacoma,NULL,And
+315-3,315,3,NULL,Model Year,>=,2016,NULL,And
+315-4,315,4,NULL,Model Year,<=,2018,NULL,And
+315-5,315,5,NULL,Product Description,=,Engine ECU,NULL,And
+315-6,315,6,(,Customer Comments,LIKE,*58-18*,NULL,Or
+315-7,315,7,NULL,Dealer Comments,LIKE,*58-18*,NULL,Or
+315-8,315,8,NULL,Correction Comments,LIKE,*58-18*,NULL,Or
+315-9,315,9,NULL,Customer Comments,LIKE,*EG1810*,NULL,Or
+315-10,315,10,NULL,Dealer Comments,LIKE,*EG1810*,NULL,Or
+315-11,315,11,NULL,Correction Comments,LIKE,*EG1810*,NULL,Or
+315-12,315,12,NULL,Customer Comments,LIKE,*5133*,NULL,Or
+315-13,315,13,NULL,Dealer Comments,LIKE,*5133*,NULL,Or
+315-14,315,14,NULL,Correction Comments,LIKE,*5133*,),NULL
+314-1,314,1,NULL,customer,=,Toyota,NULL,And
+314-2,314,2,NULL,model,=,Tacoma,NULL,And
+314-3,314,3,NULL,Model Year,>=,2016,NULL,And
+314-4,314,4,NULL,Model Year,<=,2018,NULL,And
+314-5,314,5,NULL,Product Description,=,Engine ECU,NULL,And
+314-6,314,6,(,Customer Comments,LIKE,*62-18*,NULL,Or
+314-7,314,7,NULL,Dealer Comments,LIKE,*62-18*,NULL,Or
+314-8,314,8,NULL,Correction Comments,LIKE,*62-18*,NULL,Or
+314-9,314,9,NULL,Customer Comments,LIKE,*EG1811*,NULL,Or
+314-10,314,10,NULL,Dealer Comments,LIKE,*EG1811*,NULL,Or
+314-11,314,11,NULL,Correction Comments,LIKE,*EG1811*,NULL,Or
+314-12,314,12,NULL,Customer Comments,LIKE,*5143*,NULL,Or
+314-13,314,13,NULL,Dealer Comments,LIKE,*5143*,NULL,Or
+314-14,314,14,NULL,Correction Comments,LIKE,*5143*,NULL,Or
+314-15,314,15,NULL,Customer Comments,LIKE,*WOT*,NULL,Or
+314-16,314,16,NULL,Dealer Comments,LIKE,*WOT*,NULL,Or
+314-17,314,17,NULL,Correction Comments,LIKE,*WOT*,),NULL
+313-1,313,1,NULL,customer,=,Toyota,NULL,And
+313-2,313,2,NULL,model,=,Tacoma,NULL,And
+313-3,313,3,NULL,Model Year,>=,2016,NULL,And
+313-4,313,4,NULL,Model Year,<=,2017,NULL,And
+313-5,313,5,NULL,Product Description,=,Engine ECU,NULL,And
+313-6,313,6,(,Customer Comments,LIKE,*125-18*,NULL,Or
+313-7,313,7,NULL,Dealer Comments,LIKE,*125-18*,NULL,Or
+313-8,313,8,NULL,Correction Comments,LIKE,*125-18*,NULL,Or
+313-9,313,9,NULL,Customer Comments,LIKE,*EG1812*,NULL,Or
+313-10,313,10,NULL,Dealer Comments,LIKE,*EG1812*,NULL,Or
+313-11,313,11,NULL,Correction Comments,LIKE,*EG1812*,NULL,Or
+313-12,313,12,NULL,Customer Comments,LIKE,*5154*,NULL,Or
+313-13,313,13,NULL,Dealer Comments,LIKE,*5154*,NULL,Or
+313-14,313,14,NULL,Correction Comments,LIKE,*5154*,),NULL
+311-1,311,1,NULL,customer,=,Toyota,NULL,And
+311-2,311,2,((,model,=,Camry,NULL,And
+311-3,311,3,NULL,Model Year,=,2018,),Or
+311-4,311,4,(,model,=,Sienna,NULL,And
+311-5,311,5,NULL,Model Year,>=,2017,NULL,And
+311-6,311,6,NULL,Model Year,>=,2018,),Or
+311-7,311,7,(,model,=,Tacoma,NULL,And
+311-8,311,8,NULL,Model Year,>=,2016,NULL,And
+311-9,311,9,NULL,Model Year,>=,2018,)),And
+311-10,311,10,NULL,Product Description,=,Engine ECU,NULL,And
+311-11,311,11,(,Customer Comments,LIKE,*13-19*,NULL,Or
+311-12,311,12,NULL,Dealer Comments,LIKE,*13-19*,NULL,Or
+311-13,311,13,NULL,Correction Comments,LIKE,*13-19*,NULL,Or
+311-14,311,14,NULL,Customer Comments,LIKE,*EG1822*,NULL,Or
+311-15,311,15,NULL,Dealer Comments,LIKE,*EG1822*,NULL,Or
+311-16,311,16,NULL,Correction Comments,LIKE,*EG1822*,NULL,Or
+311-17,311,17,NULL,Customer Comments,LIKE,*5191*,NULL,Or
+311-18,311,18,NULL,Dealer Comments,LIKE,*5191*,NULL,Or
+311-19,311,19,NULL,Correction Comments,LIKE,*5191*,NULL,Or
+311-20,311,20,NULL,Correction Comments,LIKE,*5191*,NULL,Or
+311-21,311,21,NULL,Customer Comments,LIKE,*2610*,NULL,Or
+311-22,311,22,NULL,Dealer Comments,LIKE,*2610*,NULL,Or
+311-23,311,23,NULL,Correction Comments,LIKE,*2610*,),NULL
+300-1,300,1,NULL,Customer,=,GM,NULL,And
+300-2,300,2,NULL,Datalink,=,FuelInjectorDMAX,NULL,And
+300-3,300,3,NULL,Vehicle Build Date,>=,12/10/2021,NULL,And
+300-4,300,4,NULL,Vehicle Build Date,<=,12/31/2023,NULL,And
+300-5,300,5,(,Issue ID,=,0,NULL,Or
+300-6,300,6,NULL,Issue ID,IS NULL,NULL,),And
+300-7,300,7,NULL,Claim Category,=,TL,NULL,NULL
+295-1,295,1,NULL,Issue ID,=,NULL,NULL,NULL
+295-2,295,2,NULL,Model,=,F150,NULL,NULL
+295-3,295,3,(,Dealer Comments,LIKE,roush,NULL,Or
+295-4,295,4,NULL,Dealer Comments,LIKE,rousch,NULL,Or
+295-5,295,5,NULL,Dealer Comments,LIKE,supercharger,NULL,Or
+295-6,295,6,NULL,Dealer Comments,LIKE,super charger,),NULL
+291-1,291,1,NULL,customer,=,Stellantis,NULL,And
+291-2,291,2,NULL,model,=,Compass,NULL,And
+291-3,291,3,NULL,Product Description,=,Blower Motor,NULL,And
+291-4,291,4,(,Customer Comments,LIKE,*nois*,NULL,Or
+291-5,291,5,NULL,Customer Comments,LIKE,*squeel*,NULL,Or
+291-6,291,6,NULL,Customer Comments,LIKE,*whine*,NULL,Or
+291-7,291,7,NULL,Customer Comments,LIKE,*whistle*,NULL,Or
+291-8,291,8,NULL,Dealer Comments,LIKE,*nois*,NULL,Or
+291-9,291,9,NULL,Dealer Comments,LIKE,*squeel*,NULL,Or
+291-10,291,10,NULL,Dealer Comments,LIKE,*whine*,NULL,Or
+291-11,291,11,NULL,Dealer Comments,LIKE,*whistle*,),And
+291-12,291,12,NULL,Vehicle Build Date,<,6/1/2019,NULL,NULL
+283-1,283,1,NULL,Model Year,>=,2020,NULL,And
+283-2,283,2,(,Claim Category,LIKE,*P044*,NULL,Or
+283-3,283,3,NULL,Claim Category,LIKE,*P017*,NULL,Or
+283-4,283,4,NULL,Claim Category,LIKE,*P045*,NULL,Or
+283-5,283,5,NULL,Claim Category,LIKE,*P117*,NULL,Or
+283-6,283,6,NULL,Claim Category,LIKE,*P17*,NULL,Or
+283-7,283,7,NULL,Claim Category,=,Stuck,),And
+283-8,283,8,NULL,Vehicle Build Date,>=,11/1/2019,NULL,NULL
+282-1,282,1,NULL,Make,=,Nissan,NULL,And
+282-2,282,2,NULL,Model,=,Murano,NULL,And
+282-3,282,3,NULL,Model Year,=,2019,NULL,And
+282-4,282,4,NULL,Dealer Comments,LIKE,*NO REFRIGERANT*,NULL,NULL
+281-1,281,1,NULL,Customer,=,Subaru,NULL,And
+281-2,281,2,(,Claimed Part Number,LIKE,*98221AN00*,NULL,Or
+281-3,281,3,NULL,Claimed Part Number,LIKE,*98221AN01*,),And
+281-4,281,4,(,Dealer Comments,LIKE,*1185*,NULL,And
+281-5,281,5,NULL,Dealer Comments,LIKE,*1195*,NULL,And
+281-6,281,6,NULL,Dealer Comments,LIKE,*1196*,),And
+281-8,281,8,NULL,Vehicle Build Date,<=,11/1/2020,NULL,NULL
+279-1,279,1,NULL,Customer,=,GM,NULL,And
+279-2,279,2,NULL,Datalink,=,StarterLGE,NULL,And
+279-3,279,3,NULL,Vehicle Build Date,>=,4/1/2019,NULL,And
+279-4,279,4,NULL,Vehicle Build Date,<,7/1/2019,NULL,And
+279-5,279,5,NULL,Claim Category,=,Flex plate,NULL,And
+279-6,279,6,(,Issue ID,IS NULL,NULL,NULL,Or
+279-7,279,7,NULL,Issue ID,=,0,NULL,Or
+279-8,279,8,NULL,Issue ID,=,279,),NULL
+272-1,272,1,NULL,Make,=,Nissan,NULL,And
+272-2,272,2,NULL,Model,=,MURANO,NULL,And
+272-3,272,3,NULL,Model Year,=,2020,NULL,NULL
+264-1,264,1,(,Model,=,Fusion,NULL,Or
+264-2,264,2,NULL,Model,=,Zephyr/MKZ,),And
+264-3,264,3,(,Dealer Comments,LIKE,*Seize*,NULL,Or
+264-4,264,4,NULL,Dealer Comments,LIKE,*Lock*,NULL,Or
+264-5,264,5,NULL,Dealer Comments,LIKE,*Sieze*,),And
+264-6,264,6,NULL,Issue ID,IS NULL,NULL,NULL,NULL
+261-1,261,1,NULL,Product Description,=,Actuator,NULL,And
+261-2,261,2,(,Model,=,Ram DT,NULL,Or
+261-3,261,3,NULL,Model,=,Ram HD,),And
+261-4,261,4,NULL,Claim Comment,=,SET,NULL,NULL
+259-1,259,1,((,model,=,Ram DT,NULL,Or
+259-2,259,2,(,Model,=,Ram HD,NULL,And
+259-3,259,3,NULL,Model Year,<=,2020,)),And
+259-4,259,4,(,Customer Comments,LIKE,*Nois*,NULL,Or
+259-5,259,5,NULL,Dealer Comments,LIKE,*Nois*,NULL,Or
+259-6,259,6,NULL,Dealer Comments,LIKE,*vibrat*,NULL,Or
+259-7,259,7,NULL,Customer Comments,LIKE,*vibrat*,)),NULL
+258-1,258,1,NULL,Product Description,=,Radiator Cap,NULL,And
+258-2,258,2,((,Model,=,Ram DS,NULL,And
+258-3,258,3,NULL,Vehicle Build Date,<=,11/16/2020,),Or
+258-4,258,4,(,Model,=,Ram DT,NULL,And
+258-5,258,5,NULL,Vehicle Build Date,<=,1/7/2021,)),NULL
+253-1,253,1,((,Model Platform,LIKE,*DT*,NULL,Or
+253-2,253,2,NULL,Model Platform,LIKE,*DJ*,),And
+253-3,253,3,(,Customer Comments,LIKE,*fog*,NULL,Or
+253-4,253,4,NULL,Customer Comments,LIKE,*windshield foggy*,NULL,Or
+253-5,253,5,NULL,Dealer Comments,LIKE,*fog*,)),NULL
+252-1,252,1,NULL,Customer,=,Subaru,NULL,And
+252-2,252,2,NULL,Vehicle Build Date,>=,8/1/2018,NULL,And
+252-3,252,3,NULL,Vehicle Build Date,<,4/1/2019,NULL,And
+252-4,252,4,(,Claimed Part Number,=,73431FL10A,NULL,Or
+252-5,252,5,NULL,Claimed Part Number,=,73431FL11A,NULL,Or
+252-6,252,6,NULL,Claimed Part Number,=,73431XC00A,),NULL
+249-1,249,1,NULL,Customer,=,Stellantis,NULL,And
+249-2,249,2,(,Model Platform,=,DJ,NULL,Or
+249-3,249,3,NULL,Model Platform,=,DT,),And
+249-4,249,4,NULL,Customer Category,=,Low Speed Noise,NULL,NULL
+248-1,248,1,(,Model,=,Ram DT,NULL,Or
+248-2,248,2,(,Model,=,Ram HD,NULL,And
+248-3,248,3,NULL,Model Year,>=,2019,)),And
+248-4,248,4,(,Claimed Part Number Desc,LIKE,*Heater - housing*,),And
+248-5,248,5,(,Claim Category,LIKE,*Case Damage - SHAP*,NULL,Or
+248-6,248,6,NULL,Customer Comments,LIKE,*water*,NULL,Or
+248-7,248,7,NULL,Customer Comments,LIKE,*broke*,NULL,Or
+248-8,248,8,NULL,Customer Comments,LIKE,*wet*,NULL,Or
+248-9,248,9,NULL,Dealer Comments,LIKE,*water*,NULL,Or
+248-10,248,10,NULL,Dealer Comments,LIKE,*broke*,NULL,Or
+248-11,248,11,NULL,Customer Comments,LIKE,*damag*,NULL,Or
+248-12,248,12,NULL,Dealer Comments,LIKE,*damag*,NULL,Or
+248-13,248,13,NULL,Dealer Comments,LIKE,*crack*,NULL,Or
+248-14,248,14,NULL,Customer Comments,LIKE,*crack*,NULL,Or
+248-15,248,15,NULL,Dealer Comments,LIKE,*wet*,),NULL
+243-1,243,1,(,Model,=,Ram DT,NULL,Or
+243-2,243,2,NULL,Model,=,Ram HD,),And
+243-3,243,3,(,Model Year,=,2019,NULL,Or
+243-4,243,4,NULL,Model Year,=,2020,),And
+243-5,243,5,(,Customer Comments,LIKE,*10EB-4B*,NULL,Or
+243-6,243,6,NULL,Dealer Comments,LIKE,*10EB-4B*,NULL,Or
+243-7,243,7,NULL,Correction Comments,LIKE,*10EB-4B*,NULL,Or
+243-8,243,8,NULL,Customer Comments,LIKE,*over temp*,NULL,Or
+243-10,243,10,NULL,Dealer Comments,LIKE,*over temp*,NULL,Or
+243-11,243,11,NULL,Correction Comments,LIKE,*over temp*,NULL,Or
+243-12,243,12,NULL,Customer Comments,LIKE,*overtemp*,NULL,Or
+243-13,243,13,NULL,Dealer Comments,LIKE,*overtemp*,NULL,Or
+243-14,243,14,NULL,Correction Comments,LIKE,*overtemp*,NULL,Or
+243-15,243,15,NULL,Dealer Comments,LIKE,*4B*,NULL,Or
+243-16,243,16,NULL,Claim Category,=,Over Temp DTC,),And
+243-17,243,17,NULL,Product Description,=,Blower Motor,NULL,NULL
+242-1,242,1,((,Customer,=,Stellantis,NULL,And
+242-2,242,2,NULL,Product Description,=,TXV Expansion Valve,),And
+242-3,242,3,(,Model Platform,LIKE,*D*,NULL,Or
+242-4,242,4,NULL,Model Platform,LIKE,*K*,NULL,Or
+242-5,242,5,NULL,Model Platform,LIKE,*MP*,),And
+242-6,242,6,(,Model Year,>,2019,),And
+242-7,242,7,(,Dealer Comments,LIKE,*leak*,NULL,And
+242-8,242,8,NULL,Dealer Country,LIKE,can*,)),NULL
+234-1,234,1,NULL,Model,=,Avalon,NULL,And
+234-2,234,2,NULL,Vehicle Build Date,<=,03/01/2019,NULL,And
+234-3,234,3,NULL,Additional Claimed Part Numbers,LIKE,8816207020,NULL,NULL
+229-1,229,1,((,Model Year,=,2019,NULL,And
+229-2,229,2,NULL,Model,=,Sienna,),Or
+229-3,229,3,(,Model Year,=,2019,NULL,And
+229-4,229,4,NULL,Model,=,Camry,)),And
+229-5,229,5,(,Complaint Code,=,01,NULL,Or
+229-6,229,6,NULL,Complaint Code,=,04,NULL,Or
+229-7,229,7,NULL,Complaint Code,=,05,NULL,Or
+229-8,229,8,NULL,Complaint Code,=,07,NULL,Or
+229-9,229,9,NULL,Complaint Code,=,08,NULL,Or
+229-10,229,10,NULL,Complaint Code,=,17,NULL,Or
+229-11,229,11,NULL,Complaint Code,=,8A,NULL,Or
+229-12,229,12,NULL,Complaint Code,=,8C,NULL,Or
+229-13,229,13,NULL,Complaint Code,=,72,NULL,Or
+229-14,229,14,NULL,Complaint Code,=,87,),NULL
+228-1,228,1,NULL,Customer,=,Subaru,NULL,And
+228-2,228,2,(,Claimed Part Number,=,73431FL10A,NULL,Or
+228-3,228,3,NULL,Claimed Part Number,=,73431FL11A,NULL,Or
+228-4,228,4,NULL,Claimed Part Number,=,73431XC00A,),And
+228-5,228,5,NULL,Vehicle Build Date,>=,8/1/2018,NULL,And
+228-6,228,6,NULL,Vehicle Build Date,<,4/1/2019,NULL,NULL
+221-1,221,1,NULL,Customer,=,Stellantis,NULL,And
+221-2,221,2,NULL,model,=,Journey,NULL,And
+221-3,221,3,NULL,Vehicle Build Date,<=,3/17/2020,NULL,And
+221-4,221,4,NULL,Claimed Part Number,=,68038538AA,NULL,And
+221-5,221,5,(,Customer Comments,LIKE,*plug*,NULL,Or
+221-6,221,6,NULL,Dealer Comments,LIKE,*plug*,NULL,Or
+221-7,221,7,NULL,Correction Comments,LIKE,*plug*,NULL,Or
+221-8,221,8,NULL,Customer Comments,LIKE,*restrict*,NULL,Or
+221-9,221,9,NULL,Dealer Comments,LIKE,*restrict*,NULL,Or
+221-10,221,10,NULL,Correction Comments,LIKE,*restrict*,NULL,Or
+221-11,221,11,NULL,Customer Comments,LIKE,*block*,NULL,Or
+221-12,221,12,NULL,Dealer Comments,LIKE,*block*,NULL,Or
+221-13,221,13,NULL,Correction Comments,LIKE,*block*,NULL,Or
+221-14,221,14,NULL,Customer Comments,LIKE,*clog*,NULL,Or
+221-15,221,15,NULL,Dealer Comments,LIKE,*clog*,NULL,Or
+221-16,221,16,NULL,Correction Comments,LIKE,*clog*,),NULL
+214-1,214,1,NULL,Model,=,Passport,NULL,And
+214-2,214,2,NULL,Model Year,=,2019,NULL,And
+214-3,214,3,NULL,Claimed Part Number,=,39870,NULL,NULL
+213-1,213,1,NULL,Model Year,=,2019,NULL,And
+213-2,213,2,NULL,Product Description,=,Compressor,NULL,And
+213-3,213,3,(,model,=,Ram DS,NULL,Or
+213-4,213,4,NULL,model,=,Ram DT,),And
+213-5,213,5,(,Vehicle Build Date,>,7/31/2018,NULL,And
+213-6,213,6,NULL,Vehicle Build Date,<=,8/31/2018,),And
+213-7,213,7,(,Dealer Comments,LIKE,*inop*,NULL,Or
+213-8,213,8,NULL,Dealer Comments,LIKE,*seiz*,NULL,Or
+213-9,213,9,NULL,Dealer Comments,LIKE,*contam*,NULL,Or
+213-10,213,10,NULL,Customer Comments,LIKE,*inop*,NULL,Or
+213-11,213,11,NULL,Customer Comments,LIKE,*seiz*,),NULL
+212-1,212,1,NULL,Claimed Part Number,LIKE,8713006410,NULL,And
+212-2,212,2,((,Vehicle Build Date,<,6/29/20,NULL,And
+212-3,212,3,((,Model,=,Camry,NULL,Or
+212-4,212,4,(,Model,=,ES,NULL,Or
+212-5,212,5,NULL,Model,=,Avalon,NULL,Or
+212-6,212,6,NULL,Model,=,Rav4,),And
+212-7,212,7,NULL,Model Year,>=,2019,))),Or
+212-8,212,8,(,Model,=,RX,NULL,And
+212-9,212,9,NULL,Vehicle Build Date,<=,6/25/20,),Or
+212-10,212,10,((,Model,=,Corolla,NULL,Or
+212-11,212,11,NULL,Model,=,Highlander,),And
+212-12,212,12,(,Vehicle Build Date,<=,9/30/20,NULL,And
+212-13,212,13,NULL,Model Year,>=,2020,))),And
+212-14,212,14,(,Issue ID,IS NULL,NULL,NULL,Or
+212-15,212,15,NULL,Issue ID,=,0,),NULL
+210-1,210,1,NULL,model,=,Cherokee,NULL,And
+210-2,210,2,NULL,Product Description,=,Wiper Blade,NULL,And
+210-3,210,3,NULL,Vehicle Build Date,<=,7/20/2020,NULL,And
+210-4,210,4,(,Customer Comments,LIKE,*streak*,NULL,Or
+210-5,210,5,NULL,Customer Comments,LIKE,*poor wip*,NULL,Or
+210-6,210,6,NULL,Customer Comments,LIKE,*worn*,NULL,Or
+210-7,210,7,NULL,Dealer Comments,LIKE,*streak*,NULL,Or
+210-8,210,8,NULL,Dealer Comments,LIKE,*poor wip*,NULL,Or
+210-9,210,9,NULL,Dealer Comments,LIKE,*worn*,),NULL
+206-1,206,1,(,model,=,Ram DT,NULL,Or
+206-2,206,2,NULL,model,=,Ram HD,),And
+206-3,206,3,(,Model Year,=,2019,NULL,Or
+206-4,206,4,NULL,Model Year,=,2020,),And
+206-5,206,5,(,Customer Comments,LIKE,*10EB-19*,NULL,Or
+206-6,206,6,NULL,Dealer Comments,LIKE,*10EB-19*,NULL,Or
+206-7,206,7,NULL,Correction Comments,LIKE,*10EB-19*,NULL,Or
+206-8,206,8,NULL,Customer Comments,LIKE,*over current*,NULL,Or
+206-9,206,9,NULL,Dealer Comments,LIKE,*over current*,NULL,Or
+206-10,206,10,NULL,Correction Comments,LIKE,*over current*,NULL,Or
+206-11,206,11,NULL,Customer Comments,LIKE,*overcurrent*,NULL,Or
+206-12,206,12,NULL,Dealer Comments,LIKE,*overcurrent*,NULL,Or
+206-13,206,13,NULL,Dealer Comments,LIKE,*-19*,NULL,Or
+206-14,206,14,NULL,Correction Comments,LIKE,*overcurrent*,NULL,Or
+206-15,206,15,NULL,Claim Category,=,Over Current DTC,),And
+206-16,206,16,NULL,Product Description,=,Blower Motor,NULL,And
+206-17,206,17,NULL,Vehicle Build Date,<=,12/16/2019,NULL,NULL
+198-1,198,1,((((,Model,=,Ram HD,NULL,Or
+198-2,198,2,NULL,Model,=,Ram DS,),And
+198-3,198,3,NULL,Model Year,=,2018,),And
+198-4,198,4,NULL,VIN,>=,3,),And
+198-5,198,5,(,Customer Comments,LIKE,*nois*,NULL,Or
+198-6,198,6,NULL,Customer Comments,LIKE,*whis*,)),And
+198-7,198,7,NULL,Issue ID,IS NULL,NULL,NULL,NULL
+193-1,193,1,NULL,Customer,=,Honda,NULL,And
+193-2,193,2,(,Model,=,RDX,NULL,Or
+193-3,193,3,NULL,Model,=,CRV,),And
+193-4,193,4,NULL,Customer Category,=,Noise,NULL,And
+193-5,193,5,NULL,Product Description,=,TXV Expansion Valve,NULL,And
+193-6,193,6,NULL,Issue ID,IS NULL,NULL,NULL,And
+193-7,193,7,NULL,Vehicle Build Date,<,5/6/2019,NULL,NULL
+190-1,190,1,NULL,Customer,=,Toyota,NULL,And
+190-2,190,2,NULL,Issue ID,IS NULL,NULL,NULL,And
+190-3,190,3,NULL,Model,=,ES,NULL,And
+190-4,190,4,NULL,Model Year,=,2019,NULL,And
+190-5,190,5,(,Customer Comments,LIKE,*overtaking*,NULL,Or
+190-6,190,6,NULL,Dealer Comments,LIKE,*overtaking*,),NULL
+189-1,189,1,NULL,customer,=,Subaru,NULL,And
+189-2,189,2,NULL,Claimed Part Number,=,73730AG00A,NULL,And
+189-3,189,3,NULL,Dealer Comments,LIKE,*072*,NULL,And
+189-4,189,4,NULL,Vehicle Build Date,<,2/1/2018,NULL,And
+189-5,189,5,(,Model,=,Outback,NULL,Or
+189-6,189,6,NULL,Model,=,Legacy,),NULL
+175-1,175,1,NULL,Vehicle Build Date,<=,1/30/2019,NULL,And
+175-2,175,2,NULL,customer,=,Stellantis,NULL,And
+175-3,175,3,NULL,Claimed Part Number,=,68447796AA,NULL,And
+175-4,175,4,(,model,=,Ram DS,NULL,Or
+175-5,175,5,NULL,model,=,Ram DT,NULL,Or
+175-6,175,6,NULL,model,=,Ram HD,NULL,Or
+175-7,175,7,NULL,model,=,Cherokee,),NULL
+171-1,171,1,NULL,customer,=,Subaru,NULL,And
+171-2,171,2,NULL,Claimed Part Number,=,98231FL00A,NULL,And
+171-3,171,3,NULL,Vehicle Build Date,>=,4/1/2018,NULL,And
+171-4,171,4,NULL,Vehicle Build Date,<,6/1/2018,NULL,And
+171-5,171,5,(,Dealer Comments,LIKE,*16F2*,NULL,Or
+171-6,171,6,NULL,Dealer Comments,LIKE,*16F3*,),NULL
+170-1,170,1,(,customer,=,Subaru,NULL,And
+170-2,170,2,NULL,model,=,Impreza,NULL,And
+170-3,170,3,NULL,Product Description,=,Blower Motor,NULL,And
+170-4,170,4,NULL,Vehicle Build Date,<=,10/3/2018,),Or
+170-5,170,5,(,customer,=,Honda,NULL,And
+170-6,170,6,NULL,Product Description,=,Blower Motor (Rear),NULL,And
+170-7,170,7,NULL,model,=,Odyssey,NULL,And
+170-8,170,8,NULL,Vehicle Build Date,<,7/1/2018,),NULL
+156-1,156,1,NULL,customer,=,Stellantis,NULL,And
+156-2,156,2,NULL,Model,=,Cherokee,NULL,And
+156-3,156,3,NULL,Vehicle Build Date,<=,12/17/2018,NULL,And
+156-4,156,4,(,Customer Comments,LIKE,*104E*,NULL,Or
+156-5,156,5,NULL,Dealer Comments,LIKE,*104E*,NULL,Or
+156-6,156,6,NULL,Correction Comments,LIKE,*104E*,),NULL
+152-1,152,1,(,Model,=,RX,NULL,Or
+152-2,152,2,NULL,Model,=,Camry,),And
+152-3,152,3,NULL,Model Year,=,2018,NULL,And
+152-4,152,4,NULL,Vehicle Build Date,<=,4/7/2018,NULL,And
+152-5,152,5,(,Failure Code,=,57,NULL,Or
+152-6,152,6,NULL,Complaint Code,=,62,),And
+152-7,152,7,(,Issue ID,IS NULL,NULL,NULL,Or
+152-8,152,8,NULL,Issue ID,=,0,),NULL
+143-1,143,1,(,Model,=,Sequoia,NULL,And
+143-2,143,2,NULL,Vehicle Build Date,<=,4/13/2018,NULL,And
+143-3,143,3,NULL,Failure Code Desc,=,POOR PROGRAMMING,),Or
+143-4,143,4,(,Model,=,Avalon,NULL,And
+143-5,143,5,NULL,Vehicle Build Date,<=,05/01/2018,NULL,And
+143-6,143,6,NULL,Failure Code Desc,=,POOR PROGRAMMING,),NULL
+140-1,140,1,NULL,Model,=,Camry,NULL,And
+140-2,140,2,NULL,Failure Code Desc,=,POOR PROGRAMMING,NULL,And
+140-3,140,3,NULL,Vehicle Build Date,<=,03/29/2018,NULL,NULL
+60-1,60,1,NULL,Customer,=,Stellantis,NULL,And
+60-2,60,2,NULL,model,=,Ram DS,NULL,And
+60-3,60,3,NULL,Vehicle Build Date,<=,2/27/2018,NULL,And
+60-4,60,4,(,Customer Comments,LIKE,*lock*,NULL,Or
+60-5,60,5,NULL,Customer Comments,LIKE,*seize*,NULL,Or
+60-7,60,7,NULL,Dealer Comments,LIKE,*lock*,NULL,Or
+60-9,60,9,NULL,Dealer Comments,LIKE,*seize*,NULL,Or
+60-10,60,10,NULL,Correction Comments,LIKE,*lock*,NULL,Or
+60-11,60,11,NULL,Correction Comments,LIKE,*seize*,),And
+60-12,60,12,NULL,Product Description,=,Compressor,NULL,NULL
+56-1,56,1,NULL,customer,=,Stellantis,NULL,And
+56-2,56,2,NULL,model,=,Cherokee,NULL,And
+56-3,56,3,NULL,Model Year,=,2016,NULL,And
+56-4,56,4,NULL,Vehicle Build Date,<=,4/11/2016,NULL,And
+56-5,56,5,NULL,Product Description,=,Wiper Arm,NULL,NULL
+45-1,45,1,NULL,Model Year,=,2016,NULL,And
+45-2,45,2,NULL,Model,=,Malibu E2,NULL,And
+45-3,45,3,NULL,Claim Category,=,Blown Fuse,NULL,NULL
+34-1,34,1,NULL,customer,=,Stellantis,NULL,And
+34-2,34,2,NULL,Model,=,Ram HD,NULL,And
+34-3,34,3,NULL,Vehicle Build Date,<,4/6/2016,NULL,And
+34-4,34,4,NULL,Product Description,=,Exhaust Gas Temperature Sensor,NULL,And
+34-5,34,5,(,Customer Comments,LIKE,*420*,NULL,Or
+34-6,34,6,NULL,Customer Comments,LIKE,*421*,NULL,Or
+34-7,34,7,NULL,Customer Comments,LIKE,*16-041*,NULL,Or
+34-8,34,8,NULL,Customer Comments,LIKE,*18-015-17*,NULL,Or
+34-9,34,9,NULL,Dealer Comments,LIKE,*420*,NULL,Or
+34-10,34,10,NULL,Dealer Comments,LIKE,*421*,NULL,Or
+34-11,34,11,NULL,Dealer Comments,LIKE,*16-041*,NULL,Or
+34-12,34,12,NULL,Dealer Comments,LIKE,*18-015-17*,NULL,Or
+34-13,34,13,NULL,Correction Comments,LIKE,*420*,NULL,Or
+34-14,34,14,NULL,Correction Comments,LIKE,*421*,NULL,Or
+34-15,34,15,NULL,Correction Comments,LIKE,*16-041*,NULL,Or
+34-16,34,16,NULL,Correction Comments,LIKE,*18-015-17*,),NULL
+13-1,13,1,NULL,Model,=,Tundra,NULL,And
+13-2,13,2,(,Model Year,>,2014,NULL,Or
+13-3,13,3,NULL,Model Year,<=,2016,),And
+13-4,13,4,(,Complaint Code Desc,=,ERRONEOUS BEHAVIOR,NULL,Or
+13-5,13,5,NULL,Complaint Code Desc,=,INOPERATIVE WHEN SWITCHED ON,),And
+13-6,13,6,NULL,Issue ID,IS NULL,NULL,NULL,NULL
+-,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
