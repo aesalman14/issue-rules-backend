@@ -35,4 +35,46 @@ const ALLOWED_ISSUE_FIELDS = {
   sql_code: "SQL Code",
 };
 
-module.exports = { PREVIEW_COLUMNS, ALLOWED_ISSUE_FIELDS };
+const DOMO_SYNC_DATASET_NAME = "Issue Rules Domo Sync";
+
+const DOMO_SYNC_COLUMNS = [
+  "DN Claim ID",
+  "VIN",
+  "Model Year",
+  "Model Year (Fixed)",
+  "Model",
+  "Engine",
+  "Vehicle Build Date",
+  "Vehicle Sale Date",
+  "Vehicle Repair Date",
+  "Mileage",
+  "MIS",
+  "DN Part ID",
+  "Product Description",
+  "Application",
+  "Customer",
+  "Claimed Part Number",
+  "Complaint Code",
+  "Complaint Code Description",
+  "Failure Code",
+  "Failure Code Description",
+  "Customer Comments",
+  "Dealer Comments",
+  "Correction Comments",
+  "Customer Comment Category",
+  "Customer Comment Category 2",
+  "Dealer Comment Category",
+  "Dealer Comment Category 2",
+  "Issue ID",
+  "Customer Comment Category Source",
+  "Customer Comment Category 2 Source",
+  "Dealer Comment Category Source",
+  "Dealer Comment Category 2 Source",
+];
+
+module.exports = {
+  PREVIEW_COLUMNS,
+  ALLOWED_ISSUE_FIELDS,
+  DOMO_SYNC_DATASET_NAME,
+  DOMO_SYNC_COLUMNS,
+};

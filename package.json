@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "node server.js",
     "test:auth": "node scripts/domo-auth.js",
+    "domo:create-issue-rules-sync": "node scripts/create-issue-rules-sync-dataset.js",
     "test:mysql": "node scripts/mysql_connect.js",
     "sync:domo": "node scripts/domo-sync.js",
     "db:migrate": "npx sequelize-cli db:migrate",

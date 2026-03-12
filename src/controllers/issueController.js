@@ -2,8 +2,63 @@
  * src/controllers/issueController.js — Issue CRUD + activate / deactivate / sql-code
  */
 const { getDb } = require("../config/db");
-const { ALLOWED_ISSUE_FIELDS } = require("../config/constants");
+const {
+  ALLOWED_ISSUE_FIELDS,
+  DOMO_SYNC_DATASET_NAME,
+  DOMO_SYNC_COLUMNS,
+} = require("../config/constants");
 const { buildWhereFromRules, toDisplaySqlCode } = require("../utils/sqlBuilder");
+const { replaceDatasetData } = require("../services/domoDataset");
+
+function createHttpError(statusCode, message) {
+  const err = new Error(message);
+  err.statusCode = statusCode;
+  return err;
+}
+
+function uniqueColumns(columns) {
+  return Array.from(
+    new Set(
+      (Array.isArray(columns) ? columns : [])
+        .map((column) => String(column || "").trim())
+        .filter(Boolean)
+    )
+  );
+}
+
+function buildDomoSyncConfig(body) {
+  const syncRequest =
+    body && typeof body === "object" && body.domo_sync && typeof body.domo_sync === "object"
+      ? body.domo_sync
+      : null;
+  const fallbackDatasetId = String(
+    process.env.DOMO_ISSUE_RULES_SYNC_DATASET_ID || ""
+  ).trim();
+  const enabled = !!syncRequest || !!fallbackDatasetId;
+  const columns = uniqueColumns(
+    syncRequest?.trim_to_columns || syncRequest?.columns || DOMO_SYNC_COLUMNS
+  );
+
+  return {
+    enabled,
+    datasetName: String(syncRequest?.dataset_name || DOMO_SYNC_DATASET_NAME),
+    datasetId: String(syncRequest?.dataset_id || fallbackDatasetId).trim(),
+    includeOnlyTaggedClaims: syncRequest?.include_only_tagged_claims !== false,
+    overwriteExistingIssueIds: syncRequest?.overwrite_existing_issue_ids === true,
+    updateOnlyWhenIssueIdEmpty: syncRequest?.update_only_when_issue_id_empty !== false,
+    columns,
+  };
+}
+
+function quoteColumns(columns) {
+  return columns.map((column) => `\`${column}\``).join(", ");
+}
+
+async function getMissingColumns(conn, columns) {
+  const [existingColumns] = await conn.execute("SHOW COLUMNS FROM claims_prod");
+  const existing = new Set(existingColumns.map((row) => String(row.Field || "").trim()));
+  return columns.filter((column) => !existing.has(column));
+}
 
 // ── GET all issues ─────────────────────────────────────
 async function getAll(req, res) {
@@ -128,41 +183,137 @@ async function remove(req, res) {
 async function activate(req, res) {
   const db = getDb();
   const issueId = req.issueId;
+  const domoSync = buildDomoSyncConfig(req.body);
+  const conn = await db.getConnection();
 
-  const [issues] = await db.execute(
-    "SELECT * FROM issue_tracking_history WHERE `Issue ID` = ?",
-    [issueId]
-  );
-  if (issues.length === 0) return res.status(404).json({ error: "Issue not found" });
+  try {
+    const [issues] = await conn.execute(
+      "SELECT * FROM issue_tracking_history WHERE `Issue ID` = ?",
+      [issueId]
+    );
+    if (issues.length === 0) {
+      throw createHttpError(404, "Issue not found");
+    }
 
-  const issue = issues[0];
-  const dnPartId = issue["DN Part ID"];
-  const customer = issue["Customer"];
+    const issue = issues[0];
+    const dnPartId = issue["DN Part ID"];
+    const customer = issue["Customer"];
 
-  const [rules] = await db.execute(
-    "SELECT * FROM rule_logic_history WHERE `Rule ID` = ? ORDER BY `Logic Number`",
-    [issueId]
-  );
+    const [rules] = await conn.execute(
+      "SELECT * FROM rule_logic_history WHERE `Rule ID` = ? ORDER BY `Logic Number`",
+      [issueId]
+    );
 
-  const where = buildWhereFromRules(rules, dnPartId, customer);
+    const where = buildWhereFromRules(rules, dnPartId, customer);
+    const sqlCode = where.replace(/%/g, "*").replace(/'/g, "#");
+    const emptyIssueIdCondition = "(`Issue ID` IS NULL OR TRIM(`Issue ID`) = '')";
+    const populatedIssueIdCondition = "(`Issue ID` IS NOT NULL AND TRIM(`Issue ID`) <> '')";
+    const taggableCondition = domoSync.overwriteExistingIssueIds
+      ? "1=1"
+      : domoSync.updateOnlyWhenIssueIdEmpty
+        ? emptyIssueIdCondition
+        : `NOT ${populatedIssueIdCondition}`;
 
-  const [countRows] = await db.execute(
-    `SELECT COUNT(*) AS total FROM claims_prod WHERE ${where}`
-  );
+    if (domoSync.enabled) {
+      const missingColumns = await getMissingColumns(conn, domoSync.columns);
+      if (missingColumns.length > 0) {
+        throw createHttpError(
+          500,
+          `claims_prod is missing DOMO sync column(s): ${missingColumns.join(", ")}`
+        );
+      }
+    }
 
-  const sqlCode = where.replace(/%/g, "*").replace(/'/g, "#");
-  await db.execute(
-    "UPDATE issue_tracking_history SET `SQL Code` = ?, `Activated` = 'Yes' WHERE `Issue ID` = ?",
-    [sqlCode, issueId]
-  );
+    await conn.beginTransaction();
 
-  res.json({
-    issue_id: parseInt(issueId),
-    status: "activated",
-    matching_claims: countRows[0].total,
-    sql_code: sqlCode,
-    where_clause: where,
-  });
+    await conn.execute("DROP TEMPORARY TABLE IF EXISTS issue_rule_activation_claims");
+    await conn.execute(
+      `CREATE TEMPORARY TABLE issue_rule_activation_claims (
+        \`DN Claim ID\` VARCHAR(100) NOT NULL PRIMARY KEY
+      ) ENGINE=MEMORY`
+    );
+    await conn.execute(
+      `INSERT INTO issue_rule_activation_claims (\`DN Claim ID\`)
+       SELECT \`DN Claim ID\`
+       FROM claims_prod
+       WHERE ${where} AND ${taggableCondition}`
+    );
+
+    const [matchingRows] = await conn.execute(
+      `SELECT COUNT(*) AS total FROM claims_prod WHERE ${where}`
+    );
+    const [taggedRows] = await conn.execute(
+      "SELECT COUNT(*) AS total FROM issue_rule_activation_claims"
+    );
+    const [skippedRows] = await conn.execute(
+      domoSync.overwriteExistingIssueIds
+        ? "SELECT 0 AS total"
+        : `SELECT COUNT(*) AS total FROM claims_prod WHERE ${where} AND ${populatedIssueIdCondition}`
+    );
+
+    await conn.execute(
+      `UPDATE claims_prod claims
+       INNER JOIN issue_rule_activation_claims picked
+         ON picked.\`DN Claim ID\` = claims.\`DN Claim ID\`
+       SET claims.\`Issue ID\` = ?`,
+      [String(issueId)]
+    );
+
+    let domoSyncResult = null;
+    if (domoSync.enabled) {
+      const sourceSql = domoSync.includeOnlyTaggedClaims
+        ? `SELECT ${quoteColumns(domoSync.columns)}
+           FROM claims_prod claims
+           INNER JOIN issue_rule_activation_claims picked
+             ON picked.\`DN Claim ID\` = claims.\`DN Claim ID\``
+        : `SELECT ${quoteColumns(domoSync.columns)}
+           FROM claims_prod
+           WHERE ${where} AND \`Issue ID\` = ?`;
+
+      const [syncRows] = domoSync.includeOnlyTaggedClaims
+        ? await conn.execute(sourceSql)
+        : await conn.execute(sourceSql, [String(issueId)]);
+
+      domoSyncResult = await replaceDatasetData({
+        datasetId: domoSync.datasetId,
+        columns: domoSync.columns,
+        rows: syncRows,
+      });
+      domoSyncResult.datasetName = domoSync.datasetName;
+    }
+
+    await conn.execute(
+      "UPDATE issue_tracking_history SET `SQL Code` = ?, `Activated` = 'Yes' WHERE `Issue ID` = ?",
+      [sqlCode, issueId]
+    );
+
+    await conn.commit();
+    await conn.execute("DROP TEMPORARY TABLE IF EXISTS issue_rule_activation_claims");
+
+    res.json({
+      issue_id: parseInt(issueId, 10),
+      status: "activated",
+      matching_claims: matchingRows[0].total,
+      tagged_claims: taggedRows[0].total,
+      skipped_claims: skippedRows[0].total,
+      domo_sync_rows: domoSyncResult?.rowsUploaded || 0,
+      domo_dataset_name: domoSyncResult?.datasetName || domoSync.datasetName,
+      domo_sync_status: domoSync.enabled ? "synced" : "skipped",
+      sql_code: sqlCode,
+      where_clause: where,
+      display_sql_code: toDisplaySqlCode(where),
+    });
+  } catch (err) {
+    try {
+      await conn.rollback();
+    } catch {}
+    try {
+      await conn.execute("DROP TEMPORARY TABLE IF EXISTS issue_rule_activation_claims");
+    } catch {}
+    throw err;
+  } finally {
+    conn.release();
+  }
 }
 
 // ── DEACTIVATE issue ───────────────────────────────────
