@@ -7,6 +7,7 @@
     "test:auth": "node scripts/domo-auth.js",
     "domo:create-issue-rules-sync": "node scripts/create-issue-rules-sync-dataset.js",
     "test:mysql": "node scripts/mysql_connect.js",
+    "db:clone:dev": "node scripts/clone-schema.js issue_rules issue_rules_dev",
     "sync:domo": "node scripts/domo-sync.js",
     "db:migrate": "npx sequelize-cli db:migrate",
     "db:migrate:undo": "npx sequelize-cli db:migrate:undo",
